@@ -5,10 +5,14 @@
  * Font is from http://www.yanone.de/typedesign/kaffeesatz/
 */
 
-body {
-  background: #95040B;
-  font-family: "Yanone Kaffeesatz", Helvetica, Arial, sans-serif;
+$red: #95040B;
+$code-white: #F2DCC2;
+$burple: #010326;
+$white: #D9DADE;
 
+body {
+  background: $red;
+  font-family: "Yanone Kaffeesatz", Helvetica, Arial, sans-serif;
 }
 
 h1, .just-title {
@@ -24,7 +28,7 @@ p > code {
 }
 
 pre, code {
-  color: #F2DCC2;
+  color: $code-white;
 }
 
 .content > .pull-right {
@@ -36,8 +40,8 @@ pre, code {
 }
 
 #preso, .slide {
-  background: #010326;
-  color: #D9DADE;
+  background: $burple;
+  color: $white;
 }
 
 .content > ul > li {
@@ -53,5 +57,5 @@ pre, code {
 }
 
 .questions {
-  background: #95040B;
+  background: $red;
 }
