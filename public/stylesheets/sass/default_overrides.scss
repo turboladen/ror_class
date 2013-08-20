@@ -1,0 +1,57 @@
+/*
+ * Using color scheme from:
+    http://www.colourlovers.com/palette/367239/the_shrike
+    http://www.colourlovers.com/palette/1533834/Ruby_Wheels
+ * Font is from http://www.yanone.de/typedesign/kaffeesatz/
+*/
+
+body {
+  background: #95040B;
+  font-family: "Yanone Kaffeesatz", Helvetica, Arial, sans-serif;
+
+}
+
+h1, .just-title {
+  font-weight: bold;
+}
+
+li > code {
+  font-size: 90%;
+}
+
+p > code {
+  font-size: 90%;
+}
+
+pre, code {
+  color: #F2DCC2;
+}
+
+.content > .pull-right {
+  text-align: right;
+}
+
+.content > p {
+  text-align: left;
+}
+
+#preso, .slide {
+  background: #010326;
+  color: #D9DADE;
+}
+
+.content > ul > li {
+  padding: .1em;
+}
+
+.bullets > ul > li {
+  text-align: left;
+}
+
+.smbullets > ul > li {
+  text-align: left;
+}
+
+.questions {
+  background: #95040B;
+}

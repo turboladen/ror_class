@@ -21,4 +21,6 @@ doc/
 .idea/
 atlassian-ide-plugin.xml
 
+# Stylesheets
+.sass-cache
 public/stylesheets/*.css

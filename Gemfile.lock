@@ -28,6 +28,7 @@ GEM
     redcarpet (3.0.0)
     rouge (0.2.14)
       thor
+    sass (3.2.10)
     sinatra (1.4.3)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -40,3 +41,4 @@ PLATFORMS
 
 DEPENDENCIES
   parade
+  sass
