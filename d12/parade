@@ -1,6 +1,6 @@
 resources 'stylesheets'
 
-title 'Geekwise: Ruby on Rails, Day 1/12'
+title 'Geekwise: Ruby on Rails, Day 12/12'
 
 section 'Intro' do
   slides '0_intro.md'
