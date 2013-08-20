@@ -1,0 +1,54 @@
+/*
+ * Using color scheme from http://www.colourlovers.com/palette/2980125/Snowflakes
+ * Font is from http://www.yanone.de/typedesign/kaffeesatz/
+*/
+body {
+    background: #ccc;
+    font-family: "Yanone Kaffeesatz", Helvetica, Arial, sans-serif;
+}
+
+h1, .just-title {
+    font-weight: bold;
+}
+
+li > code {
+    font-size: 90%;
+}
+
+p > code {
+    font-size: 90%;
+}
+
+pre, code {
+    color: #0E192F;
+}
+
+.content > .pull-right {
+    text-align: right;
+}
+
+.content > p {
+    text-align: left;
+}
+
+#preso, .slide {
+    background: #0E192F;
+    color: #CBE2F4;
+}
+
+.content > ul > li {
+    padding: .1em;
+}
+
+.bullets > ul > li {
+    text-align: left;
+}
+
+.smbullets > ul > li {
+    text-align: left;
+}
+
+.questions {
+    background: #780600;
+}
+
