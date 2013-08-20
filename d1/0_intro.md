@@ -20,6 +20,9 @@
     * Agile Web Development with Rails 4
     * The Rails 4 Way
 
+!SLIDE
+* Why?
+    * Reflection.  Lets you learn it by asking.
 
 !SLIDE questions title
 
