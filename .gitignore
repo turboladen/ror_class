@@ -17,5 +17,8 @@ tmp
 _yardoc
 doc/
 
+# Project/IDE
 .idea/
 atlassian-ide-plugin.xml
+
+public/stylesheets/*.css
