@@ -6,7 +6,7 @@ use Sass::Plugin::Rack
 current_dir = File.expand_path(File.dirname(__FILE__))
 
 # Create each Sinatra app as a class.
-(1...12).each do |i|
+(0...12).each do |i|
   klass = Class.new(Parade::Server) do
     set :presentation_directory, "#{current_dir}/d#{i}"
     set :presentation_file, "#{current_dir}/d#{i}/parade"
@@ -17,7 +17,7 @@ current_dir = File.expand_path(File.dirname(__FILE__))
 end
 
 # Map each Sinatra app to a URL.
-maps = (1...12).inject({}) do |result, i|
+maps = (0...12).inject({}) do |result, i|
   result["/d#{i}"] = Kernel.const_get("D#{i}".to_sym).new
   result
 end
