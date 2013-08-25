@@ -1,0 +1,5 @@
+resources 'stylesheets'
+
+title 'Geekwise: Ruby on Rails Course'
+
+slides '1.md'

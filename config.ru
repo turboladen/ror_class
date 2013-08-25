@@ -22,5 +22,14 @@ maps = (0...12).inject({}) do |result, i|
   result
 end
 
+# Home page app
+Home = Class.new(Parade::Server) do
+  set :presentation_directory, "#{current_dir}/home"
+  set :presentation_file, "#{current_dir}/home/parade"
+  register_stylesheet("#{current_dir}/public/stylesheets/default_overrides.css")
+end
+
+maps['/'] = Home
+
 
 run Rack::URLMap.new(maps)
