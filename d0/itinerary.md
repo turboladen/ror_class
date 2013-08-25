@@ -1,3 +1,8 @@
+!SLIDE center just-title
+# Geekwise: Ruby on Rails
+## Course Itinerary
+
+
 !SLIDE bullets
 # [Day 1/12](d1): Intro & Getting Started
 
