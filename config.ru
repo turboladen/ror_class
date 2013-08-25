@@ -34,11 +34,12 @@ end
   Kernel.const_set "#{resource.capitalize}".to_sym, klass
 end
 
-# Map
+# Map other URLs
 %w[home itinerary].inject(maps) do |result, resource|
   url = resource == 'home' ? '/' : "/#{resource}"
   result[url] = Kernel.const_get(resource.to_s.capitalize).new
   result
 end
 
+# Run 'em!
 run Rack::URLMap.new(maps)
