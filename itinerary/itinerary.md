@@ -23,6 +23,7 @@
     * IDEs
     * Git & Github
     * Heroku
+    * Vagrant
 * Installing Ruby
 * IRB
 * RubyGems
