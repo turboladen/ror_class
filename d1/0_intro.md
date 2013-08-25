@@ -28,6 +28,7 @@
 
 1. Why Ruby?
 + Install Ruby
++ hello world
 + Software Configuration Management (SCM)
 
 
