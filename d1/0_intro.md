@@ -3,10 +3,11 @@
 
 ## Day 1/12
 
-!SLIDE smbullets
+!SLIDE
 # Class Overview
 
-Get the slides: [http://geekwise-ror.herokuapp.com](http://geekwise-ror.herokuapp.com)
+* Get the slides: [http://geekwise-ror.herokuapp.com](http://geekwise-ror.herokuapp.com)
+* [Itinerary](http://geekwise-ror.herokuapp.com/d0)
 
 
 !SLIDE
