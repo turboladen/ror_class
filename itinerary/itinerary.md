@@ -136,6 +136,8 @@
 !SLIDE
 # [Day 12/12](d12): What next?
 
+* Deploying your Rails app
+* Hosting your Rails app
 * Ruby Metaprogramming
 * Using JS Frameworks (Ember, Angular, etc)
 * Rails in the Enterprise

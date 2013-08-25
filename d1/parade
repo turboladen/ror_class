@@ -4,6 +4,10 @@ title 'Geekwise: Ruby on Rails, Day 1/12'
 
 section 'Intro' do
   slides '0_intro.md'
+end
+
+section 'Talking' do
+  slides '1_talking.md'
   slides '0_rails_project.md'
 end
 
