@@ -50,7 +50,7 @@
     * Time tracker (i.e. for invoices)
     * Topic-based social networking
     * Fake store (books, videos, etc)
-    * Clone a popular site (twitter, youtube, wikipedia)
+    * Clone a popular site (twitter, youtube, wikipedia, craigslist)
     * If nothing else... The ol' blog (plus ratings? comments?)
 
 
