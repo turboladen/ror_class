@@ -7,20 +7,20 @@
 # Class Overview
 
 * Get the slides: [http://geekwise-ror.herokuapp.com](http://geekwise-ror.herokuapp.com)
-* [Itinerary](http://geekwise-ror.herokuapp.com/d0)
+* Let's check the [itinerary](http://geekwise-ror.herokuapp.com/d0).
 
 
 !SLIDE
 # Overview for Today
 
-* What you will know
-* What you will make
+* What you will know.
+* What you will make.
     * Ruby project
     * Rails project
 * Why Rails?
 * Why Ruby?
-* OO programming
-* About me
+* OO programming.
+* About me.
 
 !SLIDE
 # [Day 1/12](d1): Intro & Getting Started (cont.)
@@ -87,11 +87,6 @@
 * [Crafting Rails 4 Applications](http://pragprog.com/book/jvrails2/crafting-rails-4-applications),
   by José Valim
     * "Expert Practices for Everyday Rails Development."
-
-
-!SLIDE
-* Why?
-    * Reflection.  Lets you learn it by asking.
 
 !SLIDE questions title
 

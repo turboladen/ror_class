@@ -8,7 +8,8 @@ end
 
 section 'Talking' do
   slides '1_talking.md'
-  slides '0_rails_project.md'
+  slides '1_rails_project.md'
+  slides '1_why.md'
 end
 
 section 'Wrap' do
