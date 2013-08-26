@@ -16,7 +16,7 @@
     * OO programming
     * About me
 
-!SLIDE
+!SLIDE smbullets
 # [Day 1/12](d1): Intro & Getting Started (cont.)
 
 * Tools

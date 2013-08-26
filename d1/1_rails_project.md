@@ -34,7 +34,7 @@
     * use AJAX.
     * use pagination for lists.
     * be styled.
-    * bonus for using view caching.
+    * (bonus for using view caching.)
 
 .pull-right (cont...)
 

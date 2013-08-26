@@ -22,8 +22,8 @@
 * OO programming.
 * About me.
 
-!SLIDE
-# [Day 1/12](d1): Intro & Getting Started (cont.)
+!SLIDE smbullets
+# Overview for Today (cont.)
 
 * Tools
     * IDEs
@@ -36,7 +36,7 @@
 * RubyGems
 
 
-!SLIDE smbullets
+!SLIDE bullets
 # README (Ruby)
 
 * [Programming Ruby](http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0),
@@ -53,7 +53,7 @@
   by Paolo Perrotta
     * Good for learning Ruby's innards & "magic".
 
-!SLIDE smbullets
+!SLIDE bullets
 # README (Ruby) (cont.)
 
 * [Eloquent Ruby](http://www.amazon.com/Eloquent-Addison-Wesley-Professional-Series-ebook/dp/B004MMEJ36/ref=pd_sim_b_1),
@@ -66,7 +66,7 @@
   by Jay Fields, Martin Fowler, Kent Beck, Shane Harvie
 
 
-!SLIDE smbullets
+!SLIDE bullets
 # README (Rails)
 
 * [Agile Web Development with Rails 4](http://pragprog.com/book/rails4/agile-web-development-with-rails-4),
@@ -76,19 +76,22 @@
     * I've never used, but popular.
 * http://guides.rubyonrails.org
     * Lots of getting started info.
-* http://railscasts.com
+* http://railscasts.com, Ryan Bates
     * Shows how to solve lots of common problems.
+
+!SLIDE bullets
+# README (Rails) (cont.)
+
 * [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book),
   by Michael Hartl
     * Highly recommended (by Rails peeps) online book.
-
-!SLIDE smbullets
-# README (Rails) (cont.)
-
 * [Crafting Rails 4 Applications](http://pragprog.com/book/jvrails2/crafting-rails-4-applications),
   by José Valim
     * "Expert Practices for Everyday Rails Development."
 
-!SLIDE questions title
 
-# `> puts 'questions?'`
+!SLIDE questions title commandline incremental
+
+```
+$ puts "questions?"
+```

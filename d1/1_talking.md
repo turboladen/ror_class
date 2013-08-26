@@ -1,37 +1,39 @@
 !SLIDE
 # What You Will Know
 
-* Some things about Ruby.
-* Some things about Ruby on Rails.
-* Some other things.
+1. Some things about Ruby.
++ Some things about Ruby on Rails.
++ Some other things.
 
 !SLIDE incremental
 # What You Will Know: Ruby 2.0
 
-* Why you'd use Ruby
-* How to set up an environment for Ruby
+* Why should I use Ruby?
+* How do I set up an environment for Ruby?
 * Basic Ruby core language
-* Where to look for more info: introspection & docs
-* How to extend Ruby
-* How to write maintainable code
-* How to do web things with Ruby
+* Where can I find info on Ruby objects?
+* How can I extend Ruby for my needs?
+* How can I do web things with Ruby?
+* How can I write code that's maintainable?
 
 !SLIDE incremental
 # What You Will Know: Rails 4
 
-* Why you'd use Rails
-* How Rails simplifies web programming
-* How Rails seems like magic, but isn't
-* Rails' components & architecture
-* How to build a web app with Rails
-* How to build a web service (API) with Rails
+* Why should I use Rails?
+* How does Rails simplify web programming?
+* Why does Rails seems like magic?
+* What are Rails' components & architecture?
+* How can I build a web app with Rails?
+* How can I build a web service (API) with Rails?
+
+.pull-right (cont.)
 
 !SLIDE incremental
 # What You Will Know: Rails 4 (cont.)
 
-* How to run background jobs for Rails apps
-* Using authentication & authorization
-* How to use Rails with "other" types of databases
+* How can I run background jobs for Rails apps?
+* How can I use authentication & authorization in my app?
+* How can I use Rails with "other" types of databases?
 * Sass for CSS
 * CoffeeScript for JavaScript
 
