@@ -12,3 +12,6 @@
 - Suggested Reading after every class
 - After Wed class, "if you wanna do more, read X, build Y..."
 - Homework after Thursday class
+
+
+https://www.bloc.io/ruby-warrior/#/

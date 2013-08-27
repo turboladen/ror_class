@@ -1,8 +1,32 @@
 !SLIDE center just-title
 # Wrapping it up.
 
+* We talked about what you'll learn here.
+* We talked about why you'd use Ruby and Rails.
+* We covered some tools that we'll use throughout the class.
+* We installed Ruby.
+* We glanced at IRB.
+* We wrote our first program.
+
+
+!SLIDE questions title commandline incremental
+
+```
+$ puts "questions?"
+```
+
 !SLIDE bullets
 # Homework
 
 1. Create a github account.
-+ Push today's class work to a 'geekwise-ror' repo.
++ Start looking at IDEs and/or editors.
+
+* Suggested reading:
+    * http://tryruby.org/levels/1/challenges/0
+    * look at the links in README.
+
+!SLIDE questions title commandline incremental
+
+```
+$ end
+```
