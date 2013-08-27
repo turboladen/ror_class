@@ -16,6 +16,10 @@ section 'Tools' do
   slides '2_tools.md'
 end
 
+section 'Installing Ruby' do
+  slides '3_installing_ruby.md'
+end
+
 section 'Wrap' do
   slides '9_summary.md'
 end
