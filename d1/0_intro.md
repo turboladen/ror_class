@@ -4,15 +4,57 @@
 ## Day 1/12
 
 !SLIDE
+# Today's Goals
+
+1. Understand why we're here.
++ Setup and install tools we need.
++ Setup and install Ruby.
++ Get our fingers wet with a little code.
+
+!SLIDE
+# Class Goals
+
+1. Learn Ruby basics.
++ Learn how to learn Ruby.
++ Learn Ruby ecosystem.
++ Get your Rails sea legs.
++ Get familiar with tools involved in making Ruby/Rails libraries/apps.
+
+!SLIDE
 # Class Overview
 
 * Get the slides: [http://geekwise-ror.herokuapp.com](http://geekwise-ror.herokuapp.com)
 * Let's check the [itinerary](http://geekwise-ror.herokuapp.com/d0).
 
+!SLIDE bullets
+# Class Coding/Reviewing Workflow
+
+* While in class...
+    * we write code,
+    * I review while we're here.
+* While at home...
+    * you write code,
+    * you commit code to github;
+    * create a pull request when done,
+    * add me as a reviewer;
+    * I will review before next Wednesday.
+
+!SLIDE bullets
+# Stuck?
+
+* http://rubygroupies.github.io
+* http://irc.lc/freenode/ruby-lang
+* http://irc.lc/freenode/rails
+* http://stackoverflow.com
+* http://www.reddit.com/r/ruby
+* http://www.reddit.com/r/rails
+
 
 !SLIDE
 # Overview for Today
 
+* Stuff you should read.
+* About me.
 * What you will know.
 * What you will make.
     * Ruby project
@@ -20,7 +62,6 @@
 * Why Rails?
 * Why Ruby?
 * OO programming.
-* About me.
 
 !SLIDE smbullets
 # Overview for Today (cont.)
@@ -32,7 +73,7 @@
     * Vagrant
 * Installing Ruby
 * IRB
-* Hello World!
+* `Hello World!`
 * RubyGems
 
 

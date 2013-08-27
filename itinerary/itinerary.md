@@ -7,26 +7,28 @@
 # [Day 1/12](d1): Intro & Getting Started
 
 * Intro Talking Stuff:
-    * What you will know
-    * What you will make
+    * Stuff you should read.
+    * About me.
+    * What you will know.
+    * What you will make.
         * Ruby project
         * Rails project
     * Why Rails?
     * Why Ruby?
-    * OO programming
-    * About me
+    * OO programming.
 
 !SLIDE smbullets
 # [Day 1/12](d1): Intro & Getting Started (cont.)
 
 * Tools
+    * RSpec
     * IDEs
     * Git & Github
     * Heroku
     * Vagrant
 * Installing Ruby
 * IRB
-* Hello World!
+* `Hello World!`
 * RubyGems
 
 !SLIDE
@@ -50,17 +52,7 @@
 * RubyGems & Bundler
 
 !SLIDE
-# [Day 4/12](d4): Testing
-
-* Test::Unit
-* minitest
-* shoulda
-* mocha
-* RSpec
-* Cucumber
-
-!SLIDE
-# [Day 5/12](d5): Ruby & The Web
+# [Day 4/12](d4): Ruby & The Web
 
 * Sockets
 * CGI
@@ -71,50 +63,43 @@
 * Web Servers, App Servers, and the Web
 
 !SLIDE
-# [Day 6/12](d6): Intro to Rails
+# [Day 5/12](d5): Intro to Rails
 
-* Flickr clone in class
-* Final Rails project
+* Final Rails project review
+* In-class project review
 * Rails & the Web
 * Rack & Rails
 * Models, Views, and Controllers
+* CRUD
 * Installing Rails
-* Creating an app
+* Creating our in-class project app
 * Bundler
 
 !SLIDE
-# [Day 7/12](d7): Digging in to Rails
+# [Day 6/12](d6): Digging in to Rails
 
-* MVC & Rails
-* Create & flockr basics
-* Using RSpec for testing
+* MVC and Rails
+* Basics of our app:
+    * DB, models & migrations
+    * controller & model interaction
+    * controller & view interaction
+    * assets (CSS, JS, images)
+    * testing all of these
 * Forms
 * File uploads
-* Emailing & ActionMailer
 
 !SLIDE
-# [Day 8/12](d8): Digging Deeper
-
-* JS, AJAX
-* Ratings
-* Pagination
-* Authentication
-* Authorization
-* Background Jobs
-* Versioning
-* Soft-delete
-
-!SLIDE
-# [Day 9/12](d9): Action*
+# [Day 7/12](d7): Action*
 
 * ActionDispatch
 * ActionController
 * ActionView
 * REST and routes
 * Views, Partials, and Layouts
+* Emailing & ActionMailer
 
 !SLIDE
-# [Day 10/12](d10): ActiveRecord & ORMs
+# [Day 8/12](d8): ActiveRecord & ORMs
 
 * ActiveRecord
     * Querying
@@ -124,6 +109,28 @@
     * Mongo
     * Redis
     * DynamoDB
+
+!SLIDE
+# [Day 9/12](d9): Digging Deeper
+
+* JS, AJAX
+* Adding in functionality with gems for:
+    * Ratings
+    * Pagination
+    * Authentication
+    * Authorization
+    * Background Jobs
+    * Versioning
+    * Soft-delete
+
+!SLIDE
+# [Day 10/12](d10): Putting it out there
+
+* Deploying your Rails app
+* Differences when in production
+* Hosting your Rails app
+* Some interesting gems
+* In-class hacking time
 
 !SLIDE
 # [Day 11/12](d11): APIs
@@ -137,8 +144,8 @@
 !SLIDE
 # [Day 12/12](d12): What next?
 
-* Deploying your Rails app
-* Hosting your Rails app
 * Ruby Metaprogramming
 * Using JS Frameworks (Ember, Angular, etc)
 * Rails in the Enterprise
+* Where to get plugged in
+* Project reviews & discussion
