@@ -29,7 +29,6 @@
 * Installing Ruby
 * IRB
 * `Hello World!`
-* RubyGems
 
 !SLIDE
 # [Day 2/12](d2): Language Basics

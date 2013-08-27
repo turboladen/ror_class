@@ -74,7 +74,6 @@
 * Installing Ruby
 * IRB
 * `Hello World!`
-* RubyGems
 
 
 !SLIDE bullets

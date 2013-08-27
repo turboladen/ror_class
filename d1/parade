@@ -20,6 +20,10 @@ section 'Installing Ruby' do
   slides '3_installing_ruby.md'
 end
 
+section 'Ruby!' do
+  slides '4_finally_ruby.md'
+end
+
 section 'Wrap' do
   slides '9_summary.md'
 end
