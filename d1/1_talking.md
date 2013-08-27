@@ -1,3 +1,18 @@
+!SLIDE smbullets
+# Steve
+
+* SW since 2001
+* Black box tester, test management
+* Automated testing
+    * Mostly Ruby
+    * Some C/C++, Java, Python
+* Now, [Agrian](http://agrian.com) fun!
+* Fun projects
+    * https://github.com/turboladen
+    * First Rails in 2011
+    * I am not a Rails master.
+
+
 !SLIDE
 # What You Will Know
 
@@ -5,7 +20,7 @@
 + Some things about Ruby on Rails.
 + Some other things.
 
-!SLIDE incremental
+!SLIDE
 # What You Will Know: Ruby 2.0
 
 * Why should I use Ruby?
@@ -16,7 +31,7 @@
 * How can I do web things with Ruby?
 * How can I write code that's maintainable?
 
-!SLIDE incremental
+!SLIDE
 # What You Will Know: Rails 4
 
 * Why should I use Rails?
@@ -28,7 +43,7 @@
 
 .pull-right (cont.)
 
-!SLIDE incremental
+!SLIDE
 # What You Will Know: Rails 4 (cont.)
 
 * How can I run background jobs for Rails apps?
@@ -38,7 +53,7 @@
 * CoffeeScript for JavaScript
 
 
-!SLIDE incremental
+!SLIDE
 # What You Will Know: Other
 
 * git & github

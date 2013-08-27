@@ -16,7 +16,7 @@
 
 * Business requirements. It must...
     * provide HTML.
-        * bonus for providing non-HTML responses for at least 1 resource's action.
+        * bonus for providing some non-HTML responses.
     * allow multiple users to authenticate.
     * use associated models
         * bonus points for polymorphic associations!
