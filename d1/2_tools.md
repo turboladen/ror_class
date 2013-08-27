@@ -10,10 +10,10 @@
     * build tools
     * debugger
     * bells & whistles
-* Why?
-    * You don't.  ...but it could help.
+* Why do I need this?
+    * You don't.  ...but you really should.
 
-!SLIDE
+!SLIDE bullets
 # IDEs (cont.)
 
 * Popular Ruby/Rails IDEs:
@@ -41,6 +41,49 @@
 !SLIDE
 # HOMEWORK!
 
-* Pick an IDE to start working with.
+* Pick an IDE to start working with!
 * It will be your friend.
 * Pick by next Wednesday.
+
+
+!SLIDE bullets
+# Git & Github
+
+* Why?
+    * Good chance you'll use [git](http://git-scm.com/documentation) later.
+    * History of your work ([Software Configuration Management](http://en.wikipedia.org/wiki/Software_configuration_management)).
+    * Good for resume.
+    * Easy to share code with me.
+* Don't worry, I'll walk you through as needed.
+
+!SLIDE
+# HOMEWORK!
+
+* Create a github account!
+* Create it by tomorrow.
+
+!SLIDE
+# Heroku
+
+* Huh?
+    * It's a cloud platform as a service (PaaS).
+* Lets you deploy a Rails (etc) app simply using git.
+* Don't worry about infrastructure.
+* Free for what we'll be doing.
+* Lets you see your app on the web.
+
+!SLIDE
+# Vagrant
+
+* Huh?
+    * "Development environments made easy."
+* Lets you use VirtualBox to bring up a dev "server".
+* Don't have to install Rails dependencies on your box.
+* Use what OS you'll use in production.
+
+
+!SLIDE questions title commandline incremental
+
+```
+$ puts "questions?"
+```
