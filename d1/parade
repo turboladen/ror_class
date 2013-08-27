@@ -12,6 +12,10 @@ section 'Talking' do
   slides '1_why.md'
 end
 
+section 'Tools' do
+  slides '2_tools.md'
+end
+
 section 'Wrap' do
   slides '9_summary.md'
 end
