@@ -9,12 +9,12 @@
 * Full stack web development
     * DB access
     * Provisions for managing CSS & JS
-* Lets you develop without being a master at...
+* Lets you build apps _without_ being a master at...
     * TCP
     * DBs/SQL
     * CSS
     * JS
-* It's Ruby! ...Do a lot with little work.
+    * DevOps
 
 .pull-right (cont.)
 
@@ -23,21 +23,22 @@
 !SLIDE bullets incremental
 # Why Rails? (cont.)
 
+* It's Ruby! ...Do a lot with little work.
 * Conducive to team collaboration.
     * Lets you get right to solving the problem.
     * Accommodates change easily.
 * Well-designed and organized.
     * Model-View-Controller.
     * RESTful out of the box.
-* Support.
-    * Support for all kinds of DBs.
-    * Lots of plugins.
 
 .pull-right (cont.)
 
 !SLIDE bullets incremental
 # Why Rails? (cont.)
 
+* Support.
+    * Support for all kinds of DBs.
+    * Lots of plugins: write less code!
 * Database migrations.
 * It's easy...
     * to manage dependencies.
@@ -45,10 +46,23 @@
     * to deploy.
 * Jobs!
 
-!SLIDE smbullets incremental
+!SLIDE bullets incremental
 # Why *NOT* Rails?
 
 * There's a lot to learn besides Ruby.
+    * ERB or HAML for HTML
+    * SASS for CSS
+    * CoffeeScript for JavaScript
+    * Rails
+    * MVC
+    * Testing framework
+    * capybara, selenium
+    * rake
+    * capistrano
+
+!SLIDE smbullets incremental
+# Why *NOT* Rails? (cont.)
+
 * Overkill for your project.
 * Magic!
 * Can be confusing to debug.
@@ -62,10 +76,11 @@
 $ puts "questions?"
 ```
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # Why Ruby?
 
 * _Who here wants to learn Ruby as much as/more than Rails?_
+* You can learn a lot about Ruby from learning Rails.
 
 !SLIDE bullets incremental
 # Why Ruby?
@@ -94,11 +109,11 @@ $ puts "questions?"
 
 .pull-right (cont.)
 
-!SLIDE bullets incremental
+!SLIDE bullets
 # Why Ruby? (cont.)
 
 * Lots of VMs
-    * MRI ("C Ruby")
+    * MRI ("Matz' Ruby Interpreter", aka "C Ruby")
     * JRuby
     * RubyMotion/MacRuby
     * Rubinius (Ruby written in Ruby)
@@ -109,11 +124,11 @@ $ puts "questions?"
 
 .pull-right (cont.)
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # Sidenote: Software Maintainability
 
 * ["Over 90% of the cost of software development is software maintenance."](http://tynerblain.com/blog/2007/02/28/agile-development-roi-2/)
-* [ISO 9126](http://en.wikipedia.org/wiki/ISO/IEC_9126):
+* [ISO 9126](http://en.wikipedia.org/wiki/ISO/IEC_9126), Quality Characteristics:
     * Analyzability
     * Changeability
     * Stability
@@ -121,7 +136,7 @@ $ puts "questions?"
 
 .pull-right (cont.)
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # Sidenote: SW Maintainability (cont.)
 
 * How to mitigate?
@@ -134,6 +149,8 @@ $ puts "questions?"
     * Write tests that live with the code.
     * Write docs that live with the code.
     * Follow [design patterns](http://en.wikipedia.org/wiki/Software_design_pattern).
+    * [Red, Green, Refactor](http://www.jamesshore.com/Blog/Red-Green-Refactor.html).
+* Ruby is really good for mitigating these things.
 
 !SLIDE
 # Why Ruby?
@@ -143,12 +160,21 @@ $ puts "questions?"
 !SLIDE
 # Why *NOT* Ruby?
 
+* It doesn't feel right.
 * You can do really dumb things.
 * Too much flexibility.
 * Performance?
+* Not compiled (usually).
+* Not pre-installed on most OSes.
 
 !SLIDE questions title commandline incremental
 
 ```
 $ puts "questions?"
 ```
+
+!SLIDE
+# Object-Oriented Programming
+
+* Is not Procedural Programming.
+* Is not Functional Programming.
