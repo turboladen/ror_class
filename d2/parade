@@ -9,3 +9,7 @@ end
 section 'Objects' do
   slides '1_objects.md'
 end
+
+section 'Methods' do
+  slides '2_methods.md'
+end
