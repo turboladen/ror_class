@@ -27,8 +27,6 @@
 + Open a terminal/console, go to the directory where the file is...
 + Type: `ruby hello.rb`
 
-* OK, what's going on here?
-
 
 !SLIDE questions title commandline incremental
 

@@ -9,12 +9,6 @@
 * We wrote our first program.
 
 
-!SLIDE questions title commandline incremental
-
-```
-$ puts "questions?"
-```
-
 !SLIDE bullets
 # Homework
 
@@ -28,5 +22,5 @@ $ puts "questions?"
 !SLIDE questions title commandline incremental
 
 ```
-$ end
+$ puts "questions?"
 ```

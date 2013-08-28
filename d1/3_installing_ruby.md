@@ -142,3 +142,6 @@
 ```
 $ puts "questions?"
 ```
+
+!SLIDE center
+# Ok, let's install!

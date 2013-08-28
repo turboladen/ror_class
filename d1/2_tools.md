@@ -44,6 +44,7 @@
 * Pick an IDE to start working with!
 * It will be your friend.
 * Pick by next Wednesday.
+    * ...although we will be coding tomorrow.
 
 
 !SLIDE bullets
