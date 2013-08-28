@@ -384,3 +384,13 @@ end
     * `song.title`; is the same as `song.title();`
 * Indentation is 2 soft spaces (not hard tabs) (not syntax enforced).
 * The keyword `end` finishes multi-line statements.
+
+!SLIDE
+# Objects, Classes, Variables Summary
+
+* Objects do your program's work.
+    * Carry state.
+    * Have attributes and actions as methods.
+* Classes are like templates for objects.
+* A class is actually an object of class `Class`.
+* Instance variables hold the internal state of an object.
