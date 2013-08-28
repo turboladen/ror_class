@@ -43,6 +43,7 @@
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
 
+* Testing with RSpec
 * Exceptions
 * Input/Output
 * Duck Typing
