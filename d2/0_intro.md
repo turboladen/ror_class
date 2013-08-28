@@ -14,18 +14,18 @@ questions.any? { |q| q.created_at > Time.yesterday }
 !SLIDE
 # Today's Goals
 
-1. Learn Ruby's philosophy
+1. Learn Ruby's philosophy.
 + Learn Ruby's language basics.
 
 !SLIDE
 # Overview for Today
 
 * Classes, Objects, Variables
+* Methods
 * Containers, Blocks, Iterators
 * Sharing Functionality: Inheritance, Modules, Mix-ins
 * Standard Types/STDLIB
 * Regular Expressions
-* Methods
 
 
 !SLIDE questions title commandline incremental

@@ -34,11 +34,11 @@
 # [Day 2/12](d2): Language Basics
 
 * Classes, Objects, Variables
+* Methods
 * Containers, Blocks, Iterators
 * Sharing Functionality: Inheritance, Modules, Mixins
 * Standard Types/STDLIB
 * Regular Expressions
-* Methods
 
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
