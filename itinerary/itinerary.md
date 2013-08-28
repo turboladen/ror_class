@@ -35,15 +35,16 @@
 
 * Classes, Objects, Variables
 * Methods
-* Containers, Blocks, Iterators
-* Sharing Functionality: Inheritance, Modules, Mixins
+* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Standard Types/STDLIB
-* Regular Expressions
+* Logic and Control Flow
+* Containers, Blocks, Iterators
 
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
 
 * Testing with RSpec
+* Regular Expressions
 * Exceptions
 * Input/Output
 * Duck Typing

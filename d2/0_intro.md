@@ -22,10 +22,10 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 * Classes, Objects, Variables
 * Methods
-* Containers, Blocks, Iterators
 * Sharing Functionality: Inheritance, Modules, Mix-ins
 * Standard Types/STDLIB
-* Regular Expressions
+* Logic and Control Flow
+* Containers, Blocks, Iterators
 
 
 !SLIDE questions title commandline incremental
