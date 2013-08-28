@@ -138,6 +138,7 @@ $ irb
 ```
 
 * Creates an object from the `Song` class.
+    * `.new` is the "constructor" method.
     * AKA creates an "instance" of `Song`.
 * Assigns it to a "local variable", `song`.
 * Reflection!
@@ -219,6 +220,24 @@ $ irb
 
 * If you do something frequently, look for an easier way--there's a good chance
   Ruby lets you simplify.
+
+!SLIDE
+# Many Songs?
+
+* A `class` is like the template for an object type.
+
+```ruby
+$ irb
+001:0> require './song'
+002:0> song1 = Song.new
+003:0> song2 = Song.new
+004:0> puts song1.object_id
+005:0> puts song2.object_id
+```
+
+* Each `.new` creates a new `Song` object in memory.
+* Each `Song` object has its own unique ID.
+
 
 !SLIDE questions title commandline incremental
 
@@ -334,3 +353,34 @@ $ irb
 
 * Treating everything as an object opens tons of possibilities for making
   decisions about the objects in your app at run time.
+
+
+!SLIDE questions title commandline incremental
+
+```
+$ puts "questions?"
+```
+
+!SLIDE bullets
+# Add `Song` Attributes
+
+* Let's just add some other attributes...
+
+```ruby
+class Song
+  attr_accessor :title, :artist, :album, :track
+end
+```
+
+!SLIDE
+# Summary on style and syntax...
+
+* Class names are capitalized and use `CamelCase`.
+* Method names, variable names are lowercase, `snake_case`.
+* Instance variables start with a `@`.
+* Semi-colons are (usually) optional.
+    * `song.title` is the same as `song.title;`
+* Parentheses are (usually) optional.
+    * `song.title`; is the same as `song.title();`
+* Indentation is 2 soft spaces (not hard tabs) (not syntax enforced).
+* The keyword `end` finishes multi-line statements.
