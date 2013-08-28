@@ -355,6 +355,31 @@ $ irb
   decisions about the objects in your app at run time.
 
 
+!SLIDE
+# Summary on style and syntax...
+
+* Class names are capitalized and use `CamelCase`.
+* Method names, variable names are lowercase, `snake_case`.
+* Instance variables start with a `@`.
+* Semi-colons are (usually) optional.
+    * `song.title` is the same as `song.title;`
+* Parentheses are (usually) optional.
+    * `song.title`; is the same as `song.title();`
+* Indentation is 2 soft spaces (not hard tabs) (not syntax enforced).
+* The keyword `end` finishes multi-line statements.
+
+
+!SLIDE
+# Objects, Classes, Variables Summary
+
+* Objects do your program's work.
+    * Carry state.
+    * Have attributes and actions as methods.
+* Classes are like templates for objects.
+* A class is actually an object of class `Class`.
+* Instance variables hold the internal state of an object.
+
+
 !SLIDE questions title commandline incremental
 
 ```
@@ -372,25 +397,13 @@ class Song
 end
 ```
 
-!SLIDE
-# Summary on style and syntax...
+!SLIDE bullets
+# Commit to Github
 
-* Class names are capitalized and use `CamelCase`.
-* Method names, variable names are lowercase, `snake_case`.
-* Instance variables start with a `@`.
-* Semi-colons are (usually) optional.
-    * `song.title` is the same as `song.title;`
-* Parentheses are (usually) optional.
-    * `song.title`; is the same as `song.title();`
-* Indentation is 2 soft spaces (not hard tabs) (not syntax enforced).
-* The keyword `end` finishes multi-line statements.
-
-!SLIDE
-# Objects, Classes, Variables Summary
-
-* Objects do your program's work.
-    * Carry state.
-    * Have attributes and actions as methods.
-* Classes are like templates for objects.
-* A class is actually an object of class `Class`.
-* Instance variables hold the internal state of an object.
+1. Create the `music_db` repo via Github.
++ `$ git init` inside your `music_db` directory.
++ `$ git add song.rb`
++ `$ git commit -m First bits!`
++ `$ git add remote origin https://github.com/_username_/music_db`
++ `$ git push -u origin master`
++ Refresh your Github page.

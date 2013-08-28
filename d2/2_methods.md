@@ -71,3 +71,11 @@ end
 
 * Defined a method for our `Song`.
 * Redefined a built-in method to do what we want.
+
+!SLIDE
+# Push to Github
+
+```bash
+$ git commit song.rb -m "Added #to_s method"
+$ git push origin master
+```
