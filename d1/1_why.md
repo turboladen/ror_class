@@ -260,10 +260,11 @@ OK, great... now how about those parts?
 So would if you wanted to write a program to be a car, would it be easier to
 express that as...
 
-* a set of steps to execute?
-* a set of functions that make the car do things?
-* a set of objects that do things on their own and interact with each other?
+* A) a set of steps to execute?
+* B) a set of functions that make the car do things?
+* C) a set of objects that do things on their own and interact with each other?
 * Obviously, the right answer is C.
+* Easy for humans to relate and talk about objects, thus better code (?).
 
 !SLIDE smbullets
 # OOP Summary
