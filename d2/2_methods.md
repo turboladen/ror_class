@@ -1,8 +1,8 @@
 !SLIDE center just-title
-* Methods
+# Methods
 
 !SLIDE
-# What are they again?
+# What are they?
 
 * Little bits of functionality.
 * Called from "outside" of the object.
@@ -10,7 +10,7 @@
 * Can behave like functions.
 
 
-!SLIDE
+!SLIDE bullets
 # Before we move on...
 
 * Try this out in IRB:
@@ -24,6 +24,8 @@
 005:0> puts song
 ```
 
+* The `puts` output isn't very helpful, right?  Let's fix that.
+
 !SLIDE
 # Our First (Real) Method
 
@@ -32,7 +34,7 @@
 
 ```ruby
 class Song
-  # ...
+  # (existing code)
   def to_s
     output = "Title: #{@title}\n"
     output << "Artist: #{@artist}\n"
@@ -44,7 +46,7 @@ class Song
 end
 ```
 
-!SLIDE
+!SLIDE bullets
 # Try it out
 
 ```ruby
@@ -56,15 +58,24 @@ end
 005:0> puts song
 ```
 
-!SLIDE
+* A little more useful, ya?
+
+!SLIDE smbullets
 # Ok, what's going on here?
 
 * String interpolation: `"Title: #{@title}"`
+    * Similar to: `"Title: " + @title`
 * `\n` = newline character.
-* `<<` = append.
+* `<<` = [append/concatenate](http://rdoc.info/stdlib/core/String#%3C%3C-instance_method).
 * The last, lonely `output` returns the full String.
 * `puts` prints, but calls `#to_s` on the object before printing out.
 * We _redefined_ `#to_s` for our purposes!
+
+!SLIDE smbullets
+# `puts`
+
+* Where does that come from?
+    * [Kernel#puts](http://rdoc.info/stdlib/core/Kernel#puts-instance_method)
 
 !SLIDE
 # Method Summary

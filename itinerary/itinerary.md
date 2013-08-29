@@ -35,10 +35,10 @@
 
 * Classes, Objects, Variables
 * Methods
-* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Standard Types/STDLIB
 * Logic and Control Flow
 * Containers, Blocks, Iterators
+* Sharing Functionality: Inheritance, Modules, Mix-ins
 
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
