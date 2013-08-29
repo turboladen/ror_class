@@ -14,10 +14,20 @@
     * Put them together to make the computer do what you want.
 * Remember the car?
 
-!SLIDE
+!SLIDE bullets
 # MusicDB
 
 * We'll build an app that uses some built-in object types, and some of our own.
+* Requirements:
+    * Problem to solve: catalog our favorite songs and albums.
+    * Features:
+        * Add/retrieve songs.
+        * Songs stored in a [YAML](http://www.yaml.org/spec/1.2/spec.html) file.
+        * Rate songs 0 - 5.
+
+!SLIDE bullets
+# MusicDB: Let's get started
+
 * Start by...
     * Pick a workspace/directory for your code.
     * Create the `music_db` directory.
@@ -144,10 +154,10 @@ $ irb
 * Reflection!
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```
 
 !SLIDE smbullets
@@ -157,7 +167,23 @@ $ puts "questions?"
 * object, `song`, instance of `Song`.
 * `song` has an attribute, `title`.
 * `title` stored internally to `song` as `@title`.
+* `nil` is the absence of value.
 
+!SLIDE bullets
+# Side note: `nil`, `true`, `false`
+
+* `nil` is the absence of value.
+    * ...which is an object!
+        * try: `nil.class`
+        * try: `nil.to_s`
+        * try: `nil.to_a`
+        * try: `nil.nil?`
+    * Notice Ruby didn't complain about `@title`...
+* `true` and `false` are similar.
+    * try: `true.class`
+    * try: `false.class`
+    * try: `true.to_s`
+    * try: `false.to_s`
 
 !SLIDE smbullets
 # First Class! ...Accessors
@@ -204,22 +230,45 @@ end
 * IRB time!
 
 ```ruby
-$ irb
-001:0> require './song'
-002:0> song = Song.new
-003:0> puts song.instance_variable_get(:@title)
-004:0> song.title = 'Going to California'
-005:0> puts song.instance_variable_get(:@title)
-006:0> puts song.title
+007:0> load './song.rb'
+008:0> song = Song.new
+009:0> puts song.instance_variable_get(:@title)
+010:0> song.title = 'Going to California'
+011:0> puts song.instance_variable_get(:@title)
+012:0> puts song.title
 ```
 
 * Same behavior as before, but less code!
+* `load`?
 
-!SLIDE
+!SLIDE bullets
 # Ruby Philosophy Note #1
 
 * If you do something frequently, look for an easier way--there's a good chance
   Ruby lets you simplify.
+
+
+!SLIDE bullets
+# `load` vs. `require`
+
+* `load`:
+    * simply re-reads the code in the given file.
+    * requires `.rb` at the end of the file name.
+* `require`:
+    * searches for that library on the load path.
+    * if it's already required, don't do it again.
+        * (this is a good thing)
+
+!SLIDE incremental
+# Load Path
+
+* try: `puts $LOAD_PATH`
+    * (`$` variables = "global" variables)
+* then try: `require "jojo"`
+* then try: `require "time"`
+* Remember `require "./song"`?
+    * `./` tells Ruby to look in the current directory.
+* From now on, you use `require` or `load` as you want.
 
 !SLIDE
 # Many Songs?
@@ -227,25 +276,24 @@ $ irb
 * A `class` is like the template for an object type.
 
 ```ruby
-$ irb
-001:0> require './song'
-002:0> song1 = Song.new
-003:0> song2 = Song.new
-004:0> puts song1.object_id
-005:0> puts song2.object_id
+001:0> song1 = Song.new
+002:0> song2 = Song.new
+003:0> puts song1.object_id
+004:0> puts song2.object_id
 ```
 
 * Each `.new` creates a new `Song` object in memory.
 * Each `Song` object has its own unique ID.
+    * (related to its address in memory)
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
 ```
-$ puts "questions?"
+> puts "questions?"
 ```
 
-!SLIDE
+!SLIDE bullets
 # Variable Scope
 
 * What happens if you do this?
@@ -263,13 +311,13 @@ end
 ...and
 
 ```ruby
-001:0> require './song'
+001:0> load './song.rb'
 002:0> song = Song.new
 003:0> song.artist
 004:0> song.get_the_artist
 ```
 
-!SLIDE
+!SLIDE bullets
 # Variable Scope (cont.)
 
 * Now what about this?
@@ -290,12 +338,12 @@ end
 ...and
 
 ```ruby
-001:0> require './song'
+001:0> load './song.rb'
 002:0> song = Song.new
 003:0> song.class_artist
 ```
 
-!SLIDE
+!SLIDE bullets
 # Variable Scope (cont.)
 
 * Now what about _this_?
@@ -334,29 +382,33 @@ end
     * is instance variable of the `Song` object!
 * The `class` `Song` is an object of class `Class`.
 
-!SLIDE
+!SLIDE bullets
 # Too Much Inception?
 
 * We won't get into this, but...
 
 ```ruby
-$ irb
-001:0> my_thing = Class.new
-002:0> puts my_thing.class
-003:0> puts my_thing.class.class
-004:0> puts my_thing.superclass
-005:0> puts my_thing.methods
+001:0> my_class = Class.new
+002:0> puts my_class.class
+003:0> puts my_class.class.class
+004:0> puts my_class.superclass
+005:0> puts my_class.methods
+006:0> my_object = my_class.new
+007:0> puts my_object
+008:0> puts my_object.class.name
 ```
+* Creates a new class without a name!
+* Who cares?
 
-!SLIDE
+!SLIDE bullets
 # Ruby Philosophy Note #2
 
 * Treating everything as an object opens tons of possibilities for making
   decisions about the objects in your app at run time.
 
 
-!SLIDE
-# Summary on style and syntax...
+!SLIDE smbullets
+# Side note: On style and syntax
 
 * Class names are capitalized and use `CamelCase`.
 * Method names, variable names are lowercase, `snake_case`.
@@ -364,7 +416,7 @@ $ irb
 * Semi-colons are (usually) optional.
     * `song.title` is the same as `song.title;`
 * Parentheses are (usually) optional.
-    * `song.title`; is the same as `song.title();`
+    * `song.title;` is the same as `song.title();`
 * Indentation is 2 soft spaces (not hard tabs) (not syntax enforced).
 * The keyword `end` finishes multi-line statements.
 
@@ -380,14 +432,14 @@ $ irb
 * Instance variables hold the internal state of an object.
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```
 
 !SLIDE bullets
-# Add `Song` Attributes
+# Before we move on...
 
 * Let's just add some other attributes...
 
@@ -400,10 +452,15 @@ end
 !SLIDE bullets
 # Commit to Github
 
-1. Create the `music_db` repo via Github.
-+ `$ git init` inside your `music_db` directory.
-+ `$ git add song.rb`
-+ `$ git commit -m First bits!`
-+ `$ git add remote origin https://github.com/_username_/music_db`
-+ `$ git push -u origin master`
-+ Refresh your Github page.
+1. Create the `music_db` repo [via Github](https://help.github.com/articles/create-a-repo).
+2. From the command line, inside your `music_db` directory:
+
+```bash
+$ git init
+$ git add song.rb
+$ git commit -m "First bits!"
+$ git add remote origin https://github.com/_username_/music_db
+$ git push -u origin master
+```
+
+Refresh/check your Github page.
