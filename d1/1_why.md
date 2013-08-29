@@ -167,10 +167,11 @@ $ puts "questions?"
 * Not compiled (usually).
 * Not pre-installed on most OSes.
 
-!SLIDE questions title commandline incremental
 
-```
-$ puts "questions?"
+!SLIDE questions title
+
+```ruby
+> puts "questions?"
 ```
 
 !SLIDE smbullets incremental
@@ -273,8 +274,8 @@ express that as...
   modeling.
 * Ruby is an OOP language, but can act as other types.
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```

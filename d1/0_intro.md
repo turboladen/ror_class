@@ -133,8 +133,8 @@
     * "Expert Practices for Everyday Rails Development."
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```

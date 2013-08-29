@@ -28,8 +28,8 @@
 + Type: `ruby hello.rb`
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```

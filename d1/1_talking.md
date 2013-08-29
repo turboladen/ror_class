@@ -69,8 +69,7 @@
 * Out-of-class Rails project
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
-```
+```ruby
+> puts "questions?"

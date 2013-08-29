@@ -54,8 +54,8 @@
     * If nothing else... The ol' blog (plus ratings? comments?)
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```

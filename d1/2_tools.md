@@ -83,8 +83,8 @@
 * Use what OS you'll use in production.
 
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
 
-```
-$ puts "questions?"
+```ruby
+> puts "questions?"
 ```

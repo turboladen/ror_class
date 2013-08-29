@@ -19,8 +19,9 @@
     * http://tryruby.org/levels/1/challenges/0
     * look at the links in README.
 
-!SLIDE questions title commandline incremental
 
-```
-$ puts "questions?"
+!SLIDE questions title
+
+```ruby
+> puts "questions?"
 ```
