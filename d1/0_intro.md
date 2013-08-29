@@ -24,7 +24,7 @@
 # Class Overview
 
 * Get the slides: [http://geekwise-ror.herokuapp.com](http://geekwise-ror.herokuapp.com)
-* Let's check the [itinerary](http://geekwise-ror.herokuapp.com/d0).
+* Let's check the [itinerary](http://geekwise-ror.herokuapp.com/itinerary).
 
 !SLIDE bullets
 # Class Coding/Reviewing Workflow
