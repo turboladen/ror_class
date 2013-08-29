@@ -18,12 +18,13 @@
 # MusicDB
 
 * We'll build an app that uses some built-in object types, and some of our own.
+* Problem to solve:
+    * catalog our favorite songs and albums.
 * Requirements:
-    * Problem to solve: catalog our favorite songs and albums.
-    * Features:
-        * Add/retrieve songs.
-        * Songs stored in a [YAML](http://www.yaml.org/spec/1.2/spec.html) file.
-        * Rate songs 0 - 5.
+    * Add/retrieve songs.
+    * Songs stored in a [YAML](http://www.yaml.org/spec/1.2/spec.html) file.
+    * Rate songs 0 - 5.
+    * Can add notes about a song.
 
 !SLIDE bullets
 # MusicDB: Let's get started
@@ -32,6 +33,7 @@
     * Pick a workspace/directory for your code.
     * Create the `music_db` directory.
     * Create & open the file `song.rb` in that directory.
+        * (Open with your IDE/editor)
 
 !SLIDE bullets
 # First Class!
@@ -75,7 +77,7 @@ end
 !SLIDE smbullets
 # First Class! ...Methods
 
-* Attributes and abilities are defined as "method"s.
+* Attributes and abilities are defined as "methods".
 * Methods are defined using the `def` "keyword".
 
 ```ruby
@@ -130,6 +132,7 @@ end
 
 * `@title` will contain the `new_title` object if you call `#title=`.
 * This "assigns" the object contained in `new_title` to `@title`.
+* Notice, no type checking...
 
 !SLIDE smbullets
 # Create A `Song` Object
@@ -137,7 +140,6 @@ end
 * IRB time!
 
 ```ruby
-$ irb
 001:0> require './song'
 002:0> song = Song.new
 003:0> puts song.instance_variable_get(:@title)
@@ -160,13 +162,22 @@ $ irb
 > puts "questions?"
 ```
 
-!SLIDE smbullets
+!SLIDE smbullets incremental
 # OK, so far...
 
 * `class` named `Song`.
 * object, `song`, instance of `Song`.
 * `song` has an attribute, `title`.
 * `title` stored internally to `song` as `@title`.
+* Notice Ruby didn't complain about `@title`... Try:
+
+    ```ruby
+    puts song.instance_variable_get(:@dog)
+    song.instance_variable_set(:@dog, 'Lassie')
+    puts song.instance_variable_get(:@dog)
+    ```
+
+    * This is breaking the rules!! ...but you can do it with Ruby.
 * `nil` is the absence of value.
 
 !SLIDE bullets
@@ -178,7 +189,6 @@ $ irb
         * try: `nil.to_s`
         * try: `nil.to_a`
         * try: `nil.nil?`
-    * Notice Ruby didn't complain about `@title`...
 * `true` and `false` are similar.
     * try: `true.class`
     * try: `false.class`
@@ -188,7 +198,7 @@ $ irb
 !SLIDE smbullets
 # First Class! ...Accessors
 
-* `title` and `title=` give access to the object's state...
+* `#title` and `#title=` give access to the object's state...
 * (object's state stored in instance variables)
 
 ```ruby
@@ -212,13 +222,13 @@ end
 # First Class! ...Accessors (cont.)
 
 * "Getters and setters" are so common, Ruby makes it easier...
-* Change your code to look like:
+    * Change your code to look like:
 
-```ruby
-class Song
-  attr_accessor :title
-end
-```
+    ```ruby
+    class Song
+      attr_accessor :title
+    end
+    ```
 
 * `attr_accessor` provides getter and setter.
 * `attr_reader` provides getter.
@@ -249,8 +259,9 @@ end
 
 
 !SLIDE bullets
-# `load` vs. `require`
+# Side note: `load` vs. `require`
 
+* Both are methods, defined in [Kernel](http://rdoc.info/stdlib/core/Kernel).
 * `load`:
     * simply re-reads the code in the given file.
     * requires `.rb` at the end of the file name.
@@ -260,7 +271,7 @@ end
         * (this is a good thing)
 
 !SLIDE incremental
-# Load Path
+# Side note: Load Path
 
 * try: `puts $LOAD_PATH`
     * (`$` variables = "global" variables)
@@ -268,9 +279,9 @@ end
 * then try: `require "time"`
 * Remember `require "./song"`?
     * `./` tells Ruby to look in the current directory.
-* From now on, you use `require` or `load` as you want.
+* From now on, you use `require` or `load` as you need.
 
-!SLIDE
+!SLIDE smbullets
 # Many Songs?
 
 * A `class` is like the template for an object type.
@@ -283,13 +294,20 @@ end
 ```
 
 * Each `.new` creates a new `Song` object in memory.
+* We're assigning those new `Song` objects to variables, but don't have to.
+
+```ruby
+005:0> puts Song.new.object_id
+006:0> puts Song.new.object_id
+```
+
 * Each `Song` object has its own unique ID.
     * (related to its address in memory)
 
 
 !SLIDE questions title
 
-```
+```ruby
 > puts "questions?"
 ```
 
@@ -300,6 +318,7 @@ end
 
 ```ruby
 class Song
+  # (existing code above here)
   @artist = 'Led Zeppelin'
 
   def get_the_artist
@@ -428,8 +447,9 @@ end
     * Carry state.
     * Have attributes and actions as methods.
 * Classes are like templates for objects.
-* A class is actually an object of class `Class`.
 * Instance variables hold the internal state of an object.
+* Accessor methods give you access to your object's instance variables.
+* A class is actually an object of class `Class`.
 
 
 !SLIDE questions title
@@ -445,7 +465,7 @@ end
 
 ```ruby
 class Song
-  attr_accessor :title, :artist, :album, :track
+  attr_accessor :title, :artist, :album, :track, :notes
 end
 ```
 
