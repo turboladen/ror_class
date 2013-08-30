@@ -13,3 +13,7 @@ end
 section 'Methods' do
   slides '2_methods.md'
 end
+
+section 'STDLIB' do
+  slides '3_stdlib.md'
+end
