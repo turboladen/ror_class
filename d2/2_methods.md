@@ -199,6 +199,12 @@ end
 * Defined some methods for our `Song`.
 * Redefined a built-in method to do what we want.
 
+!SLIDE questions title
+
+```ruby
+> puts "questions?"
+```
+
 !SLIDE
 # Push to Github
 
