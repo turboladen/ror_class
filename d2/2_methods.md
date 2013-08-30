@@ -50,15 +50,13 @@ end
 # Try it out
 
 ```ruby
-001:0> song = Song.new
-002:0> song.title = "My Favorite Things"
-003:0> song.artist = "John Coltrane"
-003:0> song.album = "My Favorite Things"
-004:0> song.track = 1
-005:0> puts song
+001:0> load './song.rg'
+002:0> puts song
 ```
 
 * A little more useful, ya?
+* Also: you didn't have to recreate the `song` object to get the new
+  functionality!
 
 !SLIDE smbullets
 # Ok, what's going on here?
@@ -71,22 +69,140 @@ end
 * `puts` prints, but calls `#to_s` on the object before printing out.
 * We _redefined_ `#to_s` for our purposes!
 
-!SLIDE smbullets
-# `puts`
+!SLIDE bullets
+# Side note: Printing and Inspecting
 
-* Where does that come from?
+* `puts "hi!"`
     * [Kernel#puts](http://rdoc.info/stdlib/core/Kernel#puts-instance_method)
+    * Calls `#to_s` on the object, prints to STDOUT, then adds the `\n`.
+* `print "hi!"`
+    * [Kernel#print](http://rdoc.info/stdlib/core/Kernel#print-instance_method)
+    * Calls `#to_s` on the object and prints to STDOUT.
+* ` p "hi!"`
+    * [Kernel#p](http://rdoc.info/stdlib/core/Kernel#p-instance_method)
+    * Calls `#inspect` on the object, prints to STDOUT.
+    * Useful for looking at instance vars/object state.
+
+.pull-right (cont.)
+
+!SLIDE bullets
+# Side note: Printing and Inspecting (cont.)
+
+* `pp "hi!"`
+    * [Kernel#pp](http://rdoc.info/stdlib/pp/Kernel.pp)
+    * "Pretty Print"
+    * Must `require "pp"` first.
+    * Formats based on the object type, then prints to STDOUT.
+* `ap "hi!"`
+    * [AwesomePrint#ap](http://rdoc.info/gems/awesome_print/Kernel.ap)
+    * Must install `awesome_print` gem first.
+    * Event more formatting and coloring based on the object type, then prints
+      to STDOUT.
+
+!SLIDE bullets
+# Another method
+
+* Let's convert a song to YAML.
+
+```ruby
+require 'yaml'
+
+class Song
+  # (old stuff)
+  def to_yaml
+    the_song = {
+      title: @title,
+      artist: @artist,
+      album: @album,
+      track: @track
+    }
+
+    YAML.dump(the_song)
+  end
+end
+```
+
+!SLIDE bullets
+# Another method (cont.)
+
+* Try it out...
+
+```ruby
+001:0> song = Song.new
+002:0> puts song.to_yaml
+003:0> song.title = 'Happy Birthday'
+004:0> puts song.to_yaml
+```
+
+!SLIDE bullets
+# Another method
+
+* Let's dump the YAML to file.
+
+```ruby
+class Song
+  # (old stuff)
+
+  def dump(filename=nil)
+    filename ||= @title
+    filename ||= 'unknown'
+
+    File.write("#{filename}.yml", to_yaml)
+  end
+end
+```
+
+!SLIDE bullets
+# Another method (cont.)
+
+* Try it out...
+
+```ruby
+001:0> song.dump
+```
+
+* Check to see if the file got written...
+* Now try:
+
+```ruby
+001:0> song.dump 'test'
+```
+
+!SLIDE bullets
+# What's going on here? (`#to_yaml`)
+
+* In `#to_yaml`
+    * we use a [Hash](http://rdoc.info/stdlib/core/Hash) to determine our
+      key/value pairs.
+    * `YAML.dump` converts our Hash to a String formatted as YAML.
+* On return values...
+    * No `return`?
+    * All Ruby statements return the last value calculated in them.
+
+!SLIDE bullets
+# What's going on here? (`#dump`)
+* In `#dump`
+    * `||=`...
+    * Default parameters!
+    * `File.write` writes the String that we get from `#to_yaml` to the
+       file name that we either pass in or create.
+* On falseyness...
+    * `nil` and `false` evaluate to a "falsey" value, when doing logic.
+    * `||=`:
+        * asks "are you truthy?"
+        * if yes, don't do anything...
+        * if no, assign the object on the right side of the operator.
 
 !SLIDE
 # Method Summary
 
-* Defined a method for our `Song`.
+* Defined some methods for our `Song`.
 * Redefined a built-in method to do what we want.
 
 !SLIDE
 # Push to Github
 
 ```bash
-$ git commit song.rb -m "Added #to_s method"
+$ git commit song.rb -m "Added methods"
 $ git push origin master
 ```
