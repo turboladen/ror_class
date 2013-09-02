@@ -22,14 +22,21 @@ questions.any? { |q| q.created_at > Time.yesterday }
 # [Day 3/12](d3): Language LessBasics
 
 * Stuff we missed from last session
+* Logic and Control Flow
+* Containers, Blocks, Iterators
+* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Testing with RSpec
-* Regular Expressions
 * Exceptions
-* Input/Output
 * Duck Typing
-* Metaprogramming
 * Documenting your code
 * RubyGems & Bundler
+
+!SLIDE
+# I removed:
+
+* Regular Expressions
+* Input/Output
+* Metaprogramming
 
 
 !SLIDE bullets

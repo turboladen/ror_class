@@ -36,19 +36,16 @@
 * Classes, Objects, Variables
 * Methods
 * Standard Types/STDLIB
-* Logic and Control Flow
-* Containers, Blocks, Iterators
-* Sharing Functionality: Inheritance, Modules, Mix-ins
 
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
 
+* Logic and Control Flow
+* Containers, Blocks, Iterators
+* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Testing with RSpec
-* Regular Expressions
 * Exceptions
-* Input/Output
 * Duck Typing
-* Metaprogramming
 * Documenting your code
 * RubyGems & Bundler
 
