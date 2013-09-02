@@ -155,3 +155,12 @@ jump(wear_pants: true, height: -1, barrel_roll: true)
 ```ruby
 > puts "questions?"
 ```
+
+!SLIDE
+# Wrap Up
+
+* Covered
+    * Classes, Objects, Variables
+    * Methods
+    * STDLIB and some Core objects
+* We didn't cover...?
