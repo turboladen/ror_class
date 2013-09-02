@@ -4,6 +4,13 @@ require 'yaml'
 class Song
   attr_accessor :title, :artist, :album, :track
 
+  def initialize(title, artist, album=nil, track=nil)
+    @title = title
+    @artist = artist
+    @album = album
+    @track = track
+  end
+
   def to_s
     output = "title: #{@title}\n"
     output << "artist: #{@artist}\n"
