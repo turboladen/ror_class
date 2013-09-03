@@ -1,7 +1,7 @@
 require_relative 'yamlable'
 
 
-class Song
+class MusicDB::Song
   include YAMLable
 
   attr_accessor :title, :artist, :album, :track
