@@ -23,3 +23,7 @@ end
 section 'Documentation' do
   slides '4_docs.md'
 end
+
+section 'Summary' do
+  slides '9_summary.md'
+end
