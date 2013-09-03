@@ -1,6 +1,6 @@
 !SLIDE center just-title
 # Sharing Functionality
-## Inheritance, Modules, Mix-ins
+## Inheritance and Composition
 
 
 !SLIDE

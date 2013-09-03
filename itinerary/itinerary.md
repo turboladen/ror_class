@@ -40,7 +40,7 @@
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
 
-* Sharing Functionality: Inheritance, Modules, Mix-ins
+* Sharing Functionality: Inheritance and Composition
 * Logic and Control Flow
 * Containers, Blocks, Iterators
 * Testing with RSpec
