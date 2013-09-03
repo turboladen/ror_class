@@ -5,3 +5,8 @@ title 'Geekwise: Ruby on Rails, Day 3/12'
 section 'Intro' do
   slides '0_intro.md'
 end
+
+section 'Sharing Functionality' do
+  slides '1_sharing.md'
+end
+
