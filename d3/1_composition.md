@@ -53,25 +53,24 @@ end
 
 * Remember...
 
-```ruby
-class Artist
-  attr_accessor :name
+    ```ruby
+    class Artist
+      attr_accessor :name
 
-  def initialize(name)
-    @name = name
-  end
+      def initialize(name)
+        @name = name
+      end
 
-  def to_yaml
-    YAML.dump(name: @name)
-  end
+      def to_yaml
+        YAML.dump(name: @name)
+      end
 
-  def dump(filename=nil)
-    filename ||= @name ||= 'unknown_artist'
-    File.write("#{filename}.yml", to_yaml)
-  end
-end
-```
-
+      def dump(filename=nil)
+        filename ||= @name ||= 'unknown_artist'
+        File.write("#{filename}.yml", to_yaml)
+      end
+    end
+    ```
 * `#to_yaml` and `#dump` are similar to those in `Song`.
 
 
@@ -81,22 +80,21 @@ end
 * When used as mix-ins, `module`s tend to be adjectives.
 * Create `music_db/yamlable.rb`:
 
-```ruby
-require 'yaml'
+    ```ruby
+    require 'yaml'
 
-module YAMLable
-  def to_yaml
-    YAML.dump(attributes)
-  end
+    module YAMLable
+      def to_yaml
+        YAML.dump(attributes)
+      end
 
-  def dump(filename=nil)
-    filename ||= 'unknown'
+      def dump(filename=nil)
+        filename ||= 'unknown'
 
-    File.write("#{filename}.yml", to_yaml)
-  end
-end
-```
-
+        File.write("#{filename}.yml", to_yaml)
+      end
+    end
+    ```
 * Now we can make lots of things YAMLable!
 
 !SLIDE bullets
@@ -104,29 +102,29 @@ end
 
 * Redo `Artist`:
 
-```ruby
-require_relative 'yamlable'
+    ```ruby
+    require_relative 'yamlable'
 
-class Artist
-  include YAMLable
+    class Artist
+      include YAMLable
 
-  attr_accessor :name
+      attr_accessor :name
 
-  def initialize(name)
-    @name = name
-  end
+      def initialize(name)
+        @name = name
+      end
 
-  def attributes
-    { name: @name }
-  end
-end
-```
+      def attributes
+        { name: @name }
+      end
+    end
+    ```
 
-```ruby
-> artist = Artist.new('Wynton Marsalis')
-> puts artist.to_yaml
-> puts artist.dump('wynton')
-```
+    ```ruby
+    > artist = Artist.new('Wynton Marsalis')
+    > puts artist.to_yaml
+    > puts artist.dump('wynton')
+    ```
 
 !SLIDE bullets
 # `Song`, `YAMLable`ized
@@ -135,17 +133,125 @@ end
     * Click [here](https://github.com/turboladen/ror_class/blob/78fde36822cc47d9d565d09e536c2ba3f8b03613/music_db/song.rb).
       (too big to fit on a slide)
 
-```ruby
-> song = Song.new('Linus & Lucy', 'Wynton Marsalis')
-> puts song.to_yaml
-> puts song.dump('linus and lucy')
-```
+    ```ruby
+    > song = Song.new('Linus & Lucy', 'Wynton Marsalis')
+    > puts song.to_yaml
+    > puts song.dump('linus and lucy')
+    ```
 
 !SLIDE
 # Composition Recap
 
 * Define functionality in a `module`.
 * `include` the module into the `class`es that should have that functionality.
+
+!SLIDE questions title
+
+# Questions?
+
+!SLIDE
+# Modules for Namespacing
+
+* Be a good Ruby steward and keep your stuff in your namespace!
+* Let's move our files under the `MusicDB` namespace.
+
+!SLIDE bullets
+# Cleaning Up
+
+* Make sure you're working in the `music_db` directory, then...
+
+1. Create directory `lib/music_db`.
++ Move `song.rb` to `lib/music_db/song.rb`:
+
+    ```bash
+    $ git move song.rb lib/music_db/
+    ```
++ Do the same for `artist.rb`.
++ Create `lib/music_db.rb`:
+
+    ```ruby
+    module MusicDB; end
+
+    require_relative 'music_db/song'
+    require_relative 'music_db/artist'
+    ```
+
+!SLIDE bullets
+# Cleaning Up (cont.)
+
+* Add `lib/music_db.rb` to the git repository:
+
+    ```bash
+    $ git add lib/music_db.rb
+    ```
+* Check our progress:
+
+    ```bash
+    $ git status
+    ```
+
+!SLIDE bullets
+# Cleaning Up (cont.)
+
+* Now in `song.rb`, change:
+
+    ```ruby
+    class Song
+      # ...
+    end
+    ```
+* ...to...
+
+    ```ruby
+    class MusicDB::Song
+      # ...
+    end
+    # ...or...
+    module MusicDB
+      class Song
+        # ...
+      end
+    end
+    ```
+* And do the same in `artist.rb`...
+
+!SLIDE bullets
+# In the `MusicDB`
+
+* Now when we want an `Artist` or `Song`, we...
+
+    ```ruby
+    > song = MusicDB::Song.new('Happy Birthday', 'Everyone')
+    ```
+* Good stuff:
+    * We don't overwrite/redefine anyone else's `Song` or `Artist` classes.
+    * We have our own class hierarchy to play in (everything under `MusicDB`).
+
+
+!SLIDE bullets
+# Let's Commit to Git
+
+* After refactoring, it's good to commit.
+
+    ```bash
+    $ git commit -m
+    ```
+* Check our status:
+
+    ```bash
+    $ git status
+    ```
+* For practice, let's push to Github:
+
+    ```bash
+    $ git push origin master
+    ```
+
+* Check status again:
+
+    ```bash
+    $ git status
+    ```
 
 !SLIDE questions title
 
