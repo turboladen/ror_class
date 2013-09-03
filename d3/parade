@@ -15,3 +15,7 @@ end
 section 'Control Flow' do
   slides '2_logic.md'
 end
+
+section 'Container, Blocks, and Iterators' do
+  slides '3_blocks.md'
+end

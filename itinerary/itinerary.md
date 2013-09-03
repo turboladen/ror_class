@@ -45,7 +45,7 @@
 * Containers, Blocks, Iterators
 * Exceptions
 * Documenting your code
-* RubyGems & Bundler
+* RubyGems
 
 !SLIDE
 # [Day 4/12](d4): Ruby & The Web
