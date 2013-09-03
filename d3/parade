@@ -9,5 +9,9 @@ end
 section 'Sharing Functionality' do
   slides '1_inheritance.md'
   slides '1_composition.md'
+  slides '1_namespacing.md'
 end
 
+section 'Control Flow' do
+  slides '2_logic.md'
+end

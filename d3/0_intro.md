@@ -219,4 +219,4 @@ end
 
 !SLIDE questions title
 
-# `> puts 'questions?'`
+# Questions?
