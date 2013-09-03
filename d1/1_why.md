@@ -70,11 +70,9 @@
 * Lacking performance
     * 99% of the time, this is is lies!
 
-!SLIDE questions title commandline incremental
+!SLIDE questions title
+# Questions?
 
-```
-$ puts "questions?"
-```
 
 !SLIDE bullets incremental
 # Why Ruby?
@@ -169,10 +167,8 @@ $ puts "questions?"
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE smbullets incremental
 # Object-Oriented Programming
@@ -276,7 +272,5 @@ express that as...
 * Ruby is an OOP language, but can act as other types.
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```

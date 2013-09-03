@@ -60,8 +60,8 @@
 !SLIDE
 # HOMEWORK!
 
-* Create a github account!
-* Create it by tomorrow.
+1. Create a github account!
++ Create it by tomorrow.
 
 !SLIDE
 # Heroku
@@ -84,7 +84,5 @@
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```

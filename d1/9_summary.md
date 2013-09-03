@@ -21,7 +21,5 @@
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```

@@ -1,12 +1,12 @@
 !SLIDE center just-title
 # Installing Ruby
 
-!SLIDE
+!SLIDE smbullets
 # Installation Options
 
-1. OS's distribution of Ruby (aka "system" Ruby)
-+ Build from source
-+ 3rd party installers:
+* OS's distribution of Ruby (aka "system" Ruby)
+* Build from source
+* 3rd party installers:
     * *nix
         * [RVM](http://rvm.io) (Ruby Version Manager)
         * [rbenv](http://rbenv.org/)
@@ -19,10 +19,10 @@
 !SLIDE bullets
 # System Ruby
 
-* Pros
+* Pros:
     * Use your OS's package manager.
     * Usually makes Ruby available to all users.
-* Cons
+* Cons:
     * Usually lags behind stable Ruby releases.
     * Path stuff can get convoluted.
     * Usually requires `sudo ...` unless you tweak.
@@ -138,10 +138,8 @@
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE center
 # Ok, let's install!

@@ -40,17 +40,17 @@
 
 * Type this in the `song.rb` file and save it:
 
-```ruby
-class Song
-  def title
-    @title
-  end
+    ```ruby
+    class Song
+      def title
+        @title
+      end
 
-  def title=(new_title)
-    @title = new_title
-  end
-end
-```
+      def title=(new_title)
+        @title = new_title
+      end
+    end
+    ```
 
 .pull-right (cont.)
 
@@ -59,18 +59,17 @@ end
 
 * Object types are defined as `class`es.
 
-```ruby
-class Song
-  def title
-    @title
-  end
+    ```ruby
+    class Song
+      def title
+        @title
+      end
 
-  def title=(new_title)
-    @title = new_title
-  end
-end
-```
-
+      def title=(new_title)
+        @title = new_title
+      end
+    end
+    ```
 * `Song` is the type of object.
 
 
@@ -80,18 +79,17 @@ end
 * Attributes and abilities are defined as "methods".
 * Methods are defined using the `def` "keyword".
 
-```ruby
-class Song
-  def title
-    @title
-  end
+    ```ruby
+    class Song
+      def title
+        @title
+      end
 
-  def title=(new_title)
-    @title = new_title
-  end
-end
-```
-
+      def title=(new_title)
+        @title = new_title
+      end
+    end
+    ```
 * `#title` is an attribute of the `Song` class.
 * `#title=` a method that lets you set that attribute.
 
@@ -102,18 +100,17 @@ end
 * State of an object is stored in "instance variables".
 * Instance variables are designated by `@` + `[variable name]`.
 
-```ruby
-class Song
-  def title
-    @title
-  end
+    ```ruby
+    class Song
+      def title
+        @title
+      end
 
-  def title=(new_title)
-    @title = new_title
-  end
-end
-```
-
+      def title=(new_title)
+        @title = new_title
+      end
+    end
+    ```
 * `@title` is an instance variable for any object that's derived from the `Song`
   `class`.
 
@@ -124,12 +121,11 @@ end
 * _Instance what??_
 * A variable is just a container for an object.
 
-```ruby
-  def title=(new_title)
-    @title = new_title
-  end
-```
-
+    ```ruby
+      def title=(new_title)
+        @title = new_title
+      end
+    ```
 * `@title` will contain the `new_title` object if you call `#title=`.
 * This "assigns" the object contained in `new_title` to `@title`.
 * Notice, no type checking...
@@ -139,16 +135,15 @@ end
 
 * IRB time!
 
-```ruby
-001:0> require './song'
-002:0> song = Song.new
-003:0> puts song.instance_variable_get(:@title)
-004:0> song.title = 'Going to California'
-005:0> puts song.instance_variable_get(:@title)
-006:0> puts song.title
-007:0> puts song.class
-```
-
+    ```ruby
+    > require './song'
+    > song = Song.new
+    > puts song.instance_variable_get(:@title)
+    > song.title = 'Going to California'
+    > puts song.instance_variable_get(:@title)
+    > puts song.title
+    > puts song.class
+    ```
 * Creates an object from the `Song` class.
     * `.new` is the "constructor" method.
     * AKA creates an "instance" of `Song`.
@@ -157,10 +152,8 @@ end
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE smbullets incremental
 # OK, so far...
@@ -201,18 +194,17 @@ end
 * `#title` and `#title=` give access to the object's state...
 * (object's state stored in instance variables)
 
-```ruby
-class Song
-  def title
-    @title
-  end
+    ```ruby
+    class Song
+      def title
+        @title
+      end
 
-  def title=(new_title)
-    @title = new_title
-  end
-end
-```
-
+      def title=(new_title)
+        @title = new_title
+      end
+    end
+    ```
 * ...thus, called "accessor" methods.
 
 .pull-right (cont.)
@@ -239,15 +231,14 @@ end
 
 * IRB time!
 
-```ruby
-007:0> load './song.rb'
-008:0> song = Song.new
-009:0> puts song.instance_variable_get(:@title)
-010:0> song.title = 'Going to California'
-011:0> puts song.instance_variable_get(:@title)
-012:0> puts song.title
-```
-
+    ```ruby
+    > load './song.rb'
+    > song = Song.new
+    > puts song.instance_variable_get(:@title)
+    > song.title = 'Going to California'
+    > puts song.instance_variable_get(:@title)
+    > puts song.title
+    ```
 * Same behavior as before, but less code!
 * `load`?
 
@@ -286,80 +277,74 @@ end
 
 * A `class` is like the template for an object type.
 
-```ruby
-001:0> song1 = Song.new
-002:0> song2 = Song.new
-003:0> puts song1.object_id
-004:0> puts song2.object_id
-```
-
+    ```ruby
+    > song1 = Song.new
+    > song2 = Song.new
+    > puts song1.object_id
+    > puts song2.object_id
+    ```
 * Each `.new` creates a new `Song` object in memory.
 * We're assigning those new `Song` objects to variables, but don't have to.
 
-```ruby
-005:0> puts Song.new.object_id
-006:0> puts Song.new.object_id
-```
-
+    ```ruby
+    > puts Song.new.object_id
+    > puts Song.new.object_id
+    ```
 * Each `Song` object has its own unique ID.
     * (related to its address in memory)
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE bullets
 # Variable Scope
 
 * What happens if you do this?
 
-```ruby
-class Song
-  # (existing code above here)
-  @artist = 'Led Zeppelin'
+    ```ruby
+    class Song
+      # (existing code above here)
+      @artist = 'Led Zeppelin'
 
-  def get_the_artist
-    @artist
-  end
-end
-```
+      def get_the_artist
+        @artist
+      end
+    end
+    ```
+* ...and
 
-...and
-
-```ruby
-001:0> load './song.rb'
-002:0> song = Song.new
-003:0> song.artist
-004:0> song.get_the_artist
-```
+    ```ruby
+    > load './song.rb'
+    > song = Song.new
+    > song.artist
+    > song.get_the_artist
+    ```
 
 !SLIDE bullets
 # Variable Scope (cont.)
 
 * Now what about this?
 
-```ruby
-class Song
-  @artist = 'The Pogues'
+    ```ruby
+    class Song
+      @artist = 'The Pogues'
 
-  def artist; 'Led Zeppelin'; end
-  def get_the_artist; @artist; end
+      def artist; 'Led Zeppelin'; end
+      def get_the_artist; @artist; end
 
-  def class_artist
-    self.class.artist
-  end
-end
-```
-
+      def class_artist
+        self.class.artist
+      end
+    end
+    ```
 ...and
 
 ```ruby
-001:0> load './song.rb'
-002:0> song = Song.new
-003:0> song.class_artist
+> load './song.rb'
+> song = Song.new
+> song.class_artist
 ```
 
 !SLIDE bullets
@@ -380,13 +365,13 @@ class Song
 end
 ```
 
-...and
+* ...and
 
-```ruby
-001:0> require './song'
-002:0> song = Song.new
-003:0> song.class_artist
-```
+    ```ruby
+    > require './song'
+    > song = Song.new
+    > song.class_artist
+    ```
 
 !SLIDE incremental smbullets
 # OK, what's going on here?
@@ -407,14 +392,14 @@ end
 * We won't get into this, but...
 
 ```ruby
-001:0> my_class = Class.new
-002:0> puts my_class.class
-003:0> puts my_class.class.class
-004:0> puts my_class.superclass
-005:0> puts my_class.methods
-006:0> my_object = my_class.new
-007:0> puts my_object
-008:0> puts my_object.class.name
+> my_class = Class.new
+> puts my_class.class
+> puts my_class.class.class
+> puts my_class.superclass
+> puts my_class.methods
+> my_object = my_class.new
+> puts my_object
+> puts my_object.class.name
 ```
 * Creates a new class without a name!
 * Who cares?
@@ -453,21 +438,19 @@ end
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE bullets
 # Before we move on...
 
 * Let's just add some other attributes...
 
-```ruby
-class Song
-  attr_accessor :title, :artist, :album, :track, :notes
-end
-```
+    ```ruby
+    class Song
+      attr_accessor :title, :artist, :album, :track, :notes
+    end
+    ```
 
 !SLIDE bullets
 # Commit to Github

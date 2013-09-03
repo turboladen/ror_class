@@ -16,26 +16,25 @@
 !SLIDE bullets
 * Create `Artist` in `artist.rb`:
 
-```ruby
-class Artist
-  attr_accessor :name
+    ```ruby
+    class Artist
+      attr_accessor :name
 
-  def initialize(name)
-    @name = name
-  end
+      def initialize(name)
+        @name = name
+      end
 
-  def to_yaml
-    YAML.dump(name: @name)
-  end
+      def to_yaml
+        YAML.dump(name: @name)
+      end
 
-  def dump(filename=nil)
-    filename ||= 'unknown_artist'
+      def dump(filename=nil)
+        filename ||= 'unknown_artist'
 
-    File.write("#{filename}.yml", to_yaml)
-  end
-end
-```
-
+        File.write("#{filename}.yml", to_yaml)
+      end
+    end
+    ```
 * Our `YAML` methods are similar... let's [refactor](http://refactoring.com)!
 * ...but first...
 

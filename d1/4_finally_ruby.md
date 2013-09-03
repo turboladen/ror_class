@@ -22,14 +22,16 @@
 # `Hello World!` Time
 
 1. Open a file for editing.
-+ Type: `puts "Hello World!"
++ Type:
+
+    ```ruby
+    puts "Hello World!"
+    ```
 + Save the file as `hello.rb`.
 + Open a terminal/console, go to the directory where the file is...
-+ Type: `ruby hello.rb`
++ Type: `ruby hello.rb`.
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```

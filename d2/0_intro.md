@@ -30,10 +30,8 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 
 !SLIDE questions title
+# Questions?
 
-```ruby
-> puts "questions?"
-```
 
 !SLIDE
 # Stuff we missed yesterday

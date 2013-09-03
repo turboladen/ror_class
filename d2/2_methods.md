@@ -15,15 +15,14 @@
 
 * Try this out in IRB:
 
-```ruby
-001:0> song = Song.new
-002:0> song.title = "My Favorite Things"
-003:0> song.artist = "John Coltrane"
-003:0> song.album = "My Favorite Things"
-004:0> song.track = 1
-005:0> puts song
-```
-
+    ```ruby
+    > song = Song.new
+    > song.title = "My Favorite Things"
+    > song.artist = "John Coltrane"
+    > song.album = "My Favorite Things"
+    > song.track = 1
+    > puts song
+    ```
 * The `puts` output isn't very helpful, right?  Let's fix that.
 
 !SLIDE
@@ -32,26 +31,26 @@
 * Let's make `Song` do something.
 * Update your class with this method:
 
-```ruby
-class Song
-  # (existing code)
-  def to_s
-    output = "Title: #{@title}\n"
-    output << "Artist: #{@artist}\n"
-    output << "Album: #{@album}\n"
-    output << "Track: #{@track}\n"
+    ```ruby
+    class Song
+      # (existing code)
+      def to_s
+        output = "Title: #{@title}\n"
+        output << "Artist: #{@artist}\n"
+        output << "Album: #{@album}\n"
+        output << "Track: #{@track}\n"
 
-    output
-  end
-end
-```
+        output
+      end
+    end
+    ```
 
 !SLIDE bullets
 # Try it out
 
 ```ruby
-001:0> load './song.rg'
-002:0> puts song
+> load './song.rg'
+> puts song
 ```
 
 * A little more useful, ya?
@@ -104,23 +103,23 @@ end
 
 * Let's convert a song to YAML.
 
-```ruby
-require 'yaml'
+    ```ruby
+    require 'yaml'
 
-class Song
-  # (old stuff)
-  def to_yaml
-    the_song = {
-      title: @title,
-      artist: @artist,
-      album: @album,
-      track: @track
-    }
+    class Song
+      # (old stuff)
+      def to_yaml
+        the_song = {
+          title: @title,
+          artist: @artist,
+          album: @album,
+          track: @track
+        }
 
-    YAML.dump(the_song)
-  end
-end
-```
+        YAML.dump(the_song)
+      end
+    end
+    ```
 
 !SLIDE bullets
 # Another method (cont.)
@@ -128,10 +127,10 @@ end
 * Try it out...
 
 ```ruby
-001:0> song = Song.new
-002:0> puts song.to_yaml
-003:0> song.title = 'Happy Birthday'
-004:0> puts song.to_yaml
+> song = Song.new
+> puts song.to_yaml
+> song.title = 'Happy Birthday'
+> puts song.to_yaml
 ```
 
 !SLIDE bullets
@@ -139,34 +138,33 @@ end
 
 * Let's dump the YAML to file.
 
-```ruby
-class Song
-  # (old stuff)
+    ```ruby
+    class Song
+      # (old stuff)
 
-  def dump(filename=nil)
-    filename ||= @title
-    filename ||= 'unknown'
+      def dump(filename=nil)
+        filename ||= @title
+        filename ||= 'unknown'
 
-    File.write("#{filename}.yml", to_yaml)
-  end
-end
-```
+        File.write("#{filename}.yml", to_yaml)
+      end
+    end
+    ```
 
 !SLIDE bullets
 # Another method (cont.)
 
 * Try it out...
 
-```ruby
-001:0> song.dump
-```
-
+    ```ruby
+    > song.dump
+    ```
 * Check to see if the file got written...
 * Now try:
 
-```ruby
-001:0> song.dump 'test'
-```
+    ```ruby
+    > song.dump 'test'
+    ```
 
 !SLIDE bullets
 # What's going on here? (`#to_yaml`)
@@ -200,10 +198,7 @@ end
 * Redefined a built-in method to do what we want.
 
 !SLIDE questions title
-
-```ruby
-> puts "questions?"
-```
+# Questions?
 
 !SLIDE
 # Push to Github
