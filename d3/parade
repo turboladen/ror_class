@@ -19,3 +19,7 @@ end
 section 'Container, Blocks, and Iterators' do
   slides '3_blocks.md'
 end
+
+section 'Documentation' do
+  slides '4_docs.md'
+end
