@@ -25,7 +25,6 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Sharing Functionality: Inheritance and Composition
 * Logic and Control Flow
 * Containers, Blocks, Iterators
-* Exceptions
 * Documenting your code
 * RubyGems & Bundler
 
@@ -39,7 +38,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     * Metaprogramming
 * I moved:
     * Testing with RSpec
-
+    * Exceptions
 
 
 !SLIDE
