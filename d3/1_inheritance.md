@@ -14,7 +14,7 @@
     * ...let's write some code...
 
 !SLIDE bullets
-# `Artist`
+* Create `Artist` in `artist.rb`:
 
 ```ruby
 class Artist
@@ -29,7 +29,7 @@ class Artist
   end
 
   def dump(filename=nil)
-    filename ||= @name ||= 'unknown_artist'
+    filename ||= 'unknown_artist'
 
     File.write("#{filename}.yml", to_yaml)
   end
@@ -37,6 +37,7 @@ end
 ```
 
 * Our `YAML` methods are similar... let's [refactor](http://refactoring.com)!
+* ...but first...
 
 
 !SLIDE
@@ -44,10 +45,13 @@ end
 
 * A common OOP construct.
 * A "refinement or specialization of another class."
-* Let's talk shapes.  A abstract shape has:
+
+----
+
+* Let's talk shapes.  An abstract shape has:
     * area
     * dimensions
-* Some shapes have sides, some don't.
+* Polygons are shapes that have sides.
     * triangle has 3...
     * rectangle has 4...
 
@@ -97,8 +101,8 @@ end
 ```
 
 * Relationships...
-    * `Triangle` is the "subclass" of `Polygon`.
-    * `Polygon` is the "subclass" of `Shape`.
+    * `Triangle` is the "subclass of" and "inherits from" `Polygon`.
+    * `Polygon` is the "subclass of" and "inherits from" `Shape`.
     * `Triangle`'s "parent class" is `Polygon`.
     * `Polygon`'s "parent class" is `Shape`.
 * If not given, Ruby classes inherit from `Object`.
@@ -106,10 +110,13 @@ end
 !SLIDE smbullets
 # Shapes (cont.)
 
-Also notice we're...
+Also notice...
 
 * Using `attr_reader` from `Polygon` to get the value of `@sides` in `Triangle`.
 * Redefining `#area` and `#dimensions` in `Triangle`.
+* `BasicObject` is the root class for everything.
+* `Kernel` is a `module` that gets mixed in to `Object`.
+    * (We'll talk about `module`s in a sec)
 
 !SLIDE questions title
 

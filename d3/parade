@@ -7,6 +7,7 @@ section 'Intro' do
 end
 
 section 'Sharing Functionality' do
-  slides '1_sharing.md'
+  slides '1_inheritance.md'
+  slides '1_composition.md'
 end
 
