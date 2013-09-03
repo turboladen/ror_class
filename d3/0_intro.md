@@ -27,7 +27,6 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Containers, Blocks, Iterators
 * Testing with RSpec
 * Exceptions
-* Duck Typing
 * Documenting your code
 * RubyGems & Bundler
 

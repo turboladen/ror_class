@@ -45,7 +45,6 @@
 * Containers, Blocks, Iterators
 * Testing with RSpec
 * Exceptions
-* Duck Typing
 * Documenting your code
 * RubyGems & Bundler
 
