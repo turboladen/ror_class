@@ -22,9 +22,9 @@ questions.any? { |q| q.created_at > Time.yesterday }
 # [Day 3/12](d3): Language LessBasics
 
 * Stuff we missed from last session
+* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Logic and Control Flow
 * Containers, Blocks, Iterators
-* Sharing Functionality: Inheritance, Modules, Mix-ins
 * Testing with RSpec
 * Exceptions
 * Duck Typing
