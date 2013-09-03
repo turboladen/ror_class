@@ -341,30 +341,29 @@
     ```
 ...and
 
-```ruby
-> load './song.rb'
-> song = Song.new
-> song.class_artist
-```
+    ```ruby
+    > load './song.rb'
+    > song = Song.new
+    > song.class_artist
+    ```
 
 !SLIDE bullets
 # Variable Scope (cont.)
 
 * Now what about _this_?
 
-```ruby
-class Song
-  @artist = 'The Pogues'
+    ```ruby
+    class Song
+      @artist = 'The Pogues'
 
-  def artist; 'Led Zeppelin'; end
-  def get_the_artist; @artist; end
+      def artist; 'Led Zeppelin'; end
+      def get_the_artist; @artist; end
 
-  def class_artist
-    self.class.instance_variable_get(:@artist)
-  end
-end
-```
-
+      def class_artist
+        self.class.instance_variable_get(:@artist)
+      end
+    end
+    ```
 * ...and
 
     ```ruby
@@ -391,16 +390,16 @@ end
 
 * We won't get into this, but...
 
-```ruby
-> my_class = Class.new
-> puts my_class.class
-> puts my_class.class.class
-> puts my_class.superclass
-> puts my_class.methods
-> my_object = my_class.new
-> puts my_object
-> puts my_object.class.name
-```
+    ```ruby
+    > my_class = Class.new
+    > puts my_class.class
+    > puts my_class.class.class
+    > puts my_class.superclass
+    > puts my_class.methods
+    > my_object = my_class.new
+    > puts my_object
+    > puts my_object.class.name
+    ```
 * Creates a new class without a name!
 * Who cares?
 
@@ -456,14 +455,13 @@ end
 # Commit to Github
 
 1. Create the `music_db` repo [via Github](https://help.github.com/articles/create-a-repo).
-2. From the command line, inside your `music_db` directory:
++ From the command line, inside your `music_db` directory:
 
-```bash
-$ git init
-$ git add song.rb
-$ git commit -m "First bits!"
-$ git add remote origin https://github.com/_username_/music_db
-$ git push -u origin master
-```
-
-Refresh/check your Github page.
+    ```bash
+    $ git init
+    $ git add song.rb
+    $ git commit -m "First bits!"
+    $ git add remote origin https://github.com/_username_/music_db
+    $ git push -u origin master
+    ```
++ Refresh/check your Github page.

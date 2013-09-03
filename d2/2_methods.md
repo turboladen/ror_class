@@ -126,12 +126,12 @@
 
 * Try it out...
 
-```ruby
-> song = Song.new
-> puts song.to_yaml
-> song.title = 'Happy Birthday'
-> puts song.to_yaml
-```
+    ```ruby
+    > song = Song.new
+    > puts song.to_yaml
+    > song.title = 'Happy Birthday'
+    > puts song.to_yaml
+    ```
 
 !SLIDE bullets
 # Another method

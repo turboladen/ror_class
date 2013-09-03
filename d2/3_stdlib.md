@@ -24,17 +24,29 @@
     * time
 
 
-!SLIDE bullets
+!SLIDE smbullets
 # Some Interesting String Methods
 
 * `#to_sym` converts to a Symbol:
-    * `"one".to_sym`
+
+    ```ruby
+    "one".to_sym        # => :one
+    ```
 * `#to_i` converts to a Number:
-    * `"1".to_i`
+
+    ```ruby
+    "1".to_i            # => 1
+    ```
 * `#gsub(pattern, replacement)` replaces all patterns with replacement:
-    * `"I like cats, cat".gsub(/cat/, 'dawg')`
-* `#each_line` splits on \n, and gives you each line:
-    * `"stuff\nthings".each_line { |line| puts "My #{line}" }`
+
+    ```ruby
+    "I like cats, cat".gsub(/cat/, 'dawg')      # => "I like dawgs, dawg"
+    ```
+* `#each_line` splits on `\n`, and gives you each line:
+
+    ```ruby
+    "stuff\nthings".each_line { |line| puts "My #{line}" }
+    ```
 
 !SLIDE bullets
 # Symbols
