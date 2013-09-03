@@ -43,7 +43,7 @@
 
     ```ruby
     > album = MusicDB::Album.new
-    > album.to_yaml
+    > album.to_yaml         # raises!
     ```
 
 !SLIDE bullets
@@ -145,15 +145,6 @@
 # Loops (cont.)
 
 ```ruby
-pant_legs = 0
-
-loop do
-  break if pant_legs == 2
-  puts pant_legs += 1
-end
-
-# ...or...
-
 pant_legs = -1
 
 loop do
@@ -166,7 +157,8 @@ end
 !SLIDE bullets
 # `while` and `until` modifiers
 
-* Just like `if` and `unless`, do one-liner loops...
+* Similar to `if` and `unless`.
+* Do one-liner loops...
 
     ```ruby
     pant_legs = 0
@@ -183,6 +175,7 @@ end
 # Control Flow Summary
 
 * Lots of ways to slice and dice logic.
+    * ...more than we talked about.
 * Look for most readable way to write your statement.
 * Modifiers are cool.
 

@@ -25,20 +25,24 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Sharing Functionality: Inheritance and Composition
 * Logic and Control Flow
 * Containers, Blocks, Iterators
-* Testing with RSpec
 * Exceptions
 * Documenting your code
 * RubyGems & Bundler
 
-!SLIDE
-# I removed:
-
-* Regular Expressions
-* Input/Output
-* Metaprogramming
-
-
 !SLIDE bullets
+# Changes!
+
+* I removed:
+    * Regular Expressions
+    * Input/Output
+    * Duck Typing
+    * Metaprogramming
+* I moved:
+    * Testing with RSpec
+
+
+
+!SLIDE
 # Stuff we missed from last session
 
 * [STDLIB](d2#56)
@@ -69,7 +73,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     end
     ```
 * No limit on number of params...
-    * Don't do more than 5.
+    * Good practice: don't do more than 5.
 
 
 !SLIDE bullets

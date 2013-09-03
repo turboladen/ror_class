@@ -36,7 +36,7 @@
     end
     ```
 * Our `YAML` methods are similar... let's [refactor](http://refactoring.com)!
-* ...but first...
+* ... but first...
 
 
 !SLIDE

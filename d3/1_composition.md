@@ -1,7 +1,7 @@
 !SLIDE center
 # But there's another way to share...
 
-!SLIDE bullets
+!SLIDE smbullets
 # Composition with Modules
 
 * Composition: use `module`s to mix methods into other objects.

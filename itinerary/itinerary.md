@@ -43,7 +43,6 @@
 * Sharing Functionality: Inheritance and Composition
 * Logic and Control Flow
 * Containers, Blocks, Iterators
-* Testing with RSpec
 * Exceptions
 * Documenting your code
 * RubyGems & Bundler
@@ -51,6 +50,7 @@
 !SLIDE
 # [Day 4/12](d4): Ruby & The Web
 
+* Testing with RSpec
 * Sockets
 * CGI
 * Rack

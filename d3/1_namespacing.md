@@ -25,7 +25,7 @@
     require_relative 'music_db/artist'
     ```
 
-!SLIDE bullets
+!SLIDE
 # Cleaning Up (cont.)
 
 * Add `lib/music_db.rb` to the git repository:
@@ -42,7 +42,7 @@
 !SLIDE bullets
 # Cleaning Up (cont.)
 
-* Now in `song.rb`, change:
+* Now in `lib/music_db/song.rb`, change:
 
     ```ruby
     class Song
@@ -62,7 +62,7 @@
       end
     end
     ```
-* And do the same in `artist.rb`...
+* And do the same in `lib/music_db/artist.rb`...
 
 !SLIDE bullets
 # In the `MusicDB`
