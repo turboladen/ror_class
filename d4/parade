@@ -13,3 +13,7 @@ end
 section 'Testing' do
   slides '2_testing.md'
 end
+
+section 'Sockets' do
+  slides '3_sockets.md'
+end
