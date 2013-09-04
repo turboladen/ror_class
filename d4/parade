@@ -21,3 +21,7 @@ end
 section 'CGI' do
   slides '4_cgi.md'
 end
+
+section 'Rack' do
+  slides '5_rack.md'
+end
