@@ -18,7 +18,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 + Learn Ruby's language basics.
 
 !SLIDE
-# Overview for Today
+# Language Basics Overview
 
 * Stuff from yesterday we missed
 * Classes, Objects, Variables

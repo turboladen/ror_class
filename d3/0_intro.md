@@ -19,7 +19,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 + Learn more of Ruby's language basics.
 
 !SLIDE
-# [Day 3/12](d3): Language LessBasics
+# Language LessBasics Overview
 
 * Stuff we missed from last session
 * Sharing Functionality: Inheritance and Composition
