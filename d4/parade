@@ -17,3 +17,7 @@ end
 section 'Sockets' do
   slides '3_sockets.md'
 end
+
+section 'CGI' do
+  slides '4_cgi.md'
+end
