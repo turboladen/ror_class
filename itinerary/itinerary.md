@@ -49,8 +49,8 @@
 !SLIDE
 # [Day 4/12](d4): Ruby & The Web
 
-* Testing with RSpec
 * Exceptions
+* Testing with RSpec
 * Sockets
 * CGI
 * Rack

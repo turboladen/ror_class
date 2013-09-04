@@ -22,8 +22,8 @@ questions.any? { |q| q.created_at > Time.yesterday }
 !SLIDE
 # Ruby & the Web Overview
 
-* Testing with RSpec
 * Exceptions
+* Testing with RSpec
 
 ----
 

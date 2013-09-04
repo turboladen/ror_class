@@ -6,6 +6,10 @@ section 'Intro' do
   slides '0_intro.md'
 end
 
+section 'Exceptions' do
+  slides '1_exceptions.md'
+end
+
 section 'Testing' do
-  slides '1_testing.md'
+  slides '2_testing.md'
 end
