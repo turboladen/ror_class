@@ -7,6 +7,9 @@
 # What's this all about?
 
 * Removing code duplication!
+    * Some Ruby conventions:
+        * classes/modules < 300 LOC.
+        * methods < 30 LOC.
 * Classes let us define and reuse an object type.
 * What if you have some similar object types?
 * Let's look at an Artist...
