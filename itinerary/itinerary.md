@@ -56,7 +56,6 @@
 * Rack
 * Sinatra
 * Rails
-* Templating
 * Web Servers, App Servers, and the Web
 
 !SLIDE
@@ -67,6 +66,7 @@
 * Rails & the Web
 * Rack & Rails
 * Models, Views, and Controllers
+* Templating
 * CRUD
 * Installing Rails
 * Creating our in-class project app

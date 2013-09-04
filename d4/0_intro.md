@@ -32,7 +32,6 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Rack
 * Sinatra
 * Rails
-* Templating
 * Web Servers, App Servers, and the Web
 
 !SLIDE questions title
