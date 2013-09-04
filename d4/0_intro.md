@@ -24,6 +24,9 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 * Testing with RSpec
 * Exceptions
+
+----
+
 * Sockets
 * CGI
 * Rack
