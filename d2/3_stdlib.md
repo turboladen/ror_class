@@ -6,7 +6,7 @@
 
 * "Standard Library".
 * Common helper libraries that Ruby thinks you can use regularly.
-* Exist to help you do lots of things.
+* Exists to help you do lots of things.
 
 !SLIDE smbullets
 # Homework!
@@ -55,10 +55,10 @@
 * Useful as labels, Hash keys.
 
     ```ruby
-    > :thing.class
-    > :thing.to_s
+    > :thing.class          # => Symbol
+    > :thing.to_s           # => "thing"
     > my_book = { :title => "Programming Ruby" }
-    > my_book[:title]
+    > my_book[:title]       # => "Programming Ruby"
     ```
 * When using with Hashes, shortcut:
 
@@ -85,17 +85,18 @@
 * Arrays are 0-indexed:
 
     ```ruby
-    array[0]
-    array[1]
+    array[0]        # => nil
+    array[1]        # => 1
     ```
 
 * Hashes are made up of keys & values:
 
     ```ruby
-    hash.keys
-    hash.values
-    hash[1]
-    hash['two']
+    hash.keys       # => [1, "two", #<Object:0x00...>, nil]
+    hash.values     # => ["one", 2, #<Proc:0x007...>, nil]
+    hash[1]         # => "one"
+    hash['two']     # => 2
+    hash[:nada]     # => nil
     ```
 
 !SLIDE bullets
@@ -105,14 +106,14 @@
 
     ```ruby
     numbers = [1, 2, 3]
-    numbers.first
-    numbers.map { |x| x * 10 }
-    numbers.empty?
-    numbers.include? 3
-    numbers.find_all { |x| x > 2 }
-    numbers.any? { |x| x > 2 }
-    %w[one two three]
-    %i[one two three]
+    numbers.first                       # => 1
+    numbers.map { |x| x * 10 }          # => [10, 20, 30]
+    numbers.empty?                      # => false
+    numbers.include? 3                  # => true
+    numbers.find_all { |x| x > 2 }      # => [3]
+    numbers.any? { |x| x > 2 }          # => true
+    %w[one two three]                   # => ['one', 'two', 'three']
+    %i[one two three]                   # => [:one, :two, :three]
     ```
 
 !SLIDE bullets
@@ -125,8 +126,8 @@
       puts "#{all_the_things.class}, size #{all_the_things.size}"
     end
 
-    things
-    things('cat', 'dog')
+    things                      # => "Array, size 0"
+    things('cat', 'dog')        # => "Array, size 2"
     ```
 * Hash and the "double-splat":
 
@@ -135,8 +136,8 @@
       puts "#{named_things.class}, size #{named_things.size}"
     end
 
-    things name1: 'cat'					# => "Hash, size 1"
-    things(name1: 'cat', name2: 'dog')		# => "Hash, size 2"
+    things name1: 'cat'                     # => "Hash, size 1"
+    things(name1: 'cat', name2: 'dog')      # => "Hash, size 2"
     ```
 
 !SLIDE bullets
@@ -152,10 +153,10 @@
       puts message
     end
 
-    jump
-    jump(wear_pants: true)
-    jump(say: 'RAWR')
-    jump(wear_pants: true, height: -1, barrel_roll: true)
+    jump                                # => "Jumping 10 inches WITH NO PANTS!"
+    jump(wear_pants: true)              # => "Jumping 10 inches"
+    jump(say: 'RAWR')                   # => "Jumping 10 inches WITH NO PANTS! --say=RAWR"
+    jump(wear_pants: true, height: -1, barrel_roll: true)   # => "Jumping -1 inches --barrel_roll=true"
     ```
 
 !SLIDE questions title
