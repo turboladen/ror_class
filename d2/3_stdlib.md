@@ -64,12 +64,12 @@
 
     ```ruby
     > my_book = { title: "Programming Ruby" }
-    > my_book[:title]
+    > my_book[:title]       # => "Programming Ruby"
     ```
 * Use as messages to send to objects:
 
     ```ruby
-    > 12345.send(:to_s)
+    > 12345.send(:to_s)     # => "12345"
     ```
 
 !SLIDE bullets
@@ -82,14 +82,14 @@
     hash = { 1 => 'one', 'two' => 2, Object.new =>
       lambda { |x| x + 1 }, nil => nil }
     ```
-* Arrays are 0-indexed:
+* Arrays are 0-indexed collections of objects:
 
     ```ruby
     array[0]        # => nil
     array[1]        # => 1
     ```
 
-* Hashes are made up of keys & values:
+* Hashes are collections made up of key/value pairs:
 
     ```ruby
     hash.keys       # => [1, "two", #<Object:0x00...>, nil]
@@ -149,7 +149,9 @@
     def jump(height: 10, wear_pants: false, **options)
       message = "Jumping #{height} inches"
       message << " WITH NO PANTS!" unless wear_pants
+
       options.each { |key, value| message << " --#{key}=#{value}" }
+
       puts message
     end
 
