@@ -228,5 +228,12 @@ run HelloWorld.new
     * Each middleware has its one responsibility.
 * In essence, a tool to build your app around.
 
+!SLIDES bullets incremental
+# But...
+
+* It's not geared towards building a web site with, is it?
+* Not really--leaves a lot to be desired.
+* Can you imagine writing a full-blown web site using this?
+
 !SLIDE center questions
 # Questions?

@@ -25,3 +25,7 @@ end
 section 'Rack' do
   slides '5_rack.md'
 end
+
+section 'Sinatra' do
+  slides '6_sinatra.md'
+end
