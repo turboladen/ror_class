@@ -19,20 +19,22 @@ questions.any? { |q| q.created_at > Time.yesterday }
 + Learn a little about how Ruby lets you deal with unexpected behavior.
 + Learn about the different ways Ruby lets you live on the Web.
 
-!SLIDE
-# Ruby & the Web Overview
+!SLIDE bullets
+# Overview for Today
 
-* Exceptions
-* Testing with RSpec
+* Ruby LessBasics Continued
+    * Exceptions
+    * Testing with RSpec
 
 ----
 
-* Sockets
-* CGI
-* Rack
-* Sinatra
-* Rails
-* Web Servers, App Servers, and the Web
+* Ruby & the Web
+    * Sockets
+    * CGI
+    * Rack
+    * Sinatra
+    * Rails
+    * Web Servers, App Servers, and the Web
 
 !SLIDE questions title
 # Questions?
