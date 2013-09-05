@@ -1,10 +1,10 @@
 !SLIDE center just-title
 # Testing with RSpec
 
-!SLIDE bullets
-# Test Driven Development (TDD)
+!SLIDE bullets incremental
+# \* Driven Development (\*DD)
 
-* TDD is common in the Ruby world:
+* Test Driven Development (TDD) is common in the Ruby world:
     + Write the test for your method.
     + Run the test, watch it fail.
     + Implement functionality in the method.
@@ -16,8 +16,8 @@
     * Implement behavior across app.
     * Run the test, watch it pass.
 
-!SLIDE bullets text-size-90
-# Test Approaches
+!SLIDE bullets text-size-90 incremental
+# (Some) Test Approaches
 
 * Unit
     * focus: small chunks of code, typically methods.
@@ -28,15 +28,17 @@
 * Integration
     * focus: integrating groups of components.
     * no dependencies mocked.
-* Acceptance/Feature/Validation
+* Acceptance/Feature/Validation/Behavior
     * focus: user/customer requirements.
     * usually scenario based.
     * no dependencies mocked.
 
-!SLIDE bullets
-# Right now...
+!SLIDE bullets incremental
+# But what do I do?
 
-* We'll just talk about unit testing.
+* You should have enough--and no more-- **test coverage** to give you confidence
+  your code does what you say it does.
+* Right now we'll just talk about unit testing.
 
 !SLIDE bullets
 # RSpec Intro
@@ -52,7 +54,7 @@
 !SLIDE bullets
 # Basics
 
-* Use `describe` to express the _thing_ you're describing.
+* Use `describe` to express the _thing_ you're spec'ing.
     * class
     * method
     * behavior
@@ -63,83 +65,98 @@
     * etc.
 
 !SLIDE bullets
-# Basics (cont.)
+# Example!
 
-* Example: `my_outfit_spec.rb`
+* `my_outfit.rb`:
 
-```ruby
-class MyOutfit
-  attr_reader :pants
-  def initialize
-    @pants = [Pants.new, Pants.new]
-  end
-end
-
-describe MyOutfit do
-  describe '#pants' do
-    it "has 2 pairs" do
-      expect(subject.pants.first).to be_a Pants
-      expect(subject.pants.count).to eq 2
+    ```ruby
+    class MyOutfit
+      attr_reader :pants
+      def initialize
+        @pants = [Pants.new, Pants.new]
+      end
     end
-  end
-end
-```
+    ```
+* `my_outfit_spec.rb`:
 
-```bash
-$ rspec my_thing_spec.rb
-```
+    ```ruby
+    describe MyOutfit do
+      describe '#pants' do
+        it "has 2 pairs" do
+          expect(subject.pants.first).to be_a Pants
+          expect(subject.pants.count).to eq 2
+        end
+      end
+    end
+    ```
+
+!SLIDE bullets
+# Example! (cont.)
+
+* Run it!
+
+    ```bash
+    $ rspec --format=documentation --color my_thing_spec.rb
+
+    MyOutfit
+      #pants
+        has 2 pairs
+
+    Finished in 0.00089 seconds
+    1 example, 0 failures
+    ```
 
 !SLIDE bullets
 # Basics (cont.)
 
 * I want to be able to change my outfit...
 
-```ruby
-class MyOutfit
-  attr_reader :pants
+    ```ruby
+    class MyOutfit
+      attr_reader :pants
 
-  def initialize
-    @pants = new_pants
-  end
+      def initialize
+        @pants = new_pants
+      end
 
-  def change
-    new_pants if @pants.size == 2
-  end
+      def change
+        new_pants if @pants.size == 2
+      end
 
-  private
+      private
 
-  def new_pants
-    @pants = [Pants.new, Pants.new]
-  end
-end
-```
+      def new_pants
+        @pants = [Pants.new, Pants.new]
+      end
+    end
+    ```
 
 !SLIDE bullets
 # Basics (cont.)
 
 * Add specs for the new stuff...
 
-```ruby
-describe MyOutfit do
-  describe '#change' do
-    context 'pants size is 2' do
-      it "calls #new_pants" do
-        subject.instance_variable_set(:@pants, [1, 2])
-        expect(subject).to receive(:new_pants)
-        subject.change
-      end
-    end
+    ```ruby
+    describe MyOutfit do
+      describe '#change' do
+        context 'pants size is 2' do
+          it "calls #new_pants" do
+            subject.instance_variable_set(:@pants, [1, 2])
+            expect(subject).to receive(:new_pants)
+            subject.change
+          end
+        end
 
-    context 'pants size is not 2' do
-      it "does not call #new_pants" do
-        subject.instance_variable_set(:@pants, [1])
-        expect(subject).to_not receive(:new_pants)
-        subject.change
+        context 'pants size is not 2' do
+          it "does not call #new_pants" do
+            subject.instance_variable_set(:@pants, [1])
+            expect(subject).to_not receive(:new_pants)
+            subject.change
+          end
+        end
       end
     end
-  end
-end
-```
+    ```
 
 !SLIDE
 # What'd we just do?
@@ -157,52 +174,52 @@ end
 
 * Let's refactor those tests...
 
-```ruby
-describe MyOutfit do
-  describe '#change' do
-    let(:fake_pants) { double 'Fake Pants' }
+    ```ruby
+    describe MyOutfit do
+      describe '#change' do
+        let(:fake_pants) { double 'Fake Pants' }
 
-    context 'pants size is 2' do
-      before do
-        allow(fake_pants).to receive(:size).and_return 2
-        subject.instance_variable_set(:@pants, fake_pants)
-      end
+        context 'pants size is 2' do
+          before do
+            allow(fake_pants).to receive(:size).and_return 2
+            subject.instance_variable_set(:@pants, fake_pants)
+          end
 
-      it "calls #new_pants" do
-        expect(subject).to receive(:new_pants)
-        subject.change
+          it "calls #new_pants" do
+            expect(subject).to receive(:new_pants)
+            subject.change
+          end
+        end
+
+        # ...other spec...
       end
     end
-
-    # ...other spec...
-  end
-end
-```
+    ```
 
 !SLIDE bullets
 # More Basics (cont.)
 
 * ...and some more...
 
-```ruby
-describe MyOutfit do
-  describe '#change' do
-    # ...other spec...
+    ```ruby
+    describe MyOutfit do
+      describe '#change' do
+        # ...other spec...
 
-    context 'pants size is not 2' do
-      before do
-        allow(fake_pants).to receive(:size).and_return 1
-        subject.instance_variable_set(:@pants, fake_pants)
-      end
+        context 'pants size is not 2' do
+          before do
+            allow(fake_pants).to receive(:size).and_return 1
+            subject.instance_variable_set(:@pants, fake_pants)
+          end
 
-      it "does not call #new_pants" do
-        expect(subject).to_not receive(:new_pants)
-        subject.change
+          it "does not call #new_pants" do
+            expect(subject).to_not receive(:new_pants)
+            subject.change
+          end
+        end
       end
     end
-  end
-end
-```
+    ```
 
 !SLIDE
 # Now what'd we just do?
@@ -245,6 +262,8 @@ end
 
 * Lets you describe an object's behavior in the various states that it can be.
 * Lets you mock dependencies as needed.
+* Lets you gain confidence your code does what you intend.
+    * ...and shows others that it does what you intend.
 
 !SLIDE questions center
 # Questions?
