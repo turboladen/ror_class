@@ -1,7 +1,7 @@
 require 'yaml'
 
 
-module YAMLable
+module MusicDB::YAMLable
   def to_yaml
     if self.respond_to? :attributes
       YAML.dump(attributes)

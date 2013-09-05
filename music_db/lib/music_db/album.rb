@@ -1,7 +1,7 @@
 require_relative 'yamlable'
 
 class MusicDB::Album
-  include YAMLable
+  include MusicDB::YAMLable
 
   attr_accessor :title, :artist, :year
 end
