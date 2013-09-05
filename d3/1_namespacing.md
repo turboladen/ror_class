@@ -13,7 +13,7 @@
 + Move `song.rb` to `lib/music_db/song.rb`:
 
     ```bash
-    $ git move song.rb lib/music_db/
+    $ git mv song.rb lib/music_db/
     ```
 + Do the same for `artist.rb`.
 + Create `lib/music_db.rb`:
