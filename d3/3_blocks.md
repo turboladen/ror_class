@@ -1,5 +1,5 @@
 !SLIDE center just-title
-# Container, Blocks, and Iterators
+# Containers, Blocks, and Iterators
 
 !SLIDE bullets
 # Iterators

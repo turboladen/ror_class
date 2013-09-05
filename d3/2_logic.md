@@ -148,11 +148,17 @@
 pant_legs = -1
 
 loop do
-  next if pant_legs < 0
+  if pant_legs < 0
+    pant_legs += 1
+    next
+  end
+
   break if pant_legs == 2
   puts pant_legs += 1
 end
 ```
+
+* `next` and `break` aren't just for `loop`.
 
 !SLIDE bullets
 # `while` and `until` modifiers
