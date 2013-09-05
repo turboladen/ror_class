@@ -29,3 +29,11 @@ end
 section 'Sinatra' do
   slides '6_sinatra.md'
 end
+
+section 'The Web' do
+  slides '7_the_web.md'
+end
+
+section 'Summary' do
+  slides '9_summary.md'
+end
