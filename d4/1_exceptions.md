@@ -14,10 +14,16 @@
 
 Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 
-!SLIDE
+!SLIDE bullets incremental
 # So why exceptions?
 
-*
+* Errors will occur!
+* When creating code that someone will consume...
+    * communicate to them that something abnormal occurred.
+    * Done in Ruby via `raise`ing exceptions.
+* When using someone's reusable code...
+    * you decide what to do when something abnormal occurs.
+    * Done in Ruby via `rescue`ing exceptions.
 
 
 !SLIDE bullets
@@ -26,7 +32,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 * `raise` or `fail`.
     * Same thing, but you'll usually see `raise`.
     * Both are methods, defined in [Kernel](http://rdoc.info/stdlib/core/Kernel).
-        * (remember methods can be redefined in Ruby...)
+        * (remember methods can be redefined/hooked into in Ruby...)
 
     ```ruby
     module AnimalWords
@@ -86,13 +92,13 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 !SLIDE bullets
 # Handling Exceptions
 
-* Handle them by wrapping them in a `begin; rescue; end` block.
+* Handle them by wrapping them in a `begin; rescue; end`.
 
     ```ruby
     begin
-      File.open('blargh', 'r')
+      File.open('blargh.txt', 'r')
     rescue Errno::ENOENT => ex
-      puts "'blargh' doesn't exist!"
+      puts "'blargh.txt' doesn't exist!"
       puts ex.message
       raise
     end
@@ -100,11 +106,12 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 * Rescue a specific class of exception, or a comma-separated list.
 * The `raise` just re-raises the same exception.
     * Without it, execution just continues on.
+* _If not rescued, the exception with cause code execution to halt._
 
 !SLIDE bullets
 # Handling Exceptions (cont.)
 
-* Can also...
+* Similarly...
 
     ```ruby
     begin
@@ -121,8 +128,15 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 * `retry` adds control flow, but don't abuse this!
 * `ensure` is executed, raise or not.
 
-!SLIDE section-header
-# Ok, that's enough.
+!SLIDE
+# Ok, that's enough. Summary plz.
+
+* Exceptions are classes.
+* `Kernel#raise` will halt code execution unless handled.
+* `Kernel#rescue` lets you deal with the exception in a way that makes sense for
+  your code.
+    * Careful!  Lets you "swallow" exceptions, which can lead to problems.
+        * Often times, letting your app die is best.
 
 !SLIDE questions center
 # Questions?
