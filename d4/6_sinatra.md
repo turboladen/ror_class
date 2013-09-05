@@ -138,7 +138,7 @@ end
 
 * Not quite websockets, but almost there with not much more work...
 
-!SLIDE bullets
+!SLIDE smbullets
 # What else?
 
 * Layouts
@@ -165,8 +165,10 @@ end
 # Rails
 
 * Rails adds some complexity...
-* ...but provides a lot of convention, so you don't have to make decisions.
-* ...but you can stray from convention when you need to.
+    * ...but provides a lot of convention, so you don't have to make decisions.
+    * ...but you can stray from convention when you need to.
+* Is Rails _better_?
+    * It depends on the problem you're trying to solve!
 
 !SLIDE questions center
 # Questions?
