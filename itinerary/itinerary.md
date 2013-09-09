@@ -62,14 +62,13 @@
 # [Day 5/12](d5): Intro to Rails
 
 * Review projects
-* Rails & the Web
-* Rack & Rails
-* Models, Views, and Controllers
-* Templating
-* CRUD
 * Installing Rails
+* Rack, Rails and the Web
+* Models, Views, and Controllers
+* CRUD
 * Creating our in-class project app
-* Bundler
+* Templating
+* RubyGems & Bundler
 
 !SLIDE
 # [Day 6/12](d6): Digging in to Rails
@@ -122,6 +121,7 @@
 !SLIDE
 # [Day 10/12](d10): Putting it out there
 
+* Rails & Web Servers
 * Deploying your Rails app
 * Differences when in production
 * Hosting your Rails app

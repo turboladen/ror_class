@@ -24,14 +24,13 @@ questions.any? { |q| q.created_at > Time.yesterday }
 # Overview for Today
 
 * Review projects
-* Rails & the Web
-* Rack & Rails
-* Models, Views, and Controllers
-* Templating
-* CRUD
 * Installing Rails
+* Rack, Rails and the Web
+* Models, Views, and Controllers
+* CRUD
 * Creating our in-class project app
-* Bundler
+* Templating
+* RubyGems & Bundler
 
 
 !SLIDE questions title
@@ -51,3 +50,45 @@ questions.any? { |q| q.created_at > Time.yesterday }
 !SLIDE questions title
 
 # Questions?
+
+!SLIDE bullets incremental
+# Before we install...
+
+* RubyGems provides https://rubygems.org
+    * "released" gems are kept here.
+    * not limited to that though.
+* RubyGems commands to remember:
+    * `gem environment`
+    * `gem search -r [gem]`
+    * `gem install [gem]`
+    * `gem uninstall [gem]`
+    * `gem help commands`
+    * `gem help [command]`
+* Also, short commands like `gem env`...
+
+
+!SLIDE bullets
+# Installing Rails
+
+* Surprise, surprise...
+
+    ```bash
+    $ gem install rails
+    ```
+
+!SLIDE bullets
+
+# Create a new project
+
+* Just for fun, do:
+
+    ```bash
+    $ rails new train_maker
+    ```
+* Open `train_maker/config/application.rb`...
+    * Convention example!
+
+        ```ruby
+        module TrainMaker
+        ```
+* We'll come back to this project...
