@@ -20,11 +20,10 @@ questions.any? { |q| q.created_at > Time.yesterday }
 + Learn some of the basic areas of Rails programming.
 
 
-!SLIDE bullets
+!SLIDE smbullets
 # Overview for Today
 
-* Final Rails project review
-* In-class project review
+* Review projects
 * Rails & the Web
 * Rack & Rails
 * Models, Views, and Controllers
@@ -34,6 +33,20 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Creating our in-class project app
 * Bundler
 
+
+!SLIDE questions title
+
+# Questions?
+
+!SLIDE
+# Projects
+
+* Our in-class Rails project:
+    * We'll build together.
+    * It'll cover many topics, but not all.
+    * We'll deploy it on Heroku.
+    * We'll push it to Github.
+* [Your Rails project](d1#22).
 
 !SLIDE questions title
 

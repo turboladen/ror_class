@@ -61,8 +61,7 @@
 !SLIDE
 # [Day 5/12](d5): Intro to Rails
 
-* Final Rails project review
-* In-class project review
+* Review projects
 * Rails & the Web
 * Rack & Rails
 * Models, Views, and Controllers
