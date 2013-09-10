@@ -9,3 +9,7 @@ end
 section 'Rack, Rails & the Web' do
   slides '1_rails_and_the_web.md'
 end
+
+section 'MVC' do
+  slides '2_mvc.md'
+end
