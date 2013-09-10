@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Geekwise: Ruby on Rails
 ## Course Itinerary
 
@@ -17,6 +17,7 @@
     * Why Ruby?
     * OO programming.
 
+
 !SLIDE smbullets
 # [Day 1/12](d1): Intro & Getting Started (cont.)
 
@@ -30,12 +31,14 @@
 * IRB
 * `Hello World!`
 
+
 !SLIDE
 # [Day 2/12](d2): Language Basics
 
 * Classes, Objects, Variables
 * Methods
 * Standard Types/STDLIB
+
 
 !SLIDE
 # [Day 3/12](d3): Language LessBasics
@@ -45,6 +48,7 @@
 * Containers, Blocks, Iterators
 * Documenting your code
 * RubyGems
+
 
 !SLIDE
 # [Day 4/12](d4): Ruby & The Web
@@ -58,6 +62,7 @@
 * Rails
 * Web Servers, App Servers, and the Web
 
+
 !SLIDE
 # [Day 5/12](d5): Intro to Rails
 
@@ -69,6 +74,7 @@
 * Templating
 * Creating our in-class project app
 * RubyGems & Bundler
+
 
 !SLIDE
 # [Day 6/12](d6): Digging in to Rails
@@ -83,6 +89,7 @@
 * Forms
 * File uploads
 
+
 !SLIDE
 # [Day 7/12](d7): Action*
 
@@ -92,6 +99,7 @@
 * REST and routes
 * Views, Partials, and Layouts
 * Emailing & ActionMailer
+
 
 !SLIDE
 # [Day 8/12](d8): ActiveRecord & ORMs
@@ -104,6 +112,7 @@
     * Mongo
     * Redis
     * DynamoDB
+
 
 !SLIDE
 # [Day 9/12](d9): Digging Deeper
@@ -118,6 +127,7 @@
     * Versioning
     * Soft-delete
 
+
 !SLIDE
 # [Day 10/12](d10): Putting it out there
 
@@ -127,6 +137,7 @@
 * Hosting your Rails app
 * Some interesting gems
 * In-class hacking time
+
 
 !SLIDE
 # [Day 11/12](d11): APIs
