@@ -23,12 +23,19 @@
     * Web server receives request.
     * Web server needs to get the request to our Ruby code.
     * Web server forwards request to Ruby app server.
-    * Ruby app server extracts socket-y info and hands request to Rack.
+    * Ruby app server extracts environment-y info and hands request to Rack.
     * Rack parses and hands to Rails.
 * We'll talk more about Ruby web servers on [day 10](d10).
 
+!SLIDE bullets
+# Ruby + Web Recap (cont.)
+
+* This is what that looks like:
+
+    <img src="images/rack_n_rails.png" style="width: 95%; height: auto;"></img>
+
 !SLIDE smbullets incremental
-# Rack 'n Rail: Server
+# Rack 'n Rail: <u>Server</u>
 
 * First, "server" = thing that sends/receives the requests.
 * Remember, we ran a server with Rack by doing:
@@ -45,14 +52,16 @@
 
 
 !SLIDE bullets
-# Rack 'n Rail: Server (cont.)
+# Rack 'n Rail: <u>Server</u> (cont.)
 
-<img src="images/rack_n_rails.png" style="width: 100%; height: auto;"></img>
+* Again:
+
+    <img src="images/rack_n_rails.png" style="width: 95%; height: auto;"></img>
 
 * For more, see Rails guides: ["Rails on Rack"](http://guides.rubyonrails.org/rails_on_rack.html)
 
 !SLIDE incremental bullets
-# Rack 'n Rail: App
+# Rack 'n Rail: <u>App</u>
 
 * Remember, we used a `config.ru` to define a Rack app...
     * A Rack "app" just:
@@ -65,7 +74,7 @@
 
 
 !SLIDE incremental bullets
-# Rack 'n Rail: App (cont.)
+# Rack 'n Rail: <u>App</u> (cont.)
 
 * Remember our multi-resource Rack app?
 
@@ -118,8 +127,9 @@
 
 * You don't _have_ to know about Sockets, CGI, or Rack to do Rails.
     * It does all these things for you--thanks to Rack.
-* Rails lets you have access to all of your site's abilities with Ruby.
+* Rails gives you access to all of your site's abilities with Ruby.
     * Not stuck doing (as much) OS setup stuff.
+    * Spread across fewer tools to run your site.
 * Different aspects of your app are separated by their responsibility.
 
 !SLIDE questions center
