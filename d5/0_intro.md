@@ -28,8 +28,8 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Rack, Rails and the Web
 * Models, Views, and Controllers
 * CRUD
-* Creating our in-class project app
 * Templating
+* Creating our in-class project app
 * RubyGems & Bundler
 
 
