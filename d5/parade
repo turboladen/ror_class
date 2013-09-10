@@ -17,3 +17,7 @@ end
 section 'CRUD' do
   slides '3_crud.md'
 end
+
+section 'Templating' do
+  slides '4_templates.md'
+end
