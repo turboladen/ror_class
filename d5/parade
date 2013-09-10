@@ -13,3 +13,7 @@ end
 section 'MVC' do
   slides '2_mvc.md'
 end
+
+section 'CRUD' do
+  slides '3_crud.md'
+end
