@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE title
 # Web Servers, App Servers, and the Web
+
 
 !SLIDE bullets
 # Web Servers, whaaaat?
@@ -14,6 +15,7 @@
     * Something needs to convert to Ruby/Rack.
     * Allows other servers to sit in front:
         * Proxy, load balancer, both, etc.
+
 
 !SLIDE bullets
 # Web Servers, whaaaat? (cont.)
@@ -30,6 +32,7 @@
     * Puma
     * Each solve the problem slightly differently.
 
+
 !SLIDE bullets incremental
 # (Simple) Request Lifecycle
 
@@ -42,6 +45,7 @@
 
 Responding is more or less the reverse.
 
+
 !SLIDE bullets
 # Why is this important?
 
@@ -52,6 +56,7 @@ Responding is more or less the reverse.
 * What if you get so many clients that they start having to wait?
 * App server set up!
 * What stack you choose can effect your downtime when updating.
+
 
 !SLIDE questions center
 # Questions?

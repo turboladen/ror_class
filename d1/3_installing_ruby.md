@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Installing Ruby
+
 
 !SLIDE smbullets
 # Installation Options
@@ -16,6 +17,7 @@
         * [cygwin](http://www.cygwin.com)
         * [RailsInstaller](http://railsinstaller.org)
 
+
 !SLIDE bullets
 # System Ruby
 
@@ -27,6 +29,7 @@
     * Path stuff can get convoluted.
     * Usually requires `sudo ...` unless you tweak.
     * *nix only (?).
+
 
 !SLIDE bullets
 # Build from source
@@ -40,6 +43,7 @@
     * Have to manually download the source and run commands.
     * Updating to next version either means wiping out previous version or manually maintaining PATH.
     * Can require Visual Studio on Windows.
+
 
 !SLIDE bullets
 # RVM
@@ -57,6 +61,7 @@
     * Rare, but PATH problems when using with multi-user environment.
     * Redefines shell commands.
 
+
 !SLIDE bullets
 # rbenv
 
@@ -71,6 +76,7 @@
     * Doesn't install system deps for you.
     * Uses "shims" to use versioned Ruby.
     * Have to install plugins if you want RVM-like features.
+
 
 !SLIDE bullets
 # chruby
@@ -88,6 +94,7 @@
     * No bells & whistles.
     * Not as widely used as RVM and rbenv.
 
+
 !SLIDE bullets
 # RubyInstaller
 
@@ -101,6 +108,7 @@
     * Further from *nix (obviously).
     * Can only maintain 1 Ruby version at a time.
 
+
 !SLIDE bullets
 # cygwin
 
@@ -112,6 +120,7 @@
     * Feels more like *nix.
     * Can be problematic resolving deps that were made outside of cygwin.
     * Cygwin install required, which is more work up front than RubyInstaller.
+
 
 !SLIDE bullets
 # RailsInstaller
@@ -127,6 +136,7 @@
     * Not sure, I've never used it!
     * Seems to be lagging behind with updates.
 
+
 !SLIDE bullets
 # Installing Ruby, Summary
 
@@ -137,9 +147,10 @@
     * Not too much, not too little.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 
 !SLIDE center
 # Ok, let's install!
+

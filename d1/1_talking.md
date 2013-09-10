@@ -69,6 +69,6 @@
 * Out-of-class Rails project
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

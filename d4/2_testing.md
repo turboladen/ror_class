@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Testing with RSpec
+
 
 !SLIDE bullets incremental
 # \* Driven Development (\*DD)
@@ -15,6 +16,7 @@
     * for each method required: [GOTO TDD]
     * Implement behavior across app.
     * Run the test, watch it pass.
+
 
 !SLIDE bullets text-size-90 incremental
 # (Some) Test Approaches
@@ -33,12 +35,14 @@
     * usually scenario based.
     * no dependencies mocked.
 
+
 !SLIDE bullets incremental
 # But what do I do?
 
 * You should have enough--and no more-- **test coverage** to give you confidence
   your code does what you say it does.
 * Right now we'll just talk about unit testing.
+
 
 !SLIDE bullets
 # RSpec Intro
@@ -50,6 +54,7 @@
     * will let you test at any level.
     * is very descriptive--it's a "spec"; reads like English.
     * implies organization.
+
 
 !SLIDE bullets
 # Basics
@@ -63,6 +68,7 @@
     * conditionals in the method?
     * behavior of external dependencies?
     * etc.
+
 
 !SLIDE bullets
 # Example!
@@ -90,6 +96,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Example! (cont.)
 
@@ -105,6 +112,7 @@
     Finished in 0.00089 seconds
     1 example, 0 failures
     ```
+
 
 !SLIDE bullets
 # Basics (cont.)
@@ -130,6 +138,7 @@
       end
     end
     ```
+
 
 !SLIDE bullets
 # Basics (cont.)
@@ -158,6 +167,7 @@
     end
     ```
 
+
 !SLIDE
 # What'd we just do?
 
@@ -168,6 +178,7 @@
 * Used `it` to express how the `subject` should behave.
 * Used `#instance_variable_set` to alter the state of the `subject`.
 * Used `expect` to describe what should happen.
+
 
 !SLIDE bullets
 # More Basics
@@ -196,6 +207,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # More Basics (cont.)
 
@@ -221,6 +233,7 @@
     end
     ```
 
+
 !SLIDE
 # Now what'd we just do?
 
@@ -232,6 +245,7 @@
 * Used `#instance_variable_set` again, but this time set it to our mock.
 * Used a `before` block to set up the test.
     * This keeps the setup separate from the things we're testing for.
+
 
 !SLIDE bullets
 # Notables
@@ -257,6 +271,7 @@
     ```
 * Files go in the `spec/` directory, mimicking your `lib/` files.
 
+
 !SLIDE
 # RSpec Summary
 
@@ -265,8 +280,10 @@
 * Lets you gain confidence your code does what you intend.
     * ...and shows others that it does what you intend.
 
+
 !SLIDE questions center
 # Questions?
+
 
 !SLIDE bullets
 # Homework!

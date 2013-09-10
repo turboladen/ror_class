@@ -1,6 +1,7 @@
 !SLIDE center
 # But there's another way to share...
 
+
 !SLIDE smbullets
 # Composition with Modules
 
@@ -12,6 +13,7 @@
     * Used like containers for grouping methods, classes, constants.
     * Provide a namespace for preventing name clashes.
     * Can be mixed in to other classes, modules, or objects.
+
 
 !SLIDE
 # Shape Redo?
@@ -42,11 +44,13 @@ class Triangle
 end
 ```
 
+
 !SLIDE bullets
 # Shapes as Modules
 
 * Illustrates use, but not really a good one.
 * Let's get back to music_db and refactoring `Artist`.
+
 
 !SLIDE bullets
 # `Artist`, again
@@ -97,6 +101,7 @@ end
     ```
 * Now we can make lots of things YAMLable!
 
+
 !SLIDE bullets
 # `Artist`, `YAMLable`ized
 
@@ -126,6 +131,7 @@ end
     > puts artist.dump('wynton')
     ```
 
+
 !SLIDE bullets
 # `Song`, `YAMLable`ized
 
@@ -139,13 +145,14 @@ end
     > puts song.dump('linus and lucy')
     ```
 
+
 !SLIDE
 # Composition Recap
 
 * Define functionality in a `module`.
 * `include` the module into the `class`es that should have that functionality.
 
-!SLIDE questions title
+!SLIDE questions center
 
 # Questions?
 

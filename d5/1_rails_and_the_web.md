@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Rack, Rails, & the Web
 
 
@@ -59,6 +59,7 @@
     <img src="images/rack_n_rails.png" style="width: 95%; height: auto;"></img>
 
 * For more, see Rails guides: ["Rails on Rack"](http://guides.rubyonrails.org/rails_on_rack.html)
+
 
 !SLIDE incremental bullets
 # Rack 'n Rail: <u>App</u>
@@ -131,6 +132,7 @@
     * Not stuck doing (as much) OS setup stuff.
     * Spread across fewer tools to run your site.
 * Different aspects of your app are separated by their responsibility.
+
 
 !SLIDE questions center
 # Questions?

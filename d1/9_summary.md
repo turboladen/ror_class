@@ -20,6 +20,6 @@
     * look at the links in README.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

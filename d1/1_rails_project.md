@@ -54,6 +54,6 @@
     * If nothing else... The ol' blog (plus ratings? comments?)
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

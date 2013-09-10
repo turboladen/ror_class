@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Sharing Functionality
 ## Inheritance and Composition
 
@@ -15,6 +15,7 @@
 * Let's look at an Artist...
     * How are a song and artist similar?
     * ...let's write some code...
+
 
 !SLIDE bullets
 * Create `Artist` in `artist.rb`:
@@ -87,6 +88,7 @@ class Triangle < Polygon
 end
 ```
 
+
 !SLIDE bullets
 # Shapes (cont.)
 
@@ -109,6 +111,7 @@ end
     * `Polygon`'s "parent class" is `Shape`.
 * If not given, Ruby classes inherit from `Object`.
 
+
 !SLIDE smbullets
 # Shapes (cont.)
 
@@ -120,6 +123,7 @@ Also notice...
 * `Kernel` is a `module` that gets mixed in to `Object`.
     * (We'll talk about `module`s in a sec)
 
-!SLIDE questions title
+
+!SLIDE questions center
 
 # Questions?

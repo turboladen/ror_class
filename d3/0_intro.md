@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Geekwise: Ruby on Rails
 
 ## Day 3/12: Language LessBasics
@@ -12,11 +12,13 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 ### (any questions since last time?)
 
+
 !SLIDE
 # Today's Goals
 
 1. Learn more of Ruby's philosophy.
 + Learn more of Ruby's language basics.
+
 
 !SLIDE
 # Language LessBasics Overview
@@ -27,6 +29,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Containers, Blocks, Iterators
 * Documenting your code
 * RubyGems & Bundler
+
 
 !SLIDE bullets
 # Changes!
@@ -53,6 +56,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 * Your `song.rb` should look something like this one...
     * [song.rb](https://github.com/turboladen/ror_class/blob/2366247915e440a664b7ec0280b0057381e482ec/music_db/song.rb)
+
 
 !SLIDE bullets
 # Object Constructor: `#initialize`
@@ -94,6 +98,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     > puts s.track
     ```
 
+
 !SLIDE bullets
 # Different inits/method params
 
@@ -114,6 +119,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     ```
 * Good for if you don't want to make user pass a certain set of params.
 * Can make it less clear to user what the method expects.
+
 
 !SLIDE bullets
 # Different inits/method params (cont.)
@@ -136,6 +142,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Let's the user be a little more explicit when calling.
 * Don't get carried away with this; can be [code smell](http://en.wikipedia.org/wiki/Code_smell).
 
+
 !SLIDE bullets
 # Different inits/method params (cont.)
 
@@ -149,6 +156,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     > puts s.album          # => 'Hits'
     > puts s.track          # => nil
     ```
+
 
 !SLIDE bullets
 # Different inits/method params (cont.)
@@ -171,6 +179,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * `nil` values as params won't raise an error.
 * non-`nil` values will raise error.
 
+
 !SLIDE bullets
 # Different inits/method params (cont.)
 
@@ -181,6 +190,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     > puts s.album
     > puts s.track
     ```
+
 
 !SLIDE bullets
 # Different inits/method params (cont.)
@@ -213,6 +223,6 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Lots of ways to pass in params.
     * (those ways apply for any method, not just `#initialize`)
 
-!SLIDE questions title
+!SLIDE questions center
 
 # Questions?

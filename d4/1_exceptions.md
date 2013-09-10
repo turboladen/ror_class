@@ -1,6 +1,7 @@
 !SLIDE title
 # Exceptions
 
+
 !SLIDE bullets transition=turnUp
 # Some Definitions
 
@@ -13,6 +14,7 @@
 * "Failures cause exceptions, and are generally caused by errors."
 
 Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
+
 
 !SLIDE bullets incremental
 # So why exceptions?
@@ -47,6 +49,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
     ```
 * Raises a `RuntimeError` with no message.
 
+
 !SLIDE bullets
 # Raising in Ruby (cont.)
 
@@ -64,6 +67,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
     Dog.new.meow        # RuntimeError!
     ```
 * Raises a `RuntimeError`, but with a message.
+
 
 !SLIDE bullets
 # Raising in Ruby (cont.)
@@ -89,6 +93,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
     ```
 * Raises a `AnimalMismatch` with a message.
 
+
 !SLIDE bullets
 # Handling Exceptions
 
@@ -107,6 +112,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 * The `raise` just re-raises the same exception.
     * Without it, execution just continues on.
 * _If not rescued, the exception with cause code execution to halt._
+
 
 !SLIDE bullets
 # Handling Exceptions (cont.)
@@ -128,6 +134,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
 * `retry` adds control flow, but don't abuse this!
 * `ensure` is executed, raise or not.
 
+
 !SLIDE
 # Ok, that's enough. Summary plz.
 
@@ -137,6 +144,7 @@ Source: Avdi Grim's [_Exceptional Ruby_](http://exceptionalruby.com)
   your code.
     * Careful!  Lets you "swallow" exceptions, which can lead to problems.
         * Often times, letting your app die is best.
+
 
 !SLIDE questions center
 # Questions?

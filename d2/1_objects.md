@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Objects, Classes, Variables
+
 
 !SLIDE bullets incremental
 # Object-Orientedness & Ruby
@@ -14,6 +15,7 @@
     * Put them together to make the computer do what you want.
 * Remember the car?
 
+
 !SLIDE bullets
 # MusicDB
 
@@ -26,6 +28,7 @@
     * Rate songs 0 - 5.
     * Can add notes about a song.
 
+
 !SLIDE bullets
 # MusicDB: Let's get started
 
@@ -34,6 +37,7 @@
     * Create the `music_db` directory.
     * Create & open the file `song.rb` in that directory.
         * (Open with your IDE/editor)
+
 
 !SLIDE bullets
 # First Class!
@@ -53,6 +57,7 @@
     ```
 
 .pull-right (cont.)
+
 
 !SLIDE bullets
 # First Class! (cont.)
@@ -130,6 +135,7 @@
 * This "assigns" the object contained in `new_title` to `@title`.
 * Notice, no type checking...
 
+
 !SLIDE smbullets
 # Create A `Song` Object
 
@@ -151,7 +157,7 @@
 * Reflection!
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 
@@ -172,6 +178,7 @@
 
     * This is breaking the rules!! ...but you can do it with Ruby.
 * `nil` is the absence of value.
+
 
 !SLIDE bullets
 # Side note: `nil`, `true`, `false`
@@ -226,6 +233,7 @@
 * `attr_reader` provides getter.
 * `attr_writer` provides setter.
 
+
 !SLIDE
 # Let's try that again...
 
@@ -241,6 +249,7 @@
     ```
 * Same behavior as before, but less code!
 * `load`?
+
 
 !SLIDE bullets
 # Ruby Philosophy Note #1
@@ -261,6 +270,7 @@
     * if it's already required, don't do it again.
         * (this is a good thing)
 
+
 !SLIDE incremental
 # Side note: Load Path
 
@@ -271,6 +281,7 @@
 * Remember `require "./song"`?
     * `./` tells Ruby to look in the current directory.
 * From now on, you use `require` or `load` as you need.
+
 
 !SLIDE smbullets
 # Many Songs?
@@ -294,7 +305,7 @@
     * (related to its address in memory)
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 
@@ -322,6 +333,7 @@
     > song.get_the_artist
     ```
 
+
 !SLIDE bullets
 # Variable Scope (cont.)
 
@@ -346,6 +358,7 @@
     > song = Song.new
     > song.class_artist
     ```
+
 
 !SLIDE bullets
 # Variable Scope (cont.)
@@ -372,6 +385,7 @@
     > song.class_artist
     ```
 
+
 !SLIDE incremental smbullets
 # OK, what's going on here?
 
@@ -384,6 +398,7 @@
 * The other `@artist` is defined `Song`'s scope...
     * is instance variable of the `Song` object!
 * The `class` `Song` is an object of class `Class`.
+
 
 !SLIDE bullets
 # Too Much Inception?
@@ -402,6 +417,7 @@
     ```
 * Creates a new class without a name!
 * Who cares?
+
 
 !SLIDE bullets
 # Ruby Philosophy Note #2
@@ -436,7 +452,7 @@
 * A class is actually an object of class `Class`.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 
@@ -450,6 +466,7 @@
       attr_accessor :title, :artist, :album, :track, :notes
     end
     ```
+
 
 !SLIDE bullets
 # Commit to Github

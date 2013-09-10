@@ -7,6 +7,7 @@
 * Let's check it out (demo!)
     * (do some things that I do)
 
+
 !SLIDE bullets
 # IRB (cont.)
 
@@ -32,6 +33,6 @@
 + Type: `ruby hello.rb`.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

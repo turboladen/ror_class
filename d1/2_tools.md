@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Tools
+
 
 !SLIDE
 # IDEs
@@ -12,6 +13,7 @@
     * bells & whistles
 * Why do I need this?
     * You don't.  ...but you really should.
+
 
 !SLIDE bullets
 # IDEs (cont.)
@@ -28,6 +30,7 @@
         * I like [Janus](http://github.com/carlhuda/janus)
     * Emacs
 
+
 !SLIDE
 # IDEs (cont.)
 
@@ -37,6 +40,7 @@
 * Choose what feels comfortable to you.
 * Choose what helps you be most productive.
     * Some tools may be slow at first, but super fast later on.
+
 
 !SLIDE
 # HOMEWORK!
@@ -57,11 +61,13 @@
     * Easy to share code with me.
 * Don't worry, I'll walk you through as needed.
 
+
 !SLIDE
 # HOMEWORK!
 
 1. Create a github account!
 + Create it by tomorrow.
+
 
 !SLIDE
 # Heroku
@@ -73,6 +79,7 @@
 * Free for what we'll be doing.
 * Lets you see your app on the web.
 
+
 !SLIDE
 # Vagrant
 
@@ -83,6 +90,6 @@
 * Use what OS you'll use in production.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

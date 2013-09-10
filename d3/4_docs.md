@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Documentation
+
 
 !SLIDE
 # Why?
@@ -19,6 +20,7 @@
     * Rocco
     * Ronn
 * RDoc and Yard are most prevalent.
+
 
 !SLIDE bullets
 # Yard
@@ -41,6 +43,7 @@
       end
     end
     ```
+
 
 !SLIDE
 # Homework!

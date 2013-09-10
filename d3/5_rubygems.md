@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # RubyGems
+
 
 !SLIDE bullets
 # Intro
@@ -29,6 +30,7 @@
         * `>`, `>=`, `<`, `<=`
         * `~>`
 
+
 !SLIDE bullets
 # Structure!
 
@@ -47,6 +49,7 @@ music_db/
 ├── Rakefile
 └── music_db.gemspec
 ```
+
 
 !SLIDE smbullets
 # Structure! (cont.)
@@ -73,6 +76,7 @@ music_db/
     class MusicDB::Song
     ```
 
+
 !SLIDE bullets
 # Homework
 
@@ -80,5 +84,6 @@ music_db/
     * Commit changes with git and push to github.
     * Don't push the gem to rubygems.org!
 
-!SLIDE questions just-title
+
+!SLIDE questions center
 # Questions?

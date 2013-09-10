@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Logic and Control Flow
 
 
@@ -19,6 +19,7 @@
     ```
 * Notice: when true, returns result of `YAML.dump`.
 * Use `elsif` if more than one condition to check.
+
 
 !SLIDE bullets
 # `Album` without attributes
@@ -46,6 +47,7 @@
     > album.to_yaml         # raises!
     ```
 
+
 !SLIDE bullets
 # Others...
 
@@ -71,6 +73,7 @@
 
     puts phrase
     ```
+
 
 !SLIDE bullets
 # Others... (cont.)
@@ -99,6 +102,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # `if` and `unless` Modifiers
 
@@ -116,6 +120,7 @@
     puts "Go to work" unless today.weekend?
     ```
 * Good practice: only use modifiers with 1-liners.
+
 
 !SLIDE bullets
 # Loops
@@ -141,6 +146,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Loops (cont.)
 
@@ -160,6 +166,7 @@ end
 
 * `next` and `break` aren't just for `loop`.
 
+
 !SLIDE bullets
 # `while` and `until` modifiers
 
@@ -177,6 +184,7 @@ end
 
     ```
 
+
 !SLIDE
 # Control Flow Summary
 
@@ -186,6 +194,6 @@ end
 * Modifiers are cool.
 
 
-!SLIDE questions title
+!SLIDE questions center
 
 # Questions?

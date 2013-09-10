@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Methods
+
 
 !SLIDE
 # What are they?
@@ -25,6 +26,7 @@
     ```
 * The `puts` output isn't very helpful, right?  Let's fix that.
 
+
 !SLIDE
 # Our First (Real) Method
 
@@ -45,6 +47,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Try it out
 
@@ -57,6 +60,7 @@
 * Also: you didn't have to recreate the `song` object to get the new
   functionality!
 
+
 !SLIDE smbullets
 # Ok, what's going on here?
 
@@ -67,6 +71,7 @@
 * The last, lonely `output` returns the full String.
 * `puts` prints, but calls `#to_s` on the object before printing out.
 * We _redefined_ `#to_s` for our purposes!
+
 
 !SLIDE bullets
 # Side note: Printing and Inspecting
@@ -84,6 +89,7 @@
 
 .pull-right (cont.)
 
+
 !SLIDE bullets
 # Side note: Printing and Inspecting (cont.)
 
@@ -97,6 +103,7 @@
     * Must install `awesome_print` gem first.
     * Event more formatting and coloring based on the object type, then prints
       to STDOUT.
+
 
 !SLIDE bullets
 # Another method
@@ -121,6 +128,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Another method (cont.)
 
@@ -132,6 +140,7 @@
     > song.title = 'Happy Birthday'
     > puts song.to_yaml
     ```
+
 
 !SLIDE bullets
 # Another method
@@ -151,6 +160,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Another method (cont.)
 
@@ -166,6 +176,7 @@
     > song.dump 'test'
     ```
 
+
 !SLIDE bullets
 # What's going on here? (`#to_yaml`)
 
@@ -176,6 +187,7 @@
 * On return values...
     * No `return`?
     * All Ruby statements return the last value calculated in them.
+
 
 !SLIDE bullets
 # What's going on here? (`#dump`)
@@ -191,14 +203,17 @@
         * if yes, don't do anything...
         * if no, assign the object on the right side of the operator.
 
+
 !SLIDE
 # Method Summary
 
 * Defined some methods for our `Song`.
 * Redefined a built-in method to do what we want.
 
-!SLIDE questions title
+
+!SLIDE questions center
 # Questions?
+
 
 !SLIDE
 # Push to Github

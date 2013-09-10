@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE title
 # CGI
+
 
 !SLIDE bullets
 # WAT?
@@ -12,6 +13,7 @@
     * dealing with cookies.
     * dealing with sessions.
     * (un/)escaping HTML.
+
 
 !SLIDE bullets
 # Bleh...

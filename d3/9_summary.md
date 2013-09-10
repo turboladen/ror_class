@@ -8,6 +8,7 @@
     * Documentation and Yard
     * RubyGems
 
+
 !SLIDE bullets
 # Homework
 
@@ -16,6 +17,7 @@
 * Use [RubyGems guides](http://guides.rubygems.org) to gemify MusicDB.
     * (Due next Wednesday)
     * (Don't actually push the gem to rubygems.org)
+
 
 !SLIDE center questions
 # Questions?

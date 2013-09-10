@@ -4,6 +4,7 @@
 * Be a good Ruby steward and keep your stuff in your namespace!
 * Let's move our files under the `MusicDB` namespace.
 
+
 !SLIDE bullets
 # Cleaning Up
 
@@ -25,6 +26,7 @@
     require_relative 'music_db/artist'
     ```
 
+
 !SLIDE
 # Cleaning Up (cont.)
 
@@ -38,6 +40,7 @@
     ```bash
     $ git status
     ```
+
 
 !SLIDE bullets
 # Cleaning Up (cont.)
@@ -63,6 +66,7 @@
     end
     ```
 * And do the same in `lib/music_db/artist.rb`...
+
 
 !SLIDE bullets
 # In the `MusicDB`
@@ -102,6 +106,7 @@
     $ git status
     ```
 
-!SLIDE questions title
+
+!SLIDE questions center
 
 # Questions?

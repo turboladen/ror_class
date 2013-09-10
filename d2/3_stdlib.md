@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # STDLIB
+
 
 !SLIDE
 # What is it?
@@ -7,6 +8,7 @@
 * "Standard Library".
 * Common helper libraries that Ruby thinks you can use regularly.
 * Exists to help you do lots of things.
+
 
 !SLIDE smbullets
 # Homework!
@@ -48,6 +50,7 @@
     "stuff\nthings".each_line { |line| puts "My #{line}" }
     ```
 
+
 !SLIDE bullets
 # Symbols
 
@@ -71,6 +74,7 @@
     ```ruby
     > 12345.send(:to_s)     # => "12345"
     ```
+
 
 !SLIDE bullets
 # Arrays & Hashes
@@ -99,6 +103,7 @@
     hash[:nada]     # => nil
     ```
 
+
 !SLIDE bullets
 # Arrays & Hashes (cont.)
 
@@ -115,6 +120,7 @@
     %w[one two three]                   # => ['one', 'two', 'three']
     %i[one two three]                   # => [:one, :two, :three]
     ```
+
 
 !SLIDE bullets
 # Arrays & Hashes & Params
@@ -140,6 +146,7 @@
     things(name1: 'cat', name2: 'dog')      # => "Hash, size 2"
     ```
 
+
 !SLIDE bullets
 # Named Parameters for Methods
 
@@ -161,8 +168,10 @@
     jump(wear_pants: true, height: -1, barrel_roll: true)   # => "Jumping -1 inches --barrel_roll=true"
     ```
 
-!SLIDE questions title
+
+!SLIDE questions center
 # Questions?
+
 
 !SLIDE
 # Wrap Up

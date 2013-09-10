@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE title
 # Rack
+
 
 !SLIDE
 # Rack Intro
@@ -15,13 +16,13 @@
 > between (the so-called middleware) into a single method call.
 
 
-
 !SLIDE bullets
 # Rack Intro (cont.)
 
 * Most Ruby web frameworks "sit" on Rack.
 
 ![request](/images/rack.png)
+
 
 !SLIDE bullets incremental
 # What does Rack get you?
@@ -43,6 +44,7 @@
 # Why should I care?
 
 * It's the core to Rails.
+
 
 !SLIDE bullets
 # In fact, use Rack alone...
@@ -66,6 +68,7 @@
     $ curl -v -L http://localhost:3000
     ```
 
+
 !SLIDE bullets
 # Want to define that as a class?
 
@@ -83,6 +86,7 @@
 
     run HelloWorld.new
     ```
+
 
 !SLIDE bullets
 # A Rack App is...
@@ -131,6 +135,7 @@
 
     run builder
     ```
+
 
 !SLIDE bullets
 # So Far, Summary
@@ -194,6 +199,7 @@ end
 
 .pull-right ...then...
 
+
 !SLIDE bullets
 # Our own middleware? (cont.)
 
@@ -216,6 +222,7 @@ use CatChecker
 run HelloWorld.new
 ```
 
+
 !SLIDE bullets incremental
 # Ok, what's all that get me?
 
@@ -228,12 +235,14 @@ run HelloWorld.new
     * Each middleware has its one responsibility.
 * In essence, a tool to build your app around.
 
+
 !SLIDES bullets incremental
 # But...
 
 * It's not geared towards building a web site with, is it?
 * Not really--leaves a lot to be desired.
 * Can you imagine writing a full-blown web site using this?
+
 
 !SLIDE center questions
 # Questions?

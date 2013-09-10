@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Geekwise: Ruby on Rails
 
 ## Day 5/12: Intro to Rails
@@ -33,7 +33,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * RubyGems & Bundler
 
 
-!SLIDE questions title
+!SLIDE questions center
 
 # Questions?
 
@@ -47,7 +47,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     * We'll push it to Github.
 * [Your Rails project](d1#22).
 
-!SLIDE questions title
+!SLIDE questions center
 
 # Questions?
 
@@ -75,6 +75,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
     ```bash
     $ gem install rails
     ```
+* Or [RailsInstaller](http://railsinstaller.org/en) (OSX and Windows).
 
 !SLIDE bullets
 

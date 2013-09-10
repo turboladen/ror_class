@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Containers, Blocks, and Iterators
+
 
 !SLIDE bullets
 # Iterators
@@ -28,6 +29,7 @@
 * Blocks allow for iterators.
 * You don't have to understand how they work to start using iterators.
 
+
 !SLIDE bullets
 # Blocks in the wild
 
@@ -49,6 +51,7 @@
     # => "I like to do the arithmetics."
     ```
 
+
 !SLIDE bullets
 # _Take one down, pass it around..._
 
@@ -65,6 +68,7 @@
     (1..100).find_all(&the_finder)
     # => [35, 70]
     ```
+
 
 !SLIDE bullets
 # How it doez that?
@@ -90,6 +94,7 @@
     end
     ```
 
+
 !SLIDE bullets incremental
 # How it doez that? (cont.)
 
@@ -106,6 +111,7 @@
         * Same effect.
     * `return` (in `#find`) stops iterating and returns the value.
 
+
 !SLIDE smbullets incremental
 # Creating Blocks
 
@@ -121,6 +127,7 @@
     * arity checks block params.
     * is actually `Kernel#lambda`.
 
+
 !SLIDE
 # Block Summary
 
@@ -133,6 +140,7 @@
       puts number
     end
     ```
+
 
 !SLIDE questions center
 # Questions?

@@ -1,4 +1,4 @@
-!SLIDE center just-title
+!SLIDE title
 # Geekwise: Ruby on Rails
 
 ## Day 1/12
@@ -133,6 +133,6 @@
     * "Expert Practices for Everyday Rails Development."
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 

@@ -3,6 +3,7 @@
 
 * _Wait, why are you here?_
 
+
 !SLIDE bullets incremental
 # Why Rails? (cont.)
 
@@ -20,6 +21,7 @@
 
 .notes Startups
 
+
 !SLIDE bullets incremental
 # Why Rails? (cont.)
 
@@ -33,6 +35,7 @@
 
 .pull-right (cont.)
 
+
 !SLIDE bullets incremental
 # Why Rails? (cont.)
 
@@ -45,6 +48,7 @@
     * to test.
     * to deploy.
 * Jobs!
+
 
 !SLIDE bullets incremental
 # Why *NOT* Rails?
@@ -60,6 +64,7 @@
     * rake
     * capistrano
 
+
 !SLIDE smbullets incremental
 # Why *NOT* Rails? (cont.)
 
@@ -70,7 +75,8 @@
 * Lacking performance
     * 99% of the time, this is is lies!
 
-!SLIDE questions title
+
+!SLIDE questions center
 # Questions?
 
 
@@ -79,6 +85,7 @@
 
 * _Who here wants to learn Ruby as much as/more than Rails?_
 * You can learn a lot about Ruby from learning Rails.
+
 
 !SLIDE bullets incremental
 # Why Ruby?
@@ -94,6 +101,7 @@
 
 .pull-right (cont.)
 
+
 !SLIDE bullets incremental
 # Why Ruby? (cont.)
 
@@ -106,6 +114,7 @@
 * Lots of DevOps tools written in Ruby.
 
 .pull-right (cont.)
+
 
 !SLIDE bullets
 # Why Ruby? (cont.)
@@ -122,6 +131,7 @@
 
 .pull-right (cont.)
 
+
 !SLIDE bullets incremental
 # Sidenote: Software Maintainability
 
@@ -133,6 +143,7 @@
     * Testability
 
 .pull-right (cont.)
+
 
 !SLIDE bullets incremental
 # Sidenote: SW Maintainability (cont.)
@@ -150,10 +161,12 @@
     * [Red, Green, Refactor](http://www.jamesshore.com/Blog/Red-Green-Refactor.html).
 * Ruby is really good for mitigating these things.
 
+
 !SLIDE
 # Why Ruby?
 
 ## Ruby lends itself to writing maintainable code.
+
 
 !SLIDE
 # Why *NOT* Ruby?
@@ -166,7 +179,7 @@
 * Not pre-installed on most OSes.
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 
@@ -184,6 +197,7 @@
     * Some just "make sense" to you.
     * ...but let's leave this question to the Platos...
 
+
 !SLIDE bullets incremental
 # OOP (cont.)
 
@@ -198,6 +212,7 @@
     * Ex. C#, C++, Fortran, Java, Lua, Objective-C, Perl, PHP, Python, Smalltalk...
 * Lots of other programming paradigms, but these 3 are popular.
 
+
 !SLIDE bullets
 # OOP (cont.)
 
@@ -209,6 +224,7 @@
     * Perl
     * Python
     * Smalltalk
+
 
 !SLIDE bullets incremental
 # OOP: The Car Example
@@ -224,6 +240,7 @@ The ol' car example...
     * start and stop
     * go forward and backwards
     * turn left and right
+
 
 !SLIDE bullets incremental
 # OOP: The Car Example (cont.)
@@ -250,6 +267,7 @@ OK, great... now how about those parts?
     * increase/decrease RPM
     * etc
 
+
 !SLIDE bullets incremental
 # OOP: The Car Example (cont.)
 
@@ -262,6 +280,7 @@ express that as...
 * Obviously, the right answer is C.
 * Easy for humans to relate and talk about objects, thus better code (?).
 
+
 !SLIDE smbullets
 # OOP Summary
 
@@ -271,6 +290,7 @@ express that as...
   modeling.
 * Ruby is an OOP language, but can act as other types.
 
-!SLIDE questions title
+
+!SLIDE questions center
 # Questions?
 

@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE title
 # Sockets
+
 
 !SLIDE bullets incremental
 # WAT?
@@ -14,6 +15,7 @@
 * That's true, you don't if you only want to do the easy stuff...
 * ...but it'll help otherwise.
 
+
 !SLIDE bullets
 # README
 
@@ -24,6 +26,7 @@
       by Jesse Storimer.
 * Since Ruby's `Socket` is just a wrapper around the C library, you can usually
   refer to your *nix docs.
+
 
 !SLIDE bullets
 # Socket Types
@@ -42,8 +45,10 @@
     * Unix
         * aka UDS (Unix Domain Socket)
 
+
 !SLIDE bullets
 # We'll only deal with TCP sockets.
+
 
 !SLIDE bullets
 # Let's try!
@@ -68,6 +73,7 @@
     end
     ```
 
+
 !SLIDE bullets
 # Let's try! (cont.)
 
@@ -82,6 +88,7 @@
     5.times { socket.gets }
     ```
 
+
 !SLIDE bullets
 # What's going on here?
 
@@ -95,6 +102,7 @@
     * Creates a new TCP socket, connecting to my IP address on port 12345.
     * Sends me whatever you send.
     * Gets the last 5 lines I sent you.
+
 
 !SLIDE bullets
 # Socket Summary

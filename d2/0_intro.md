@@ -1,5 +1,6 @@
-!SLIDE center just-title
+!SLIDE title
 # Geekwise: Ruby on Rails
+
 
 ## Day 2/12: Language Basics
 
@@ -11,11 +12,13 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 ### (any questions since last time?)
 
+
 !SLIDE
 # Today's Goals
 
 1. Learn more of Ruby's philosophy.
 + Learn Ruby's language basics.
+
 
 !SLIDE
 # Language Basics Overview
@@ -29,7 +32,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Sharing Functionality: Inheritance, Modules, Mix-ins
 
 
-!SLIDE questions title
+!SLIDE questions center
 # Questions?
 
 

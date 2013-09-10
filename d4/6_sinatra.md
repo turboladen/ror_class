@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE title
 # Sinatra
+
 
 !SLIDE bullets
 # Can you figure out what this does?
@@ -19,12 +20,14 @@
     $ ruby hello.rb
     ```
 
+
 !SLIDE bullets
 # Sinatra Intro
 
 * http://www.sinatrarb.com/intro.html:
 
 > Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
+
 
 !SLIDE bullets
 # Params
@@ -50,6 +53,7 @@ get '/posts.?:format?' do
 end
 ```
 
+
 !SLIDE bullets
 # Templates
 
@@ -67,6 +71,7 @@ end
     <h1>Hi!</h1>
     <p>This is my app.<p>
     ```
+
 
 !SLIDE smbullets
 # Template Languages
@@ -87,6 +92,7 @@ end
     * Less
     * Liquid
 
+
 !SLIDE bullets incremental
 # More Response Access
 
@@ -102,6 +108,7 @@ end
     end
     ```
 * Look familiar?
+
 
 !SLIDE bullets
 # Sessions?
@@ -138,6 +145,7 @@ end
 
 * Not quite websockets, but almost there with not much more work...
 
+
 !SLIDE smbullets
 # What else?
 
@@ -161,6 +169,7 @@ end
 * How about DB related stuff?
 * Lets you do a lot with little, but makes you decide a lot.
 
+
 !SLIDE bullets
 # Rails
 
@@ -169,6 +178,7 @@ end
     * ...but you can stray from convention when you need to.
 * Is Rails _better_?
     * It depends on the problem you're trying to solve!
+
 
 !SLIDE questions center
 # Questions?
