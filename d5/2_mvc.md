@@ -1,6 +1,7 @@
 !SLIDE title
 # Models, Views, and Controllers
 
+
 !SLIDE
 # MVC
 
@@ -77,6 +78,7 @@
 
 <img src="http://www.endlick.com/wp-content/uploads/2012/02/mvc_diagram.png" style="width: 400px; height: auto;">
 
+
 !SLIDE center
 # MVC Examples (cont.)
 
@@ -147,6 +149,7 @@
     ```
 * Go to http://localhost:3000/train_cars.
 
+
 !SLIDE bullets incremental
 # How'd it do that?
 
@@ -161,10 +164,10 @@
     * the controller: `app/controllers/train_cars_controller.rb`
     * the views: `app/views/train_cars/`
 
+
 !SLIDE bullets incremental
 # But there were more files...
 
-* Let's follow the request through the Rails stack...
 * Look at `config/routes.rb`:
     * `resources :train_cars` = shortcut for defining:
         * index: `GET train_cars/`
@@ -174,6 +177,7 @@
         * edit: `GET train_cars/:id/edit`
         * update: `PATCH train_cars/:id`
         * destroy: `DELETE train_cars/:id`
+
 
 !SLIDE smbullets incremental
 # But there were more files... (cont.)
@@ -192,6 +196,7 @@
 * Look at `app/assets/stylesheets/train_cars.css.scss`
 * Look at `app/assets/stylesheets/scaffolds.css.scss`...
 
+
 !SLIDE bullets incremental
 # Rail & MVC Wrap-Up
 
@@ -206,6 +211,7 @@
     * CSS (as Sass).
 * Rails decides where to put files and how to name them.
     * Possible to deviate, but try to avoid.
+
 
 !SLIDE center questions
 # Questions?
