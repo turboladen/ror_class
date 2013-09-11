@@ -86,6 +86,7 @@
 * `my_outfit_spec.rb`:
 
     ```ruby
+    require_relative 'my_outfit'
     describe MyOutfit do
       describe '#pants' do
         it "has 2 pairs" do
@@ -168,9 +169,10 @@
     ```
 
 
-!SLIDE
+!SLIDE incremental
 # What'd we just do?
 
+* `require`d `my_outfit` so the tests could access the class.
 * Used `describe` to express what `MyOutfit` and its methods should do.
 * Used `context` to express how `#change` should behave when `MyOutfit` is in
   certain states.
