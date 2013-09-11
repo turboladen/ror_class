@@ -25,3 +25,7 @@ end
 section 'Our Project' do
   slides '5_flockr.md'
 end
+
+section 'Summary' do
+  slides '9_summary.md'
+end
