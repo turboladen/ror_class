@@ -140,8 +140,10 @@
     ```bash
     $ rails generate scaffold TrainCar name:string car_class:string car_number:integer
     ```
-* Restart rails... `ctrl-c`, then... `rails server`.
-* Look at what was created...
+    * Look at the files that were created...
+* Restart Rails...
+* Look at how that changed the app...
+    * (refresh your browser)
 * Let's fix that...
 
     ```bash
@@ -170,7 +172,7 @@
 
 * Look at `config/routes.rb`:
     * `resources :train_cars` = shortcut for defining:
-        * index: `GET train_cars/`
+        * index: `GET train_cars`
         * show: `GET train_cars/:id`
         * new: `GET train_cars/new`
         * create: `POST train_cars`

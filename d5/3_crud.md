@@ -42,6 +42,7 @@
         * what Rails will do with HTTP request after routed.
     * the model
         * the data the HTTP request is looking for.
+* Basically, a mapping of the HTTP method & URI -> Rails action & controller.
 
 
 !SLIDE bullets incremental
