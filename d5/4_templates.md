@@ -36,6 +36,7 @@
     \#{link_to 'Back', train_cars_path}
     ```
 
+
 !SLIDE bullets
 # Templating Summary
 
