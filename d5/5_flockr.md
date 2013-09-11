@@ -59,7 +59,7 @@
 * Get familiar with Ruby's [pessimistic operator](http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator).
 
 
-!SLIDE incremental
+!SLIDE incremental bullets
 # photos
 
 * What attributes should a photo have?
@@ -73,3 +73,38 @@
     ```bash
     $ rails generate scaffold photo file_name:string path:string
     ```
+
+!SLIDE incremental bullets
+# photos (cont.)
+
+* Run the specs...
+
+    ```bash
+    $ rake spec
+    ```
+* Migrations!?
+    * Check out `db/migrate/*_create_photos.rb`
+    * Well, run them...
+
+        ```bash
+        $ rake db:migrate
+        ```
+    * Then check out `db/schema.rb`
+* Re-run the specs.
+
+
+!SLIDE incremental bullets
+# photos (cont.)
+
+* Check it out...
+    * `rails server`
+    * http://localhost:3000/photos
+
+
+!SLIDE bullets
+# Wrap Up
+
+* We just did a lot. ...but didn't have to do much, really.
+
+!SLIDE questions center
+# Questions?
