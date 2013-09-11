@@ -79,7 +79,6 @@
 !SLIDE
 # [Day 6/12](d6): Digging in to Rails
 
-* MVC and Rails
 * Basics of our app:
     * DB, models & migrations
     * controller & model interaction

@@ -3,6 +3,7 @@
 
 ## Day 5/12: Intro to Rails
 
+
 !SLIDE questions center
 
 ```ruby
@@ -34,8 +35,8 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 
 !SLIDE questions center
-
 # Questions?
+
 
 !SLIDE
 # Projects
