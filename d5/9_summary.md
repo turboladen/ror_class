@@ -12,6 +12,7 @@
 !SLIDE
 # Homework!
 
+* Create a Github repo and push flockr to it.
 * Read:
     * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
 
