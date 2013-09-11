@@ -47,9 +47,19 @@ questions.any? { |q| q.created_at > Time.yesterday }
     * We'll push it to Github.
 * [Your Rails project](d1#22).
 
-!SLIDE questions center
 
-# Questions?
+!SLIDE
+# The Two Rails Philosophies
+
+1. Don't Repeat Yourself.
++ Convention Over Configuration.
+
+    > Rails makes assumptions about what you want to do and how you're going to
+    > do it, rather than requiring you to specify every little thing through
+    > endless configuration files.
+
+[source](http://guides.rubyonrails.org/getting_started.html)
+
 
 !SLIDE bullets incremental
 # Before we install...
