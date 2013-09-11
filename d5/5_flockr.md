@@ -1,0 +1,75 @@
+!SLIDE title
+# Our Project
+
+
+!SLIDE bullets
+# What are we building?
+
+* "Flockr", the Flickr clone.
+* Requirements:
+    * Users can upload photos.
+    * Users can view photos at `photos/[username]`.
+    * Users can comment on photos.
+    * Users can add contacts.
+    * Users can create sets of photos.
+    * Users can favorite photos.
+    * Users can share photos.
+    * Users can convert photo sizes.
+    * Photos are paginated.
+    * Photos are versioned.
+
+
+!SLIDE bullets
+# What are we building? (cont.)
+
+* Don't hesitate adding anything that you think of.
+    * i.e. play as you read & learn more.
+
+
+!SLIDE bullets incremental
+# Let's dig in.
+
+* Create your app.
+* Now delete that directory.
+* Now do:
+
+    ```bash
+    $ rails new flockr --skip-test-unit
+    ```
+* I want to use RSpec...
+
+
+!SLIDE bullets
+# Install rspec-rails
+
+* Check out the [rspec-rails](https://github.com/rspec/rspec-rails) project page.
+* Install it.
+
+
+!SLIDE bullets
+# Bundler
+
+* What is it?
+
+    > Bundler maintains a consistent environment for ruby applications. It
+    > tracks an application's code and the rubygems it needs to run, so that an
+    > application will always have the exact gems (and versions) that it needs
+    > to run.
+* http://bundler.io
+* Get familiar with Ruby's [pessimistic operator](http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator).
+
+
+!SLIDE incremental
+# photos
+
+* What attributes should a photo have?
+* file name?
+* path to image file?
+* anything else?
+* Let's not get ahead of ourselves...
+* Create scaffolding for photos.
+* ... like this:
+
+    ```bash
+    $ rails generate scaffold photo file_name:string path:string
+    ```

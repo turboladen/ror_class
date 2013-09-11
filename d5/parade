@@ -21,3 +21,7 @@ end
 section 'Templating' do
   slides '4_templates.md'
 end
+
+section 'Our Project' do
+  slides '5_flockr.md'
+end
