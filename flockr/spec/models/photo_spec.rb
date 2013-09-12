@@ -1,5 +1,9 @@
 require 'spec_helper'
 
 describe Photo do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'can belong to a user' do
+    user = User.new
+    photo = Photo.new(user: user)
+    photo.should be_valid
+  end
 end
