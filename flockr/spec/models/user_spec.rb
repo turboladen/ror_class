@@ -14,4 +14,10 @@ describe User do
       expect(User.new(email: 'test@test.com')).to have(1).error_on(:email)
     end
   end
+
+  it 'can have many photos' do
+    user = User.new(email: 'test@test.com')
+    2.times { user.photos << Photo.new }
+    expect(user).to be_valid
+  end
 end
