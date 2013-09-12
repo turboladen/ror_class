@@ -23,7 +23,7 @@ describe UsersController do
   # This should return the minimal set of attributes required to create a valid
   # User. As you add validations to User, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "email" => "MyString" } }
+  let(:valid_attributes) { { "email" => "MyString", "username" => "MyString" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe UsersController do
       it "assigns a newly created but unsaved user as @user" do
         # Trigger the behavior that occurs when invalid params are submitted
         User.any_instance.stub(:save).and_return(false)
-        post :create, {:user => { "email" => "invalid value" }}, valid_session
+        post :create, {:user => { "email" => "invalid value", "username" => "invalid_value" }}, valid_session
         assigns(:user).should be_a_new(User)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         User.any_instance.stub(:save).and_return(false)
-        post :create, {:user => { "email" => "invalid value" }}, valid_session
+        post :create, {:user => { "email" => "invalid value", "username" => "invalid_value" }}, valid_session
         response.should render_template("new")
       end
     end

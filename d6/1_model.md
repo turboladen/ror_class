@@ -39,7 +39,7 @@
 * Let's generate some scaffolding...
 
     ```bash
-    $ rails generate scaffold User email:string
+    $ rails generate scaffold User email:string username:string
     ```
 * Now add those files to your git repo and commit them...
 
@@ -128,6 +128,8 @@
         * Hint: `uniqueness:`...
     * Add specs...
     * Check out in `rails console`...
+* How about presence and uniqueness of the username?
+    * Add!
 
 
 !SLIDES bullets
@@ -156,7 +158,7 @@
 
     ```ruby
     > photo = Photo.new
-    > user = User.new(email: 'guy@smiley.com')
+    > user = User.new(email: 'guy@smiley.com', username: 'guy')
     > user.photos << photo
     > user.save
     ```
@@ -202,7 +204,7 @@
 
     ```ruby
     > p = Photo.new
-    > u = User.new(email: 'a_new_email@address.com')
+    > u = User.new(email: 'a_new_email@address.com', username: 'newguy')
     > u.photos << p
     > u.save
     > p = Photo.last
@@ -235,7 +237,7 @@
 
     ```ruby
     > p = Photo.new
-    > u = User.create(email: 'a_new_email@address.com', photos: [p])
+    > u = User.create(email: 'a_new_email@address.com', username: 'newguy', photos: [p])
     > p = Photo.last
     > u.destroy
     > p.reload          # p doesn't know it's been updated
