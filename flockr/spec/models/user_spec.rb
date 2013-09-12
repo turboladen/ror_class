@@ -7,4 +7,11 @@ describe User do
       expect(User.new).to have(1).error_on(:email)
     end
   end
+
+  context 'with a duplicate email address' do
+    it 'fails validation' do
+      User.create!(email: 'test@test.com')
+      expect(User.new(email: 'test@test.com')).to have(1).error_on(:email)
+    end
+  end
 end
