@@ -125,6 +125,7 @@
 * What else could we validate?
 * How about uniqueness of the email?
     * Can you add?
+        * Hint: `uniqueness:`...
     * Add specs...
     * Check out in `rails console`...
 
@@ -168,6 +169,8 @@
 
 * The `belongs_to` association makes that model store the foreign key for the
   model that `has_many`.
+
+----
 * Add the spec to `Photo` that says it belongs to a `User`...
     * [spec/models/photo_spec.rb](https://github.com/turboladen/ror_class/commit/1af23c5657d7d084b9673c0a0da952e14d7bfde5)
     * Run it...
@@ -221,7 +224,7 @@
 !SLIDES incremental bullets
 # `dependent: :destroy`
 
-* ^^^That's all we have to add to our `has_many`.
+* \^\^\^That's all we have to add to our `has_many`.
 * Add spec...
     * [spec/models/user_spec.rb](https://github.com/turboladen/ror_class/commit/2e560bb4d10a0a9da96d255ff972320f1d0bf44b)
     * Run it...
@@ -235,7 +238,7 @@
     > u = User.create(email: 'a_new_email@address.com', photos: [p])
     > p = Photo.last
     > u.destroy
-    > p = Photo.last        # important to re-retrieve here
+    > p.reload          # p doesn't know it's been updated
     ```
 
 
@@ -248,17 +251,18 @@
 !SLIDES
 # Notes and Model Recap
 
-* `save` vs. `create`
-* `save` vs. `save!`
+* Models let us access our data in an object-oriented nature.
 * Validations and Associations are business logic, defined on models.
 * You're responsible for adding foreign keys.
+* `save` vs. `create`
+* `save` vs. `save!`
 
 
 !SLIDES questions center
 # Questions?
 
 
-!SLIDES
+!SLIDES bullets
 # Git it!
 
 * Push the branch up.
