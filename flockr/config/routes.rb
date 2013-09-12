@@ -1,4 +1,6 @@
 Flockr::Application.routes.draw do
+  root 'home#index'
+
   resources :users
 
   resources :photos
@@ -43,7 +45,7 @@ Flockr::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
