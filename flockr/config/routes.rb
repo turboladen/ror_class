@@ -1,9 +1,10 @@
 Flockr::Application.routes.draw do
   root 'home#index'
 
-  resources :users
+  resources :users do
+    resources :photos
+  end
 
-  resources :photos
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
