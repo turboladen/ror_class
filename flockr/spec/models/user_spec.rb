@@ -21,4 +21,13 @@ describe User do
     expect(user).to be_valid
     user.save!
   end
+
+  describe '#destroy' do
+    it 'destroys associated photos' do
+      photo = Photo.new
+      user = User.create!(email: 'test@test.com', photos: [photo])
+
+      expect { user.destroy }.to change { Photo.count }.by -1
+    end
+  end
 end
