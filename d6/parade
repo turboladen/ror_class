@@ -6,6 +6,10 @@ section 'Intro' do
   slides '0_intro.md'
 end
 
+section 'photos Model' do
+  slides '1_model.md'
+end
+
 section 'Summary' do
   slides '9_summary.md'
 end
