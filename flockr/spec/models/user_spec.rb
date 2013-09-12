@@ -19,5 +19,6 @@ describe User do
     user = User.new(email: 'test@test.com')
     2.times { user.photos << Photo.new }
     expect(user).to be_valid
+    user.save!
   end
 end
