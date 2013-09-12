@@ -17,6 +17,17 @@
     * (the controller)
 
 
+!SLIDES bullets
+# Get Git Ready
+
+* Let's branch for the changes we'll make today.
+
+    ```bash
+    $ git branch day6
+    $ git checkout day6
+    ```
+
+
 !SLIDES incremental
 # How about Users?
 
@@ -98,6 +109,13 @@
     ```
 
 
+!SLIDES bullets
+# Git it!
+
+* Add newly created files to the repo.
+* Commit the files, saying "Added first validation."
+
+
 !SLIDES incremental
 # Our First "Validation" (cont.)
 
@@ -109,6 +127,12 @@
     * Can you add?
     * Add specs...
     * Check out in `rails console`...
+
+
+!SLIDES bullets
+# Git it!
+
+* Commit the files, saying "Added validation on email uniqueness."
 
 
 !SLIDES incremental bullets
@@ -187,6 +211,13 @@
     * What to do with its photos?
 
 
+!SLIDES bullets
+# Git it!
+
+* Add the newly created files to the repo.
+* Commit the files, saying "Associated user and photo."
+
+
 !SLIDES incremental bullets
 # `dependent: :destroy`
 
@@ -207,6 +238,13 @@
     > p = Photo.last        # important to re-retrieve here
     ```
 
+
+!SLIDES bullets
+# Git it!
+
+* Commit the file, saying "Destroy dependent photos."
+
+
 !SLIDES
 # Notes and Model Recap
 
@@ -218,3 +256,14 @@
 
 !SLIDES questions center
 # Questions?
+
+
+!SLIDES
+# Git it!
+
+* Push the branch up.
+
+    ```bash
+    $ git push -u origin day6
+    ```
+
