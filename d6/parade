@@ -6,8 +6,16 @@ section 'Intro' do
   slides '0_intro.md'
 end
 
-section 'photos Model' do
+section 'Our Models' do
   slides '1_model.md'
+end
+
+section 'Our Controllers' do
+  slides '2_controller.md'
+end
+
+section 'Our Views' do
+  slides '3_views.md'
 end
 
 section 'Summary' do
