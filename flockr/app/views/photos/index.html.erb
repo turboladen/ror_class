@@ -16,9 +16,9 @@
       <tr>
         <td><%= photo.file_name %></td>
         <td><%= photo.path %></td>
-        <td><%= link_to 'Show', photo %></td>
-        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_photo_path(@user, photo) %></td>
+        <td><%= link_to 'Edit', edit_user_photo_path(@user, photo) %></td>
+        <td><%= link_to 'Destroy', user_photo_path(@user, photo), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Photo', new_photo_path %>
+<%= link_to 'New Photo', new_user_photo_path(@user) %>

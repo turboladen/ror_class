@@ -1,10 +1,11 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
+  before_action :set_user
 
   # GET /photos
   # GET /photos.json
   def index
-    @photos = Photo.all
+    @photos = @user.photos
   end
 
   # GET /photos/1
@@ -28,7 +29,7 @@ class PhotosController < ApplicationController
 
     respond_to do |format|
       if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+        format.html { redirect_to user_photo_path(@user, @photo), notice: 'Photo was successfully created.' }
         format.json { render action: 'show', status: :created, location: @photo }
       else
         format.html { render action: 'new' }
@@ -42,7 +43,7 @@ class PhotosController < ApplicationController
   def update
     respond_to do |format|
       if @photo.update(photo_params)
-        format.html { redirect_to @photo, notice: 'Photo was successfully updated.' }
+        format.html { redirect_to user_photo_path(@user, @photo), notice: 'Photo was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -56,7 +57,7 @@ class PhotosController < ApplicationController
   def destroy
     @photo.destroy
     respond_to do |format|
-      format.html { redirect_to photos_url }
+      format.html { redirect_to user_photos_url(@user) }
       format.json { head :no_content }
     end
   end
@@ -67,8 +68,12 @@ class PhotosController < ApplicationController
       @photo = Photo.find(params[:id])
     end
 
+    def set_user
+      @user = User.find(params[:user_id])
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:file_name, :path)
+      params.require(:photo).permit(:file_name, :path, :user_id)
     end
 end

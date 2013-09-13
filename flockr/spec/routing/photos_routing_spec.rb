@@ -2,33 +2,39 @@ require "spec_helper"
 
 describe PhotosController do
   describe "routing" do
-
     it "routes to #index" do
-      get("/photos").should route_to("photos#index")
+      get("/users/1/photos").should route_to(controller: 'photos',
+        action: 'index', user_id: '1')
     end
 
     it "routes to #new" do
-      get("/photos/new").should route_to("photos#new")
+      get("/users/1/photos/new").should route_to(controller: 'photos',
+        action: 'new', user_id: '1')
     end
 
     it "routes to #show" do
-      get("/photos/1").should route_to("photos#show", :id => "1")
+      get("/users/1/photos/1").should route_to(controller: 'photos',
+        action: 'show', user_id: '1', id: '1')
     end
 
     it "routes to #edit" do
-      get("/photos/1/edit").should route_to("photos#edit", :id => "1")
+      get("/users/1/photos/1/edit").should route_to(controller: 'photos',
+        action: 'edit', user_id: '1', id: '1')
     end
 
     it "routes to #create" do
-      post("/photos").should route_to("photos#create")
+      post("/users/1/photos").should route_to(controller: 'photos',
+        action: 'create', user_id: '1')
     end
 
     it "routes to #update" do
-      put("/photos/1").should route_to("photos#update", :id => "1")
+      patch("/users/1/photos/1").should route_to(controller: 'photos',
+        action: 'update', user_id: '1', id: '1')
     end
 
     it "routes to #destroy" do
-      delete("/photos/1").should route_to("photos#destroy", :id => "1")
+      delete("/users/1/photos/1").should route_to(controller: 'photos',
+        action: 'destroy', user_id: '1', id: '1')
     end
 
   end
