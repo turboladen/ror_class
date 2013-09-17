@@ -6,6 +6,7 @@
 # What are we building?
 
 * "Flockr", the Flickr clone.
+    * Repo: https://github.com/turboladen/flockr
 * Requirements:
     * Users can upload photos.
     * Users can view photos at `photos/[username]`.
