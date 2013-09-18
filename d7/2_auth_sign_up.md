@@ -133,4 +133,7 @@
 !SLIDE
 # Bootstrapping our Views
 
+* Lots of changes, so just pull them down.
+    * [Changes](https://github.com/turboladen/flockr/commit/48f0cc813dd6adbb5e37fb9dc0cf4b677cedba80)
+
 
