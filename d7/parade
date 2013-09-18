@@ -5,3 +5,15 @@ title 'Geekwise: Ruby on Rails, Day 7/12'
 section 'Intro' do
   slides '0_intro.md'
 end
+
+section 'Authentication: Data' do
+  slides '1_auth_data.md'
+end
+
+section 'Authentication: Sign Up' do
+  slides '2_auth_sign_up.md'
+end
+
+section 'Summary' do
+  slides '9_summary.md'
+end
