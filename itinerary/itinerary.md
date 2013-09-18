@@ -85,62 +85,62 @@
     * controller & view interaction
     * assets (CSS, JS, images)
     * testing all of these
-* Forms
-* File uploads
 
 
 !SLIDE
-# [Day 7/12](d7): Action*
+# [Day 7/12](d7): Authentication, Part 1
 
+* User authentication
+    * Model & passwords
+    * Controller & views
+* Topics:
+    * REST and routes
+    * Views, Partials, and Layouts
+    * Forms
+    * Feature testing with Capybara
+    * Twitter Bootstrap
+
+!SLIDE
+# [Day 8/12](d8): Authentication, Part 2; Adding Photos
+
+* Flockr: User authentication, continued
+    * Sessions & cookies
+* Flockr: Adding Photos
+* Flockr: Commenting on Photos
+* Topics:
+    * Sessions
+    * File uploads
+    * Using 3rd party gems
+
+
+!SLIDE
+# [Day 9/12](d9): Finishing Flockr
+
+* Flockr: Converting Photos
+* Flockr: Sharing Photos
+* Flockr: Paginating Photos
+* Flockr: Versioning Photos
+
+
+
+!SLIDE
+# [Day 10/12](d10): Digging Deeper
+
+* ActiveRecord
 * ActionDispatch
 * ActionController
 * ActionView
-* REST and routes
-* Views, Partials, and Layouts
-* Emailing & ActionMailer
-
-
-!SLIDE
-# [Day 8/12](d8): ActiveRecord & ORMs
-
-* ActiveRecord
-    * Querying
-    * Batch operations
-* Other ORMs
-    * SQL
-    * Mongo
-    * Redis
-    * DynamoDB
-
-
-!SLIDE
-# [Day 9/12](d9): Digging Deeper
-
-* JS, AJAX
-* Adding in functionality with gems for:
-    * Ratings
-    * Pagination
-    * Authentication
-    * Authorization
-    * Background Jobs
-    * Versioning
-    * Soft-delete
-
-
-!SLIDE
-# [Day 10/12](d10): Putting it out there
-
-* Rails & Web Servers
-* Deploying your Rails app
-* Differences when in production
-* Hosting your Rails app
 * Some interesting gems
 * In-class hacking time
 
 
 !SLIDE
-# [Day 11/12](d11): APIs
+# [Day 11/12](d11): Putting it out there, APIs
 
+* Rails & Web Servers
+* Deploying your Rails app
+* Differences when in production
+* Hosting your Rails app
 * [rails-api](https://github.com/rails-api/rails-api)
 * Versioning
 * Middleware

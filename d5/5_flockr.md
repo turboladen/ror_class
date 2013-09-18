@@ -11,11 +11,8 @@
     * Users must authenticate.
     * Users can view photos at `/users/:user_id/photos`.
     * Users can upload photos.
-    * Users can favorite photos.
     * Users can comment on photos.
-    * Users can create sets of photos.
     * Users can share photos.
-    * Users can add contacts/friends.
     * Users can convert photo sizes.
 
 
