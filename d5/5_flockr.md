@@ -8,23 +8,27 @@
 * "Flockr", the Flickr clone.
     * Repo: https://github.com/turboladen/flockr
 * Requirements:
+    * Users must authenticate.
+    * Users can view photos at `/users/:user_id/photos`.
     * Users can upload photos.
-    * Users can view photos at `photos/[username]`.
-    * Users can comment on photos.
-    * Users can add contacts.
-    * Users can create sets of photos.
     * Users can favorite photos.
+    * Users can comment on photos.
+    * Users can create sets of photos.
     * Users can share photos.
+    * Users can add contacts/friends.
     * Users can convert photo sizes.
-    * Photos are paginated.
-    * Photos are versioned.
 
 
 !SLIDE bullets
 # What are we building? (cont.)
 
+* Requirements (cont.):
+    * Photos are paginated.
+    * Photos are versioned.
 * Don't hesitate adding anything that you think of.
     * i.e. play as you read & learn more.
+* Extra credit:
+    * Users can view photos at: `/photos/:user_name`.
 
 
 !SLIDE bullets incremental
