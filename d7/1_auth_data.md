@@ -77,6 +77,11 @@ Now uniqueness is really enforced!
         $ git cherry-pick eb96fd7defb10d855522dfa4d53575a3a78086bc
         ```
 
+        * Then merge the changes.
+            * Edit `spec/models/user_spec.rb`.
+            * Remove old sections.
+            * `git add spec/models/user_spec.rb`
+
 
 !SLIDE incremental bullets
 # Add Specs (cont.)
@@ -120,12 +125,14 @@ Now uniqueness is really enforced!
     * Validation fails if `password` and `password_confirmation` don't match.
 * Let's see here:
     * [685d8dd765bf0b7f52b43d90d31c8b6ccb026bfc](https://github.com/turboladen/flockr/commit/685d8dd765bf0b7f52b43d90d31c8b6ccb026bfc)
+* (includes `rake db:migrate` changes)
 * Git it!
 
 
 !SLIDE incremental bullets
 # Add `authenticate` Method
 
+* This will check the hash of the given text vs what's in `password_digest`.
 * Actually, `has_secure_password` adds for us, so let's add specs.
     * [spec/models/user_spec.rb](https://github.com/turboladen/flockr/commit/dd6e34987a777ad481be33e4ae32649b6ad5a7ad)
 * Run them.

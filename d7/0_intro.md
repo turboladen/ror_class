@@ -15,6 +15,37 @@
     * Users can view photos at `/users/:user_id/photos`.
 
 
+!SLIDE bullets
+# Merge `day6` to `master`
+
+* Get all of the changes on github:
+
+    ```bash
+    $ git checkout master
+    $ git pull
+    ```
+* Merge in the branch:
+
+    ```bash
+    $ git merge day6
+    ```
+* Commit all that stuff to `master`:
+
+    ```bash
+    $ git commit
+    ```
+* Push to github...
+
+
+!SLIDE bullets
+# Clean up branches
+
+* If you want, delete local and remote branches:
+
+    ```bash
+    $ git branch -d day6
+    $ git push origin :day6
+    ```
 
 !SLIDE questions center
 # Questions?

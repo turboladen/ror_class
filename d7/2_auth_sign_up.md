@@ -1,5 +1,5 @@
 !SLIDE title
-# Authentication in the Controller & Views
+# Authentication: Sign Up
 
 
 !SLIDE
@@ -13,6 +13,11 @@
     gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
     ```
 * `bundle install`
+
+
+!SLIDE
+# Let's Get Purdy First (cont.)
+
 * Include CSS and JS into Rails' "asset pipeline":
     * In `app/assets/stylesheets/application.css`:
 
@@ -84,6 +89,11 @@
 * It uses `form_for(@user)`...
 * Update to match our spec...
     * [Changes](https://github.com/turboladen/flockr/commit/7a08c94f043ef9b592f50fc9ee34120a532fa00b).
+
+
+!SLIDE incremental bullets
+# Update the Route & View (cont.)
+
 * Run the feature specs...
 
     ```bash
@@ -92,10 +102,6 @@
     * Fails, right?
 * Try http://localhost:3000/sign_up...
     * Fails, right?
-
-!SLIDE
-# Update the Route & View (cont.)
-
 * Before we fix, how about a link to `/sign_up`?
 * Edit `app/views/layouts/application.html.erb`
     * [Changes](https://github.com/turboladen/flockr/commit/51d0d4b2098163d72dcf90c104c52daa11810b9c).
