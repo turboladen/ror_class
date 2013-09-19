@@ -4,6 +4,6 @@
 ## Day 8/12
 
 
-!SLIDE questions title
+!SLIDE questions center
 
-# `> puts 'questions?'`
+# Questions?
