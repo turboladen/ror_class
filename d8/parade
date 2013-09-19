@@ -9,3 +9,11 @@ end
 section 'Authorization: Sign In' do
   slides '1_sign_in.md'
 end
+
+section 'Adding Photos' do
+  slides '2_adding_photos.md'
+end
+
+section 'Summary' do
+  slides '9_summary.md'
+end
