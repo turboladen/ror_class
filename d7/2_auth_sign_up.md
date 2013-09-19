@@ -83,9 +83,9 @@
 !SLIDE
 # Update the Route & View (cont.)
 
-* `app/views/users/new.html.haml`
+* `app/views/users/new.html.erb`
     * Whoa, _partials_!
-* `app/views/users/_form.html.haml`
+* `app/views/users/_form.html.erb`
 * It uses `form_for(@user)`...
 * Update to match our spec...
     * [Changes](https://github.com/turboladen/flockr/commit/7a08c94f043ef9b592f50fc9ee34120a532fa00b).

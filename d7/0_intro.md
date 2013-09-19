@@ -14,7 +14,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 
 
 !SLIDE
-# Todays Goals
+# Today's Goals
 
 1. Learn about Rails' authentication abilities.
 + Learn more about models.
