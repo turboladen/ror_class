@@ -106,7 +106,6 @@
 * Flockr: User authentication, continued
     * Sessions & cookies
 * Flockr: Adding Photos
-* Flockr: Commenting on Photos
 * Topics:
     * Sessions
     * File uploads
@@ -116,6 +115,7 @@
 !SLIDE
 # [Day 9/12](d9): Finishing Flockr
 
+* Flockr: Commenting on Photos
 * Flockr: Converting Photos
 * Flockr: Sharing Photos
 * Flockr: Paginating Photos
