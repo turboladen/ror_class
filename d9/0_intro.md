@@ -30,7 +30,7 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Extra credit: fix broken view specs.
 
 
-!SLIDE
+!SLIDE bullets
 # Itinerary Updates!
 
 * Removed:
@@ -49,11 +49,11 @@ questions.any? { |q| q.created_at > Time.yesterday }
 + Review Flockr.
 
 
-!SLIDE
+!SLIDE bullets
 # Carrierwave
 
-* Any takers?  How was it?
-* Here's my [carrierwave branch](https://github.com/turboladen/flockr/compare/carrierwave).
+* Here's my [carrierwave branch](https://github.com/turboladen/flockr/tree/carrierwave)
+  and [pull request](https://github.com/turboladen/flockr/pull/3/files).
 * Check out:
     * Moving of `app/views/photos/index.html.erb` to `app/views/photos/_index.html.erb`.
     * Use of `if current_user == @user` for conditionals in views.

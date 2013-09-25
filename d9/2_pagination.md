@@ -2,7 +2,7 @@
 # Flockr: Paginating Photos
 
 
-!SLIDE
+!SLIDE bullets
 # Get git ready
 
 * Make sure you're up to date...
@@ -24,7 +24,7 @@
     ```
 
 
-!SLIDE
+!SLIDE bullets
 # How to add?
 
 * Rolling our own wouldn't be too bad...
@@ -36,7 +36,8 @@
         * [RailsCast #254](http://railscasts.com/episodes/254-pagination-with-kaminari)
     * [kaminari-bootstrap](https://github.com/mcasimir/kaminari-bootstrap)
 
-!SLIDE
+
+!SLIDE bullets incremental
 # Setup
 
 * Add the latter to the `Gemfile` and `bundle install`.
@@ -47,11 +48,11 @@
     ```bash
     $ rails g kaminari:config
     ```
-* Set the `config.default_per_page` to 8:
+* Set the `config.default_per_page` to `8`:
     * [Changes](https://github.com/turboladen/flockr/commit/5104b724396ad32752b09c597777d2777829737e)
 
 
-!SLIDE
+!SLIDE bullets incremental
 # Controller & View
 
 * We want anyone's `Photo`s, but only enough for 1 page's worth.
@@ -60,7 +61,7 @@
     * [Changes](https://github.com/turboladen/flockr/commit/1ad5cceac8336538d016f41c8ee1d2cf458b0919)
 
 
-!SLIDE
+!SLIDE bullets
 # Git it!
 
 * Commit

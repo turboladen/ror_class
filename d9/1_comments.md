@@ -30,7 +30,7 @@
     $ git checkout photo_comments
     ```
 
-!SLIDE
+!SLIDE bullets incremental
 # Start with the DB
 
 * Create the model:
@@ -44,6 +44,10 @@
         ```ruby
         validates_presence_of :body, :user, :photo
         ```
+
+!SLIDE bullets incremental
+# Start with the DB (cont.)
+
 * Add the inverse assocations:
     * Edit `app/models/user.rb`:
 
@@ -55,27 +59,33 @@
         ```ruby
         has_many :comments, dependent: :destroy
         ```
-* Add model tests
+* Add model tests.
+
 
 !SLIDE
 # Fixtures!
 
-* _Fixtures_ = sample DB data.
-* Refactor for [fixtures](http://guides.rubyonrails.org/testing.html#the-low-down-on-fixtures).
+* [_Fixtures_](http://guides.rubyonrails.org/testing.html#the-low-down-on-fixtures) = sample DB data.
+* Refactor for fixtures:
     * [Changes](https://github.com/turboladen/flockr/commit/525b1fa3c29cf9298079db3ff237aa6bf67d9585)
 
 
-!SLIDE
+!SLIDE bullets incremental
 # On to the Controller
 
-* Now we want to be able to `GET /users/:user_id/photos/:photo_id/comments/new
+* Now we want to be able to `GET` on `/users/:user_id/photos/:photo_id/comments/new`
     * ...and to `POST` to something similar...
     * ...but to view comments, they should be on `/users/:user_id/photos/:photo_id`
 * CommentsController!
 
     ```bash
-    rails g controller comments new create destroy edit`
+    rails g controller comments new create destroy edit
     ```
+
+
+!SLIDE bullets incremental
+# On to the Controller (cont.)
+
 * Fix routes...
 
     ```ruby
@@ -91,7 +101,8 @@
     * `spec/views/comments/destroy.html.erb_spec.rb`
     * `spec/views/comments/create.html.erb_spec.rb`
 
-!SLIDE
+
+!SLIDE bullets incremental
 # Controller & Views: new/create
 
 * Add controller code for new/create.
@@ -104,7 +115,8 @@
     * Add `app/views/comments/_form.html.erb`
     * [Changes](https://github.com/turboladen/flockr/commit/8aaf102ba7ee2d903a6b70f5ac47d69e5b1393e2)
 
-!SLIDE
+
+!SLIDE bullets incremental
 # Controller & Views: edit/update
 
 * Update `app/views/photos/show.html.erb` with edit link for each comment.
@@ -115,7 +127,8 @@
     * Forgot to generate with the `update` action!
     * [Changes](https://github.com/turboladen/flockr/commit/9c6a189db05b797ae440bef57ed504cb18ab1886)
 
-!SLIDE
+
+!SLIDE bullets incremental
 # Controller & Views: destroy
 
 * Update `app/views/photos/show.html.erb` with delete link for each comment.
@@ -124,16 +137,17 @@
     * [Changes](https://github.com/turboladen/flockr/commit/7c45ecb74ed0afa4ea264f247aef5adfd0894a0a)
 
 
-!SLIDE
+!SLIDE bullets incremental
 # Refactoring
 
-* `photo#show` is starting to get unwieldy.  Let's fix.
+`photo#show` is starting to get unwieldy.  Let's fix.
+
 * Extract the code for showing each `comment` into a partial, `app/views/comments/_comment.html.erb`.
     * [Changes](https://github.com/turboladen/flockr/commit/52a7b442ebb935b0ec81cf2844d1d2d3805bb675)
     * If you use RubyMine, look under the `Refactor` menu...
 
 
-!SLIDE
+!SLIDE bullets
 # Git it!
 
 * Commit:

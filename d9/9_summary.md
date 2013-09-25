@@ -19,12 +19,16 @@
 # Additionally, we could...
 
 * Cleanup!
-    * /home should display random photos
+    * `/home` should display random photos.
     * Remove unused tests.
-    * Make links nice buttons
-    * Remove JSON
-    * Make views flow better
-    * Add more information to specific pages
+    * Make links nice buttons.
+    * Remove JSON.
+    * Make views flow better.
+    * Add more information to specific pages.
+* Static Analysis
+    * [rails_best_practices](https://github.com/railsbp/rails_best_practices) for
+      making sure you do good Railsy things.
+    * [simplecov](https://github.com/colszowka/simplecov) for test coverage.
 
 
 !SLIDE smbullets
@@ -39,6 +43,11 @@
     * relationships/associations
     * callbacks
     * querying
+
+
+!SLIDE smbullets
+# Concepts We Covered (cont.)
+
 * Controllers
     * routing
     * actions
@@ -53,3 +62,9 @@
 
 !SLIDE questions center
 # Questions?
+
+
+!SLIDE
+# Homework!
+
+* Your project!
