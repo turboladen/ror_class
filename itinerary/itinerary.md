@@ -117,10 +117,7 @@
 
 * Flockr: Commenting on Photos
 * Flockr: Converting Photos
-* Flockr: Sharing Photos
 * Flockr: Paginating Photos
-* Flockr: Versioning Photos
-
 
 
 !SLIDE

@@ -4,6 +4,51 @@
 ## Day 9/12: Finishing Flockr
 
 
+!SLIDE questions center
+
+```ruby
+questions.any? { |q| q.created_at > Time.yesterday }
+```
+
+### (any questions since last time?)
+
+
+!SLIDE
+# Personal Project Progress
+
+* Where are you on it?
+* We'll have some time in class tomorrow.
+
+
+
+!SLIDE
+# Homework Review
+
+* Flockr shows errors on failed login.
+* Flockr feature specs.
+* Fix SessionsController specs for Flockr.
+* Extra credit: fix broken view specs.
+
+
+!SLIDE
+# Itinerary Updates!
+
+* Removed:
+    * Flockr: Sharing Photos
+        * Check out [social-share-button](https://github.com/huacnlee/social-share-button)
+    * Flockr: Versioning Photos
+        * Check out [paper_trail](https://github.com/airblade/paper_trail)
+
+
+!SLIDE
+# Today's Goals
+
+1. Review CarrierWave integration for uploading photos in Flockr.
++ Implement commenting on photos in Flockr.
++ Implement paginating photos on /home.
++ Review Flockr.
+
+
 !SLIDE
 # Carrierwave
 
