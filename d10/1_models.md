@@ -128,7 +128,7 @@ Thus, `rake g migration CreateUsers email:string` ->
 Products.connection.execute('UPDATE `products` SET `price`=`free` WHERE 1')
 ```
 
-!SLIDE
+!SLIDE bullets
 # More `change`
 
 * You can do these things when `change`ing:
@@ -207,7 +207,7 @@ Products.connection.execute('UPDATE `products` SET `price`=`free` WHERE 1')
 > just load into the database a description of the current schema.
 
 
-!SLIDE
+!SLIDE bullets incremental
 # More on Schema Files (cont.)
 
 * `db/schema.rb` is like the summary of your migrations.
@@ -223,3 +223,23 @@ Products.connection.execute('UPDATE `products` SET `price`=`free` WHERE 1')
 
 !SLIDE questions center
 # Questions?
+
+
+!SLIDE title
+# ActiveRecord Querying
+
+
+!SLIDE
+# It's how we get the data.
+
+* [Active Record Query Interface](http://guides.rubyonrails.org/active_record_querying.html)
+
+
+
+!SLIDE title
+# Active Record Associations
+
+!SLIDE
+# It's how we tie data together.
+
+* [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)

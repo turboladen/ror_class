@@ -123,11 +123,10 @@
 !SLIDE
 # [Day 10/12](d10): Digging Deeper
 
-* ActiveRecord
-* ActionDispatch
-* ActionController
-* ActionView
-* Some interesting gems
+* More on Models
+* More on Controllers & Routing
+* More on Views
+* Support & Debugging
 * In-class hacking time
 
 

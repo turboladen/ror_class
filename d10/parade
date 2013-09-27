@@ -9,3 +9,15 @@ end
 section 'Models' do
   slides '1_models.md'
 end
+
+section 'Controllers' do
+  slides '2_controllers.md'
+end
+
+section 'Views' do
+  slides '3_views.md'
+end
+
+section 'Support' do
+  slides '4_support.md'
+end

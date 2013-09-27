@@ -17,21 +17,11 @@ questions.any? { |q| q.created_at > Time.yesterday }
 # Today's Goals
 
 1. Learn more about dealing with models.
-+ Learn more about dealing with controllers.
++ Learn more about dealing with controllers and routing.
 + Learn more about dealing with views.
++ Learn more about some other odds and ends.
 + Spend time working on final project.
 
 
-!SLIDE
-# Itinerary
-
-* More on models
-    * Migrations
-    * Seeds
-    * ActiveRecord Querying
-
-
-
 !SLIDE questions center
-
 # Questions?
