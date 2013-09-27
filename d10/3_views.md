@@ -32,7 +32,7 @@
 !SLIDE title
 # The Asset Pipeline
 
-!SLIDE
+!SLIDE bullets
 # It lets you focus on your app.
 
 * [The Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html)

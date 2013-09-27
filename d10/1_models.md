@@ -229,7 +229,7 @@ Products.connection.execute('UPDATE `products` SET `price`=`free` WHERE 1')
 # ActiveRecord Querying
 
 
-!SLIDE
+!SLIDE bullets
 # It's how we get the data.
 
 * [Active Record Query Interface](http://guides.rubyonrails.org/active_record_querying.html)
@@ -239,7 +239,11 @@ Products.connection.execute('UPDATE `products` SET `price`=`free` WHERE 1')
 !SLIDE title
 # Active Record Associations
 
-!SLIDE
+!SLIDE bullets
 # It's how we tie data together.
 
 * [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)
+
+
+!SLIDE center questions
+# Questions?
