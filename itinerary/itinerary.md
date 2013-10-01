@@ -104,10 +104,14 @@
 # [Day 8/12](d8): Authentication, Part 2; Adding Photos
 
 * Flockr: User authentication, continued
-    * Sessions & cookies
 * Flockr: Adding Photos
 * Topics:
-    * Sessions
+    * Model callbacks and virtual attributes
+    * Routes, controllers, and actions
+    * Rails generators
+    * Sessions & cookies
+    * Rails' `has_secure_password`
+    * Forms
     * File uploads
     * Using 3rd party gems
 
@@ -116,8 +120,11 @@
 # [Day 9/12](d9): Finishing Flockr
 
 * Flockr: Commenting on Photos
-* Flockr: Converting Photos
 * Flockr: Paginating Photos
+* Topics:
+    * Model associations
+    * Fixtures
+    * Using 3rd party gems
 
 
 !SLIDE
@@ -131,12 +138,13 @@
 
 
 !SLIDE
-# [Day 11/12](d11): Putting it out there, APIs
+# [Day 11/12](d11): Putting it out there; APIs
 
-* Rails & Web Servers
-* Deploying your Rails app
-* Differences when in production
-* Hosting your Rails app
+* Getting to Production:
+    * Rails & Web Servers
+    * Deploying your Rails app
+    * Differences when in production
+    * Hosting your Rails app
 * [rails-api](https://github.com/rails-api/rails-api)
 * Versioning
 * Middleware
@@ -146,6 +154,7 @@
 !SLIDE
 # [Day 12/12](d12): What next?
 
+* Other Rails-y things
 * Ruby Metaprogramming
 * Using JS Frameworks (Ember, Angular, etc)
 * Rails in the Enterprise
