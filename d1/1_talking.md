@@ -49,9 +49,8 @@
 !SLIDE
 # What You Will Know: Rails 4 (cont.)
 
-* How can I run background jobs for Rails apps?
 * How can I use authentication & authorization in my app?
-* How can I use Rails with "other" types of databases?
+* How can I use others' code in my projects?
 * Sass for CSS
 * CoffeeScript for JavaScript
 
