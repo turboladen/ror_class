@@ -25,7 +25,7 @@
     * Web server forwards request to Ruby app server.
     * Ruby app server extracts environment-y info and hands request to Rack.
     * Rack parses and hands to Rails.
-* We'll talk more about Ruby web servers on [day 10](d10).
+* We'll talk more about Ruby web servers on [day 11](d11).
 
 !SLIDE bullets
 # Ruby + Web Recap (cont.)
