@@ -11,6 +11,7 @@
 
 .pull-right (cont...)
 
+
 !SLIDE bullets
 # Your Rails Project (cont.)
 
@@ -25,6 +26,7 @@
 
 .pull-right (cont...)
 
+
 !SLIDE bullets
 # Your Rails Project (cont.)
 
@@ -37,6 +39,7 @@
     * (bonus for using view caching.)
 
 .pull-right (cont...)
+
 
 !SLIDE bullets
 # Your Rails Project (cont.)

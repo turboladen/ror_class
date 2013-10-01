@@ -20,6 +20,7 @@
 + Some things about Ruby on Rails.
 + Some other things.
 
+
 !SLIDE
 # What You Will Know: Ruby 2.0
 
@@ -30,6 +31,7 @@
 * How can I extend Ruby for my needs?
 * How can I do web things with Ruby?
 * How can I write code that's maintainable?
+
 
 !SLIDE
 # What You Will Know: Rails 4
@@ -42,6 +44,7 @@
 * How can I build a web service (API) with Rails?
 
 .pull-right (cont.)
+
 
 !SLIDE
 # What You Will Know: Rails 4 (cont.)

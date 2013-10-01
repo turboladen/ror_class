@@ -63,6 +63,7 @@
 * Why Ruby?
 * OO programming.
 
+
 !SLIDE smbullets
 # Overview for Today (cont.)
 
