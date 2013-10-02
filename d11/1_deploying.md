@@ -127,6 +127,114 @@
     $ vagrant up
     ```
 
+
+!SLIDE bullets
+# OS Dependencies
+
+* We need:
+    * Ruby
+    * Web server
+    * App server
+    * Database
+    * User to run the app as?
+    * SSH access?
+* Eventually, do this on all boxes that will run the app:
+    * staging
+    * production
+    * etc?
+* Sure would be nice to not have to manually do this twice...
+
+
+!SLIDE bullets
+# Installing Ruby
+
+* Yeah, we've done this before...
+* You may run into permissions problems with RVM or rbenv.
+    * If RVM, install RVM (etc) using "system-wide" option.
+        * Necessary for getting Ruby access for more than 1 user.
+        * Can lead to sudo & permissions hell.
+    * RVM lets you use `rvmsudo` instead of `sudo`...
+    * I'm liking [chruby](https://github.com/postmodern/chruby) for production.
+
+
+!SLIDE
+# Install Minor Depedencies
+
+* We need bundler already on the box:
+
+    ```bash
+    $ gem install bundler`.
+    ```
+* We need OS dependencies:
+    * git
+    * imagemagick/libmagick-dev/graphicksmagick/whatever
+    * A JS runtime...
+    * A user, `deploy`, for deploying the app.
+    * SSH for [Deploying with Capistrano](https://help.github.com/articles/deploying-with-capistrano).
+
+
+!SLIDE bullets
+# Installing nginx + Passenger
+
+* [Instructions](https://www.phusionpassenger.com/download)...
+* Install the `passenger` gem.
+* I want nginx + passenger, so
+
+    ```bash
+    $ sudo passenger-install-nginx-module
+    ```
+    * (install any missing dependencies that passenger tells you about)
+    * (`rvmsudo` if using RVM)
+* Edit `nginx.conf` to point to where flockr will reside:
+
+    ```
+    server {
+        listen 80;
+        server_name localhost;
+        root /opt/nginx/html/flockr/public;   # <--- be sure to point to 'public'!
+        passenger_enabled on;
+    }
+    ```
+
+!SLIDE bullets
+# Installing nginx + Passenger (cont.)
+
+* We need to create the `flockr` directory and set permissions.
+
+    ```bash
+    $ sudo mkdir /opt/nginx/html/flockr
+    $ sudo chown deploy /opt/nginx/html/flockr
+    ```
+* Add the [nginx init script](http://wiki.nginx.org/Nginx-init-ubuntu)
+    * (edit paths to match our install)
+* Start nginx:
+
+    ```bash
+    $ sudo /etc/init.d/nginx start
+    ```
+
+
+!SLIDE bullets
+# Installing Postgres
+
+* Easiest (?): use the server's package manager.
+    * You'll need `libpq-dev` on Ubuntu; something similar on other distros.
+* Set the `postgres` user's password:
+
+    ```
+    $ sudo -u postgres psql postgres
+    postgres=# \password postgres
+    ```
+* Create the `deploy` database user:
+
+    ```
+    $ sudo su postgres -c psql
+    postgres=# CREATE ROLE deploy SUPERUSER LOGIN;
+    postgres=# \q
+    ```
+    * (probably don't want it as a superuser...)
+
+
 !SLIDE bullets
 # Now the deploy part.
 
@@ -137,9 +245,65 @@
     $ git branch add_capistrano
     $ git checkout add_capistrano
     ```
-* Add `capistrano` to the project (uncomment in `Gemfile`).
+
+!SLIDE
+# Capistrano Setup
+
+* Add `capistrano` to the project (uncomment in `Gemfile` & `bundle`).
 * Add capistrano files to the project:
 
+    * [Changes](https://github.com/turboladen/flockr/commit/2ab6f5b75184d26236956dc187e7a4a765c25891)
+* Create initial directory structure:
+
     ```bash
-    $ cap install
+    $ cap staging deploy:setup
     ```
+* Do a "cold" deploy:
+
+    ```bash
+    $ cap staging deploy:cold
+    ```
+
+!SLIDE
+# Capistrano Setup (cont.)
+
+* Create the database (remotely):
+
+    ```bash
+    $ cd /opt/nginx/html/flockr/current
+    $ bundle exec rake db:create RAILS_ENV=production
+    ```
+* Now, really deploy:
+
+    ```bash
+    $ cap staging deploy
+    ```
+* And try it out: http://192.168.33.10
+
+
+!SLIDE
+# More on Capistrano
+
+* Mess up your release?  Roll back!
+
+    ```bash
+    $ cap staging deploy:rollback
+    ```
+* It'll amass releases in `../flockr/releases`, so clean up:
+
+    ```bash
+    $ cap staging deploy:cleanup
+    ```
+* Once `staging` is all good, move on to `production`...
+
+
+!SLIDE
+# Deploy Summary
+
+* Kinda painful, right?
+* Heroku handled all of that mess for us.  $$$
+* But Configuration Management can make this a lot easier.
+    * (chef, puppet, ansible, etc.)
+* What if your server goes down?  How to recreate?
+
+
