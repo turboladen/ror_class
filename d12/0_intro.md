@@ -16,6 +16,8 @@
     * Action Mailer
     * Internationalization
     * Rails Engines
+* Related topics we didn't cover:
+    * [travis-ci](http://travis-ci.org)
 
 
 
