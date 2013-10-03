@@ -60,6 +60,9 @@ Ok, great, but what do I _need_?
     * Ability to install OS 3rd party libraries.
     * ssh access.
     * Ability to configure OS library config files.
+
+!SLIDE bullets
+# Hosting (cont.)
 * Nicest:
     * Full OS access.
 
@@ -70,6 +73,7 @@ What can you afford?
 # Web Servers
 
 * Which web server?
+* Main two choices:
     * Apache:
         * Released in 1995.
         * Lots of info available.
@@ -78,20 +82,29 @@ What can you afford?
         * Released in 2002.
         * Aims to be slim and fast.
         * Unix socket support.
-    * IIS:
-        * Windows-only.
-        * Sounds painful.
+
+
+!SLIDE bullets
+# Web Servers (cont.)
+* Some others:
+    * lighttpd
+        * "light-y"
+        * CGI, via FastCGI
+        * [LighttpdOnRails](http://redmine.lighttpd.net/projects/1/wiki/LighttpdOnRails)
     * JBoss:
         * Java + JRuby!
         * http://torquebox.org
+    * IIS:
+        * Don't even think about it.
 
 
 !SLIDE bullets
 # App Servers
 
-* Remember [Web Servers, App Servers, and the Web](d4#76)?
-* And [Rack, Rails, & the Web](d5#11)?
-    * (check [this pic](d5#14))
+Remember [Web Servers, App Servers, and the Web](d4#76)?
+
+And [Rack, Rails, & the Web](d5#11)? (check [this pic](d5#14))
+
 * Concurrency is the problem, solved in different ways!
     * Thread pools?  Process pools?
 * Which app server?
@@ -108,7 +121,8 @@ What can you afford?
 * [Phusion Passenger](https://www.phusionpassenger.com)
     * Defaults to nginx, but can use Apache.
     * Almost no config required.
-    * Came from "mod_ruby" on Apache.
+        * (other than the web server config)
+    * Came from `mod_ruby` on Apache.
     * Multi-threaded & multi-process.
     * "Hybrid" evented.
     * Can take a _long_ time to compile.
@@ -120,8 +134,10 @@ What can you afford?
 
 * [Unicorn](https://github.com/blog/517-unicorn)
     * Requires nginx (for the Unix socket).
-    * nginx proxies all requests to the shared Unix socket, which forward to
-      unicorn master process.
+    * nginx:
+        * proxies all requests to the shared Unix socket
+        * which forward to unicorn master process
+        * unicorn master process delegates workers as needed
     * Takes some tweaking to get it configured right.
     * 0-down-time deploys.
     * Created by GitHub peeps.
@@ -132,9 +148,10 @@ What can you afford?
 # App Servers: Thin
 
 * [Thin](http://code.macournoyer.com/thin/)
-    * Works with any web server.
-    * Tell web server to proxy requests to thin processes, running on different
-      TCP ports.
+    * Works with most web servers.
+    * Configuration:
+        * web server: proxy requests to thin processes
+        * Thin processes running on different TCP ports.
     * Internally evented.
     * Uses tools that have been around the block.
     * Easy to use for development or production.
@@ -146,6 +163,9 @@ What can you afford?
 
 * [Puma](http://puma.io)
     * Built for speed, concurrency, and small footprint.
+    * Configuration:
+        * Can listen on Unix socket
+        * ...or use proxies from web server
     * New(er) kid on the block; lots of positive reports.
     * Better on Rubinius or JRuby?
 
@@ -153,14 +173,16 @@ What can you afford?
 !SLIDE bullets
 # It all depends...
 
-* Your web host, web server, and app server should be determined by your app's
-  needs.
+* Each should be determined by your app's needs:
+    * web host
+    * web server
+    * app server
 * If your app doesn't need a lot, use what _feels_ best to you.
     * Which is easiest to set up?
     * Which is easiest to understand?
     * Which looks prettiest?
     * Which has the purpose that you most agree with?
-* If you still don't care, use Passenger.
+* If you still don't care, Rails team suggests Passenger.
     * (but just for the production environment)
 
 

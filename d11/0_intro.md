@@ -10,6 +10,8 @@
 questions.any? { |q| q.created_at > Time.yesterday }
 ```
 
+### (any questions since last time?)
+
 !SLIDE
 # Today's Goals
 
@@ -17,6 +19,5 @@ questions.any? { |q| q.created_at > Time.yesterday }
 * Learn how to get started with a web service/API.
 
 
-### (any questions since last time?)
 !SLIDE questions center
 # Questions?
