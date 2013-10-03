@@ -8,6 +8,7 @@
 * Do you want to give programmatic access to your app?
 * Wanting to do heavy client-side work?
     * (i.e. JS frameworks, like Ember, Backbone, Angular)
+* JSON is common, but doesn't have to be.
 
 
 !SLIDE bullets
