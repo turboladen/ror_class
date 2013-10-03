@@ -12,9 +12,15 @@
     * [A Capistrano Rails Guide](https://gist.github.com/jrochkind/2161449)
     * Version 2 was current for ~5 years, until June 2013.
         * Most help you'll find now is for v2.
+    * Version 3 should be released soon.
 * Also: [vlad](http://rubyhitsquad.com/Vlad_the_Deployer.html)
     * Strives to be thin/simple.
     * Uses Rake for tasks.
+
+
+!SLIDE bullets
+# Deploying (cont.)
+
 * Both will/can:
     * SSH in to your server
     * Pull down your git repo
@@ -28,11 +34,13 @@
 # Deploying (cont.)
 
 * What about your OS dependencies?
-* You're welcome to do manually, but Configuration Management is en vogue:
+* You're welcome to do manually...
+* but Configuration Management is en vogue:
     * [chef](http://www.opscode.com/chef/)
     * [puppet](https://puppetlabs.com)
     * [ansible](http://www.ansibleworks.com)
 * CM lets you check in code that defines your environment.
+    * Your environment lives with your code.
 
 
 !SLIDE bullets
@@ -96,6 +104,17 @@
     * (uses old version of Vagrant)
 * [Introduction to Vagrant for Rails developers](http://blog.dcxn.com/2013/07/12/introduction-to-vagrant-for-rails-developers/)
 * Download & install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* Git it!
+
+    ```bash
+    $ git branch add_vagrant
+    $ git checkout add_vagrant
+    ```
+
+
+
+!SLIDE bullets
+# Flockr -> Vagrant VM (cont.)
 * Download & install [Vagrant](http://downloads.vagrantup.com)
 * Init Flockr to use a precise64 base box:
 
@@ -103,17 +122,19 @@
     $ vagrant init precise64 http://files.vagrantup.com/precise64.box
     ```
     * (substitute 32 for 64 if you must)
-
-
-!SLIDE bullets
-# Flockr -> Vagrant VM (cont.)
-
+* Look at the new `Vagrantfile`...
+    * [Mine](https://github.com/turboladen/flockr/blob/89e07f0258282c60aaf871f9b1b3e370e5ce79b1/Vagrantfile)
+* Add `Vagrantfile` to git...
 * Boot the box!
 
     ```bash
     $ vagrant up
     ```
-* Look at the new `Vagrantfile`...
+
+
+!SLIDE bullets
+# Flockr -> Vagrant VM (cont.)
+
 * Now SSH in to the box...
 
     ```bash
@@ -136,8 +157,7 @@
     * Web server
     * App server
     * Database
-    * User to run the app as?
-    * SSH access?
+    * User + SSH access to run the app as?
 * Eventually, do this on all boxes that will run the app:
     * staging
     * production
@@ -157,13 +177,13 @@
     * I'm liking [chruby](https://github.com/postmodern/chruby) for production.
 
 
-!SLIDE
+!SLIDE bullets
 # Install Minor Depedencies
 
 * We need bundler already on the box:
 
     ```bash
-    $ gem install bundler`.
+    $ gem install bundler
     ```
 * We need OS dependencies:
     * git
@@ -173,7 +193,7 @@
     * SSH for [Deploying with Capistrano](https://help.github.com/articles/deploying-with-capistrano).
 
 
-!SLIDE bullets
+!SLIDE smbullets
 # Installing nginx + Passenger
 
 * [Instructions](https://www.phusionpassenger.com/download)...
@@ -206,7 +226,7 @@
     $ sudo chown deploy /opt/nginx/html/flockr
     ```
 * Add the [nginx init script](http://wiki.nginx.org/Nginx-init-ubuntu)
-    * (edit paths to match our install)
+    * (edit paths to match your install)
 * Start nginx:
 
     ```bash
@@ -234,6 +254,12 @@
     ```
     * (probably don't want it as a superuser...)
 
+!SLIDE bullets
+# Installing Postgres (cont.)
+
+* Update flockr to use Postgres:
+    * [Gemfile](https://github.com/turboladen/flockr/blob/543e0d618e9f375c41b25d7126ea166c0fcee778/Gemfile)
+    * [config/database.yml](https://github.com/turboladen/flockr/blob/f14682532771daed5d7fb7f3830831db10fd0ee1/config/database.yml)
 
 !SLIDE bullets
 # Now the deploy part.
@@ -246,7 +272,7 @@
     $ git checkout add_capistrano
     ```
 
-!SLIDE
+!SLIDE bullets
 # Capistrano Setup
 
 * Add `capistrano` to the project (uncomment in `Gemfile` & `bundle`).
@@ -263,8 +289,9 @@
     ```bash
     $ cap staging deploy:cold
     ```
+    * (does everything but restart your app server)
 
-!SLIDE
+!SLIDE bullets
 # Capistrano Setup (cont.)
 
 * Create the database (remotely):
@@ -281,7 +308,7 @@
 * And try it out: http://192.168.33.10
 
 
-!SLIDE
+!SLIDE bullets
 # More on Capistrano
 
 * Mess up your release?  Roll back!
