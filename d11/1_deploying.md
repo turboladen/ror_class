@@ -68,8 +68,8 @@
 
     ```bash
 
-    $ git branch heroku_deploy
-    $ git checkout heroku_deploy
+    $ git branch heroku
+    $ git checkout heroku
     ```
     * [Changes]()
 * Tell Heroku to create the app:
@@ -84,7 +84,7 @@
 * Let Heroku do deploy magic:
 
     ```bash
-    $ git push heroku heroku_deploy:master
+    $ git push heroku heroku:master
     ```
     * Notice `bundle install`...
     * Notice `Preparing app for Rails asset pipeline`...
