@@ -16,7 +16,6 @@ questions.any? { |q| q.created_at > Time.yesterday }
 # Today's Goals
 
 * Learn how to get your app into "production".
-* Learn how to get started with a web service/API.
 
 
 !SLIDE questions center

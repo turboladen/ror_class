@@ -4,23 +4,21 @@
 ## Day 12/12
 
 
+!SLIDE questions center
 
+```ruby
+questions.any? { |q| q.created_at > Time.yesterday }
+```
+
+### (any questions since last time?)
 
 !SLIDE
+# Today's Goals
 
-* Rails topics we didn't cover:
-    * CoffeeScript
-    * SASS
-    * View helpers
-    * JS and AJAX
-    * Action Mailer
-    * Internationalization
-    * Rails Engines
-* Related topics we didn't cover:
-    * [travis-ci](http://travis-ci.org)
+* Learn how to get started with a web service/API.
+* Show off your projects; show what you learned.
+* Recap the class.
 
 
-
-!SLIDE questions title
-
-# `> puts 'questions?'`
+!SLIDE questions center
+# Questions?
